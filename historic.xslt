@@ -4,8 +4,12 @@
 
 <xsl:template name="historic_ways">
 	<rule e="way" k="historic" v="*" zoom-min="10">
-		<rule e="way" k="historic" v="archaeological_site">
+		<rule e="way" k="historic" v="archaeological_site"> <!-- Historische Wälle/Schanzen -->
 			<area fill="#f5f4e1" stroke="#818181" stroke-width="0.1" />
+			<rule e="way" k="building" v="~" zoom-min="12">	<!-- nur dargestellt, wenn es kein Gebäude ist -->
+				<line stroke="#AEAEAE" stroke-width="2" dy="0.4" stroke-dasharray="2,10" stroke-linecap="butt" /> <!-- breitere graue Querstriche, rechts gehts runter -->
+				<line stroke="#AEAEAE" stroke-width="0.4" stroke-linecap="butt" /> 
+			</rule>
 		</rule>
 	</rule>
 </xsl:template>

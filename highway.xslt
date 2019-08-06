@@ -180,7 +180,7 @@
 			<rule e="any" k="tunnel" v="~|no|false">
 				<rule e="any" k="bridge" v="~|no|false">
 					<!-- casing -->
-					<rule e="node" k="highway" v="turning_circle|mini_roundabout" zoom-min="13" >
+					<rule e="node" k="highway" v="turning_circle|mini_roundabout" zoom-min="{$z-residential}" >
 						<circle radius="1.0" scale-radius="true" fill="{$cs-residential}" />
 					</rule>
 					<!-- Tracks -->
@@ -246,8 +246,8 @@
 				</rule>
 
 				<!-- core -->
-				<rule e="node" k="highway" v="turning_circle|mini_roundabout" zoom-min="13">
-					<circle radius="0.8" scale-radius="true" fill="{$hw-residential}" />
+				<rule e="node" k="highway" v="turning_circle|mini_roundabout" zoom-min="{$z-residential}">
+					<circle radius="0.9" scale-radius="true" fill="{$hw-residential}" />
 				</rule>
 				<rule e="way" k="highway" v="construction" zoom-min="{$z-construction}">
 				  <line stroke="{$hw-construction}" stroke-width="0.2" stroke-linecap="butt" stroke-dasharray="12,12" />

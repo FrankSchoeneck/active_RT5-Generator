@@ -3,11 +3,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 <xsl:variable name="osmc-bcg-sym-prio">2</xsl:variable>
-<xsl:variable name="osmc-bcg-sym-perc">50</xsl:variable>
+<xsl:variable name="osmc-bcg-sym-perc">45</xsl:variable>
 <xsl:variable name="osmc-frg-sym-prio">3</xsl:variable>
-<xsl:variable name="osmc-frg-sym-perc">50</xsl:variable>
-<xsl:variable name="osmc-wmtl_1-font-size">9</xsl:variable>
-<xsl:variable name="osmc-wmtl_3-font-size">8</xsl:variable>
+<xsl:variable name="osmc-frg-sym-perc">45</xsl:variable>
+<xsl:variable name="osmc-wmtl_1-font-size">7</xsl:variable>
+<xsl:variable name="osmc-wmtl_3-font-size">6</xsl:variable>
 
 <xsl:variable name="iwn_color">#b02c21</xsl:variable>
 <xsl:variable name="iwn_color2">#50b02c21</xsl:variable>

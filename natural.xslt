@@ -73,6 +73,10 @@
 				<line stroke="#73dcff" stroke-width="0.3" />
 				<area fill="#50ff7396" />
 			</rule>
+			<rule e="way" k="natural" v="earth_bank"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. Braune Linie mit nach rechts versetzten Querstrichen, in Linienrichtung rechts gehts runter  -->
+				<line stroke="#7C6442" stroke-width="2" dy="0.7" stroke-dasharray="0.7,8" stroke-linecap="round" />
+				<line stroke="#7C6442" stroke-width="0.3" stroke-linecap="round" /> 
+			</rule>
 		</rule>
 
 		<!-- Natural captions -->
