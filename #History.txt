@@ -1,0 +1,3 @@
+12.08.2019, geändert: steps, stroke-dasharray="1.5,1.5"
+12.08.2019, geändert: historic=archaeological_site, stroke + stroke-dasharray an cliff angepasst
+12.08.2019, geändert: natural=cliff um |earth_bank erweitert, einzelnes natural=earth_bank entfernt

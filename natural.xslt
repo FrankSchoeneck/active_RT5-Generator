@@ -54,14 +54,14 @@
 		</rule>
 
 		<rule e="way" k="natural" v="*" zoom-min="12">
-			<rule e="way" k="natural" v="cliff" closed="no" cat="landscapefeat" >
+			<rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat" > <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
 				<line stroke="#70606060" stroke-width="1.0" stroke-dasharray="1.8,2" stroke-linecap="butt"/>
 				<pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 				<rule e="way" k="natural" v="*" zoom-min="13">
-					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-width="6" symbol-height="10" />
+					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-width="5" symbol-height="9" />
 				</rule>		
 			</rule>
-			<rule e="way" k="natural" v="cliff" closed="yes" cat="landscapefeat">
+			<rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
 				<line stroke="#70606060" stroke-width="1.0" stroke-dasharray="1.8,2" stroke-linecap="butt" />
 				<caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 			</rule>
@@ -72,10 +72,6 @@
 			<rule e="way" k="natural" v="crevasse" closed="yes">
 				<line stroke="#73dcff" stroke-width="0.3" />
 				<area fill="#50ff7396" />
-			</rule>
-			<rule e="way" k="natural" v="earth_bank"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. Braune Linie mit nach rechts versetzten Querstrichen, in Linienrichtung rechts gehts runter  -->
-				<line stroke="#7C6442" stroke-width="2" dy="0.7" stroke-dasharray="0.7,8" stroke-linecap="round" />
-				<line stroke="#7C6442" stroke-width="0.3" stroke-linecap="round" /> 
 			</rule>
 		</rule>
 

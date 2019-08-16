@@ -253,7 +253,7 @@
 				  <line stroke="{$hw-construction}" stroke-width="0.2" stroke-linecap="butt" stroke-dasharray="12,12" />
 				</rule>
 				<rule e="way" k="highway" v="steps" zoom-min="{$z-footway}">
-					<line stroke="{$hw-steps}" stroke-width="0.4" stroke-dasharray="0.7,0.5" stroke-linecap="butt" scale="stroke"/>
+					<line stroke="{$hw-steps}" stroke-width="0.4" stroke-dasharray="1.5,1.5" stroke-linecap="butt" scale="stroke"/>
 					<rule e="way" k="*" v="*" zoom-min="13">
 						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
