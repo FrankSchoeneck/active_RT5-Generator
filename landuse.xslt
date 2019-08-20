@@ -37,13 +37,13 @@
 	</rule>
 
 	<!-- park captions -->
-	<rule e="way" k="leisure|landuse" v="park|village_green|recreation_ground" zoom-min="13">
-		<caption k="name" font-style="normal" font-size="12" fill="#1f5c1b" stroke="#FFFFFF" stroke-width="1.5" />
+	<rule e="way" k="leisure|landuse" v="park|village_green|recreation_ground" zoom-min="15">
+		<caption k="name" font-style="normal" font-size="10" fill="#1f5c1b" stroke="#FFFFFF" stroke-width="1.5" />
 	</rule>
 
 	<!-- wood -->
 	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
-		<rule e="way" k="*" v="*" zoom-min="8">
+		<rule e="way" k="*" v="*" >
 			<rule e="way" k="*" v="*" zoom-max="10">
 				<area fill="#D4DAA4" />
 			</rule>
@@ -60,10 +60,12 @@
 				</rule>
 			</rule>
 		</rule>
-
+		
 		<!-- wood captions -->
-		<rule e="way" k="*" v="*" zoom-min="13">
-			<caption k="name" font-style="bold" font-size="10" fill="#164526" stroke="#FFFFFF" stroke-width="2.0" />
+		<rule e="way" k="boundary" v="~" >
+			<rule e="way" k="*" v="*" zoom-min="13">
+				<caption k="name" font-style="bold" font-size="10" fill="#164526" stroke="#FFFFFF" stroke-width="2.0" />
+			</rule>
 		</rule>
 	</rule>
 	
@@ -82,8 +84,8 @@
 	</rule>
 	<rule e="way" k="landuse" v="vineyard" zoom-min="10" closed="yes">
 		<area fill="#c9d9a8" />
-		<rule e="way" k="*" v="*" zoom-min="12">
-			<area src="file:/patterns/vineyard.svg" symbol-width="16" />
+		<rule e="way" k="*" v="*" zoom-min="13">
+			<area src="file:/patterns/vineyard.svg" symbol-percent="50" />
 		</rule>
 	</rule>
 
