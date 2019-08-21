@@ -48,9 +48,9 @@
 	<xsl:call-template name="areas"/>
 	<xsl:call-template name="landuse"/>
 	<xsl:call-template name="tourism_areas"/>
+	<xsl:call-template name="natural_ways"/>
 	<xsl:call-template name="waterways"/>
 	<xsl:call-template name="waterbodies"/>
-	<xsl:call-template name="natural_ways"/>
 	<xsl:call-template name="amenity_ways"/>
 	<xsl:call-template name="admin"/>
 	<xsl:call-template name="contour_lines"/>

@@ -1,9 +1,11 @@
-12.08.2019, geändert: steps, stroke-dasharray="1.5,1.5"
-12.08.2019, geändert: historic=archaeological_site, stroke + stroke-dasharray an cliff angepasst
-12.08.2019, geändert: natural=cliff um |earth_bank erweitert, einzelnes natural=earth_bank entfernt
+21.08.2019, Fehler: Bäche wurden nicht überall dargestellt. Reihenfolge geändert natural_ways nun vor waterways
 
 20.08.2019, geändert: leisure|landuse=park|village_green|recreation_ground, Zoom ab 15, Schriftgröße 10
 20.08.2019, geändert: landuse=vineyard, Symbol verkleinert,  Zoom ab 13
 20.08.2019, geändert: boundary=national_park, Schriftart=normal, Schriftgröße 9
 20.08.2019, geändert: protect_class=1|~, Schriftart=normal, Schriftgröße 9
 20.08.2019, geändert: caption forest nur wenn kein Schutzgebiet (k=boundary v=~)
+
+12.08.2019, geändert: steps, stroke-dasharray="1.5,1.5"
+12.08.2019, geändert: historic=archaeological_site, stroke + stroke-dasharray an cliff angepasst
+12.08.2019, geändert: natural=cliff um |earth_bank erweitert, einzelnes natural=earth_bank entfernt
