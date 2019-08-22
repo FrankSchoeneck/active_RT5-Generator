@@ -62,7 +62,7 @@
 		</rule>
 		
 		<!-- wood captions -->
-		<rule e="way" k="boundary" v="~" >
+		<rule e="way" k="boundary" v="~|no|false" >
 			<rule e="way" k="*" v="*" zoom-min="13">
 				<caption k="name" font-style="bold" font-size="10" fill="#164526" stroke="#FFFFFF" stroke-width="2.0" />
 			</rule>

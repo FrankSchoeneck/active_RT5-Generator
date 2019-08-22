@@ -255,7 +255,7 @@
 				<rule e="way" k="highway" v="steps" zoom-min="{$z-footway}">
 					<line stroke="{$hw-steps}" stroke-width="0.4" stroke-dasharray="1.5,1.5" stroke-linecap="butt" scale="stroke"/>
 					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<rule e="way" k="highway" v="path|footway" zoom-min="12">
@@ -282,7 +282,7 @@
 							<line stroke="#FF4000" stroke-width="0.4" stroke-dasharray="3,5" stroke-linecap="butt" scale="stroke"/>
 						</rule>
 						<rule e="way" k="*" v="*">
-							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 						</rule>
 					</rule>
 					<!-- schwer sichtbare Wege -->
@@ -312,7 +312,7 @@
 						<line stroke="#FF4000" stroke-width="0.4" stroke-dasharray="3,5" stroke-linecap="butt" scale="stroke"/>
 					</rule>
 					<rule e="way" k="*" v="*">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Klettersteige (via_ferrata) -->
@@ -322,28 +322,28 @@
 					<line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,1,0.5,1,0.5,1" stroke-linecap="butt" scale="stroke"/>
 					<rule e="any" k="*" v="*" zoom-min="13">
 						<caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Reitweg -->
 				<rule e="way" k="highway" v="bridleway" zoom-min="13">
 					<line stroke="{$hw-track}" stroke-width="0.4" stroke-dasharray="2,6" stroke-linecap="butt" />
 					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Fussgängerzone -->
 				<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}">
 					<line stroke="{$hw-pedestrian}" stroke-width="1.1" />
 					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Radweg -->
 				<rule e="way" k="highway" v="cycleway" zoom-min="{$z-cycleway}">
 					<line stroke="{$hw-cycleway}" stroke-width="0.4" />
 					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Zufahrtsstrasse -->

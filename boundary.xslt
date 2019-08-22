@@ -4,20 +4,22 @@
 <xsl:template name="boundary">
 	<!-- NATIONAL PARK -->
 	<rule e="way" k="boundary" v="national_park|protected_area" cat="boundaries_areas">
-		<rule e="way" k="protect_class" v="1|~" zoom-max="11">
-			<area fill="#2034972d" stroke="#818181" stroke-width="0.01"/>
+		<rule e="way" k="protect_class" v="1|~">
+			<area fill="#2034972d" />
 		</rule>
-		<rule e="way" k="protect_class" v="1|~" zoom-min="12">
+		<rule e="way" k="protect_class" v="1|~" zoom-min="14">
 			<line stroke="#6bb96c" stroke-width="0.8" stroke-linecap="butt" />
 		</rule>
 
 		<!-- captions -->
 		<rule e="way" k="boundary" v="national_park" zoom-min="12" zoom-max="14">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#164526" stroke="#ffffff" stroke-width="2.0" />
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#164526" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
+		<!-- Deaktivert da es in Mapsforge Probleme mit den Kachelgrenzen gibt	
 		<rule e="way" k="protect_class" v="1|~" zoom-min="15">
-			<pathText k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#164526" stroke="#ffffff" stroke-width="2.0" />
+			<pathText k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#164526" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
+		-->
 	</rule>
 </xsl:template>
 </xsl:stylesheet>
