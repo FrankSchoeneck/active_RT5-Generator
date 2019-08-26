@@ -1,3 +1,5 @@
+26.08.2019, geändert: Schriftgrößen bei diversen highways verkleinert.
+
 22.08.2019, geändert: boundary=national_park|protected_area, Wegen Fehlern an den Kachelgrenzen die Darstellung verändert
 22.08.2019, geändert: highway=track|byway, etc. stroke-width verkleinert
 22.08.2019, geändert: natural=peak + vulcano, Position der caption näher ans Symbol gerückt

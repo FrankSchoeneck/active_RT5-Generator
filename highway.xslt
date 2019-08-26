@@ -18,6 +18,7 @@
 <xsl:variable name="hw-footway">#747474</xsl:variable>
 <xsl:variable name="hw-steps">#747474</xsl:variable>
 <xsl:variable name="hw-construction">#d0d0d0</xsl:variable>
+
 <!-- road casing colors -->
 <xsl:variable name="cs-motorway">#999999</xsl:variable>
 <xsl:variable name="cs-trunk">#999999</xsl:variable>
@@ -46,11 +47,26 @@
 <xsl:variable name="z-pedestrian">11</xsl:variable>
 <xsl:variable name="z-living">11</xsl:variable>
 <xsl:variable name="z-service">11</xsl:variable>
-<xsl:variable name="z-service2">11</xsl:variable>
 <xsl:variable name="z-track">11</xsl:variable>
 <xsl:variable name="z-cycleway">12</xsl:variable>
 <xsl:variable name="z-footway">12</xsl:variable>
 <xsl:variable name="z-construction">11</xsl:variable>
+
+<!-- road pathText font-size -->
+<xsl:variable name="fs-steps">7</xsl:variable>
+<xsl:variable name="fs-footway">7</xsl:variable>
+<xsl:variable name="fs-track">7</xsl:variable>
+<xsl:variable name="fs-pedestrian">8</xsl:variable>
+<xsl:variable name="fs-cycleway">7</xsl:variable>
+<xsl:variable name="fs-service">8</xsl:variable>
+<xsl:variable name="fs-living">8</xsl:variable>
+<xsl:variable name="fs-residential">8</xsl:variable>
+<xsl:variable name="fs-construction">8</xsl:variable>
+<xsl:variable name="fs-tertiary">8</xsl:variable>
+<xsl:variable name="fs-secondary">8</xsl:variable>
+<xsl:variable name="fs-primary">9</xsl:variable>
+<xsl:variable name="fs-trunk">9</xsl:variable>
+
 
 <xsl:template name="highway">
 	<rule e="any" k="highway" v="*">
@@ -178,8 +194,9 @@
 			</rule>
 			<!-- not tunnel & not bridge-->
 			<rule e="any" k="tunnel" v="~|no|false">
+				<!-- casing -->
 				<rule e="any" k="bridge" v="~|no|false">
-					<!-- casing -->
+					<!-- Wendehammer -->
 					<rule e="node" k="highway" v="turning_circle|mini_roundabout" zoom-min="{$z-residential}" >
 						<circle radius="1.0" scale-radius="true" fill="{$cs-residential}" />
 					</rule>
@@ -205,6 +222,10 @@
 					<!-- Strasse im Bau -->
 					<rule e="way" k="highway" v="construction" zoom-min="{$z-construction}">
 						<line stroke="{$cs-construction}" stroke-width="1.0" stroke-linecap="round" />
+					</rule>
+					<!-- Private Wege -->
+					<rule e="way" k="access" v="private|acc_no|destination" zoom-min="{$z-service}">
+						<line stroke="{$cs-service}" stroke-width="0.9" stroke-linecap="round" />
 					</rule>
 					<!-- Zufahrtsstrase -->
 					<rule e="way" k="highway" v="service|road" zoom-min="{$z-service}">
@@ -254,11 +275,11 @@
 				</rule>
 				<rule e="way" k="highway" v="steps" zoom-min="{$z-footway}">
 					<line stroke="{$hw-steps}" stroke-width="0.4" stroke-dasharray="1.5,1.5" stroke-linecap="butt" scale="stroke"/>
-					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="way" k="*" v="*" zoom-min="16">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-steps}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
-				<rule e="way" k="highway" v="path|footway" zoom-min="12">
+				<rule e="way" k="highway" v="path|footway" zoom-min="{$z-footway}">
 					<rule e="way" k="trail_visibility" v="~|excellent|good|intermediate">
 						<rule e="way" k="sac_scale" v="~">
 							<line stroke="{$hw-footway}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
@@ -281,8 +302,8 @@
 						<rule e="way" k="foot" v="ft_no"> <!-- Rote Markierung falls Weg nicht für Füßgänger -->
 							<line stroke="#FF4000" stroke-width="0.4" stroke-dasharray="3,5" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="*" v="*">
-							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+						<rule e="way" k="*" v="*" zoom-min="15">
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-footway}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 						</rule>
 					</rule>
 					<!-- schwer sichtbare Wege -->
@@ -311,71 +332,74 @@
 					<rule e="way" k="foot" v="ft_no"> <!-- Rote Markierung falls Weg nicht für Füßgänger -->
 						<line stroke="#FF4000" stroke-width="0.4" stroke-dasharray="3,5" stroke-linecap="butt" scale="stroke"/>
 					</rule>
-					<rule e="way" k="*" v="*">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="way" k="*" v="*" zoom-min="15">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Klettersteige (via_ferrata) -->
-				<rule e="way" k="via_ferrata_flag|via_ferrata_scale" v="set|yes|*" zoom-min="12">
+				<rule e="way" k="via_ferrata_flag|via_ferrata_scale" v="set|yes|*" zoom-min="{$z-track}">
 					<symbol id="id_via_ferrata" src="file:/symbols/via_ferrata.svg" symbol-width="16"/>
 					<line stroke="#FF0000" stroke-width="0.4" stroke-linecap="butt"/>
 					<line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,1,0.5,1,0.5,1" stroke-linecap="butt" scale="stroke"/>
-					<rule e="any" k="*" v="*" zoom-min="13">
+					<rule e="any" k="*" v="*" zoom-min="15">
 						<caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Reitweg -->
-				<rule e="way" k="highway" v="bridleway" zoom-min="13">
+				<rule e="way" k="highway" v="bridleway" zoom-min="{$z-track}">
 					<line stroke="{$hw-track}" stroke-width="0.4" stroke-dasharray="2,6" stroke-linecap="butt" />
-					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="way" k="*" v="*" zoom-min="15">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Fussgängerzone -->
 				<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}">
 					<line stroke="{$hw-pedestrian}" stroke-width="1.1" />
-					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="way" k="*" v="*" zoom-min="16">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-pedestrian}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Radweg -->
 				<rule e="way" k="highway" v="cycleway" zoom-min="{$z-cycleway}">
 					<line stroke="{$hw-cycleway}" stroke-width="0.4" />
-					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="8" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="way" k="*" v="*" zoom-min="15">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-cycleway}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					</rule>
+				</rule>
+				<!-- Private Wege -->
+				<rule e="way" k="access" v="private|acc_no|destination" zoom-min="{$z-service}">
+					<line stroke="#CCCCCC" stroke-width="0.7" />
+					<rule e="way" k="*" v="*" zoom-min="16" >
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Zufahrtsstrasse -->
 				<rule e="way" k="highway" v="service|road" zoom-min="{$z-service}">
 					<line stroke="{$hw-service}" stroke-width="0.8" />
-					<rule e="way" k="*" v="*" zoom-min="15" >
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="9" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+					<rule e="way" k="*" v="*" zoom-min="16" >
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Wohnstrasse -->
 				<rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
 					<line stroke="{$hw-living}" stroke-width="0.8" />
-					<rule e="way" k="*" v="*" zoom-min="14" >
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+					<rule e="way" k="*" v="*" zoom-min="16" >
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-living}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<rule e="way" k="highway" v="residential|unclassified" zoom-min="{$z-residential}">
 					<line stroke="{$hw-residential}" stroke-width="0.8" />
-					<rule e="way" k="*" v="*" zoom-min="14" >
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+					<rule e="way" k="*" v="*" zoom-min="16" >
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-residential}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Strasse im Bau -->
-				<rule e="way" k="highway" v="construction" zoom-min="11">
+				<rule e="way" k="highway" v="construction" zoom-min="{$z-construction}">
 					<line stroke="#d0d0d0" stroke-width="0.8" />
-					<rule e="way" k="*" v="*" zoom-min="13">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+					<rule e="way" k="*" v="*" zoom-min="15">
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-construction}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
-				</rule>
-				<!-- Private Wege -->
-				<rule e="way" k="access" v="private|acc_no|destination" zoom-min="12">
-					<line stroke="#CCCCCC" stroke-width="0.8" />
 				</rule>
 
 				<!-- Abzweige -->
@@ -398,36 +422,36 @@
 				<!-- Hauptstrasse -->
 				<rule e="way" k="highway" v="tertiary|raceway" zoom-min="{$z-tertiary}">
 					<line stroke="{$hw-tertiary}" stroke-width="1.0" />
-					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FEF8B9" stroke-width="3.0" />
+					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-tertiary}" fill="#393935" stroke="#FEF8B9" stroke-width="3.0" />
 				</rule>
 				<!-- Landstraßen -->
 				<rule e="way" k="highway" v="secondary" zoom-min="{$z-secondary}">
 					<line stroke="{$hw-secondary}" stroke-width="1.0" />
-					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#FEF8B9" stroke-width="3.0" />
-					<rule e="way" k="network|hknetwork" v="~" zoom-min="12"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
+					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-secondary}" fill="#393935" stroke="#FEF8B9" stroke-width="3.0" />
+					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
 						<caption k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FEF8B9" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Bundesstrassen -->
 				<rule e="way" k="highway" v="primary" zoom-min="{$z-primary}">
 					<line stroke="{$hw-primary}" stroke-width="1.0" />
-					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#fff486" stroke-width="3.0" />
-					<rule e="way" k="network|hknetwork" v="~" zoom-min="12"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
+					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-primary}" fill="#393935" stroke="#fff486" stroke-width="3.0" />
+					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
 						<caption k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#fff486" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Schnellstrassen -->
 				<rule e="way" k="highway" v="trunk" zoom-min="{$z-trunk}">
 					<line stroke="{$hw-trunk}" stroke-width="1.0" />
-					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#393935" stroke="#fff486" stroke-width="3.0" />
-					<rule e="way" k="network|hknetwork" v="~" zoom-min="12"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
+					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-trunk}" fill="#393935" stroke="#fff486" stroke-width="3.0" />
+					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
 						<caption k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#fff486" stroke-width="3.0" />
 					</rule>
 				</rule>
 				<!-- Autobahnen -->
 				<rule e="way" k="highway" v="motorway" zoom-min="{$z-motorway}">
 					<line stroke="{$hw-motorway}" stroke-width="2.0" stroke-linecap="butt" />
-					<caption k="ref" font-style="bold" font-size="10" fill="#FFFFFF" stroke="#296BB5" stroke-width="4" />
+					<caption k="ref" position="center" font-style="bold" font-size="10" fill="#FFFFFF" stroke="#296BB5" stroke-width="4" />
 				</rule>
 		
 				<!-- Maut pflichtige werden mit roten Punkten versehen -->
@@ -468,7 +492,7 @@
                 <area fill="{$hw-living}" stroke="{$cs-living}" stroke-width="0.1"/>
             </rule>
             <rule e="way" k="*" v="*" zoom-min="{$z-service}">
-              <caption k="name" font-style="bold" font-size="11" fill="#000000" stroke="#ffffff" stroke-width="3"/>
+              <caption k="name" font-style="bold" font-size="{$fs-service}" fill="#000000" stroke="#ffffff" stroke-width="3"/>
             </rule>
         </rule>
     </rule>  
