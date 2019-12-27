@@ -11,7 +11,7 @@
 			<rule e="node" k="highway" v="bus_stop" zoom-min="15" cat="pub_transp">
 				<symbol id="id_bus_stop" src="file:/symbols/bus_stop_germany.svg" symbol-percent="50" />
 				<rule e="node" k="highway" v="*" zoom-min="17">
-					<caption symbol-id="id_bus_stop" k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+					<caption symbol-id="id_bus_stop" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>
 			</rule>
 			
@@ -30,13 +30,13 @@
 		<rule e="any" k="leisure" v="playground" zoom-min="15">
 			<symbol id="id_playground" src="file:/symbols/playground.svg"  symbol-percent="70" />
 			<rule e="any" k="*" v="*" zoom-min="16">
-				<caption symbol-id="id_playground" k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+				<caption symbol-id="id_playground" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="node" k="leisure" v="picnic_table" zoom-min="15">
 			<symbol id="id_picnic_table" src="file:/symbols/picnic_site.svg" symbol-percent="70" />
 			<rule e="any" k="*" v="*" zoom-min="16">
-				<caption symbol-id="id_picnic_table" k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+				<caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 
@@ -64,11 +64,11 @@
 		<rule e="node" k="tower" v="*" zoom-min="12">
 			<rule e="node" k="tower" v="communication" >
 				<symbol id="id_communication" src="file:/symbols/tower_communication.svg" symbol-width="14" />
-				<caption symbol-id="id_communication" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+				<caption symbol-id="id_communication" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 			</rule>
 			<rule e="node" k="tower" v="~|observation" >
 				<symbol id="id_observation" src="file:/symbols/tower_observation.svg" symbol-width="12" />
-				<caption symbol-id="id_observation" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+				<caption symbol-id="id_observation" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 			</rule>
 		</rule>
 
@@ -77,13 +77,13 @@
 			<rule e="any" k="drinking_water" v="yes">
 				<symbol id="id_drinking_water_yes" src="file:/symbols/water_well_drinking.svg" symbol-percent="60" />
 				<rule e="any" k="*" v="*" zoom-min="16">
-					<caption symbol-id="id_drinking_water_yes" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+					<caption symbol-id="id_drinking_water_yes" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 				</rule>
 			</rule>
 			<rule e="any" k="drinking_water" v="no|~">
 				<symbol id="id_drinking_water_no" src="file:/symbols/water_well.svg" symbol-percent="60" />
 				<rule e="any" k="*" v="*" zoom-min="16">
-					<caption symbol-id="id_drinking_water_no" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+					<caption symbol-id="id_drinking_water_no" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 				</rule>
 			</rule>
 		</rule>

@@ -284,9 +284,9 @@
 			</rule>
 		</rule>
 		<rule e="node" k="natural" v="tree" zoom-min="14" cat="landscapefeat">
-			<symbol id="id_tree" src="file:/symbols/tree.svg" symbol-width="10" />
+			<symbol id="id_tree" src="file:/symbols/tree.svg" symbol-percent="60" />
 			<rule e="node" k="natural" v="*" zoom-min="16" >
-				<caption symbol-id="id_tree" k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#164526" stroke="#FFFFFF" stroke-width="0.5" />
+				<caption symbol-id="id_tree" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#164526" stroke="#FFFFFF" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="node" k="natural" v="rock|stone|nat_stone" cat="landscapefeat">

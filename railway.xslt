@@ -119,9 +119,9 @@
 				<circle radius="3.5" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
 			</rule>
 			<rule e="node" k="railway" v="station" zoom-min="13">
-				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-width="14" />
+				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-percent="70" />
 				<rule e="node" k="*" v="*" zoom-min="14">
-					<caption symbol-id="id_station" k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+					<caption symbol-id="id_station" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>
 			</rule>
 			<!-- Straßenbahnhaltestelle -->
@@ -130,7 +130,7 @@
 			</rule>
 			<rule e="node" k="railway" v="tram_stop" zoom-min="15">
 				<circle radius="5.0" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-				<caption k="name" dy="16" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+				<caption k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 			<!-- Haltepunkt -->
 			<rule e="node" k="railway" v="halt" zoom-min="12" zoom-max="13">
@@ -138,7 +138,7 @@
 			</rule>
 			<rule e="node" k="railway" v="halt" zoom-min="14">
 				<circle radius="5.0" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-				<caption k="name" dy="16" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+				<caption k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
     </xsl:template>
