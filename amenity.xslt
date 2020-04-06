@@ -114,8 +114,8 @@
 			<symbol src="file:/symbols/fountain.svg" symbol-percent="60" />
 		</rule>
 
-		<rule e="node" k="amenity" v="bench" zoom-min="14">
-			<symbol src="file:/symbols/bench.svg" symbol-percent="60" />
+		<rule e="any" k="amenity" v="bench" zoom-min="15">
+			<symbol src="file:/symbols/bench.svg" symbol-percent="60" display="always" />
 		</rule>
 		
 		<rule e="any" k="amenity" v="toilets" zoom-min="15">
