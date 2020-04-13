@@ -31,6 +31,9 @@
 			<area fill="#B3DDFF" stroke="#6060ff" stroke-width="0.15" />
 		</rule>
 
+		<rule e="way" k="leisure" v="common" zoom-min="15">
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+		</rule>
 		<rule e="way" k="leisure" v="stadium|sports_centre|water_park|golf_course|playing_fields" zoom-min="15">
 			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>

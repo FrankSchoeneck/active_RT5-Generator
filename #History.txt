@@ -1,3 +1,10 @@
+13.04.2020, geändert: Symbolgröße und Textgröße bei emergency_access_point angepasst.
+12.04.2020, neu hinzu: e=way k=building v=~ um z.B. Basilika bei OAM darzustellen
+12.04.2020, geändert: caption von leisure common zoom-min auf 15 geändert.
+11.04.2020, geändert: protect_class=1 um 2|3|4 erweitert. Nötig für OAM ab 03.2020
+10.04.2010, geändert: leisure wird nun direkt nach areas gerendert.
+10.04.2010, geändert: Der Abschnitt highway_area wurde nicht gerendert.
+
 06.04.2020, geändert: bench (Bänke) werden nun immer angezeigt
 
 27.12.2019, neu hinzu: historic=wayside_shrine (Bildstock) als way für OpenAndroMaps ab 01.2020

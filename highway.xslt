@@ -468,7 +468,7 @@
 </xsl:template>
 
 <xsl:template name="highway_area">
-    <rule cat="highway" e="way" k="area" v="yes|true">
+    <rule e="way" k="area" v="yes|true">
 		<rule e="way" k="highway" v="*">
             <rule e="way" k="highway" v="footway|path" zoom-min="{$z-footway}">
                 <area fill="{$hw-footway}" stroke="{$cs-footway}" stroke-width="0.1"/>
@@ -491,7 +491,7 @@
             <rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
                 <area fill="{$hw-living}" stroke="{$cs-living}" stroke-width="0.1"/>
             </rule>
-            <rule e="way" k="*" v="*" zoom-min="{$z-service}">
+            <rule e="way" k="highway" v="*" zoom-min="15">
               <caption k="name" font-style="bold" font-size="{$fs-service}" fill="#000000" stroke="#ffffff" stroke-width="3"/>
             </rule>
         </rule>

@@ -41,7 +41,7 @@
 		
 		<rule e="any" k="amenity" v="place_of_worship" zoom-min="12">
 			<rule e="any" k="religion" v="christian">
-				<rule e="any" k="building" v="cathedral|church|yes">
+				<rule e="any" k="building" v="cathedral|church|yes|~">
 					<symbol id="place_of_worship_christian" src="file:/symbols/church.svg" symbol-width="16" />
 					<rule e="any" k="building" v="*" zoom-min="17">
 						<caption symbol-id="place_of_worship_christian" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />

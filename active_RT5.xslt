@@ -47,6 +47,7 @@
 	<xsl:call-template name="menu"/>
 	<xsl:call-template name="areas"/>
 	<xsl:call-template name="landuse"/>
+	<xsl:call-template name="leisure"/>
 	<xsl:call-template name="tourism_areas"/>
 	<xsl:call-template name="natural_ways"/>
 	<xsl:call-template name="waterways"/>
@@ -71,7 +72,7 @@
 
 	<xsl:call-template name="places"/>
 	<xsl:call-template name="boundary"/>
-	<xsl:call-template name="leisure"/>
+	
 	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="man_made"/>
 
