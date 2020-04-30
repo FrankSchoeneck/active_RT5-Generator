@@ -43,29 +43,25 @@
 
 	<!-- wood -->
 	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
-		<rule e="way" k="*" v="*" >
-			<rule e="way" k="*" v="*" zoom-max="10">
-				<area fill="#D4DAA4" />
+		<rule e="way" k="*" v="*" zoom-max="10">
+			<area fill="#D4DAA4" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="11">
+			<area fill="#D4DAA4" />
+			<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
+				<area src="file:/patterns/wood_coniferous_transparent.svg" symbol-width="40" />
 			</rule>
-			<rule e="way" k="*" v="*" zoom-min="11">
-				<area fill="#D4DAA4" />
-				<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
-					<area src="file:/patterns/wood_coniferous_transparent.svg" symbol-width="40" />
-				</rule>
-				<rule e="any" k="wood|leaf_type" v="deciduous|broadleaved">
-					<area src="file:/patterns/wood_deciduous_transparent.svg" symbol-width="40" />
-				</rule>
-				<rule e="any" k="wood|leaf_type" v="~|mixed|leafless">
-					<area src="file:/patterns/wood_mixed_transparent.svg" symbol-width="40" />
-				</rule>
+			<rule e="any" k="wood|leaf_type" v="deciduous|broadleaved">
+				<area src="file:/patterns/wood_deciduous_transparent.svg" symbol-width="40" />
+			</rule>
+			<rule e="any" k="wood|leaf_type" v="~|mixed|leafless">
+				<area src="file:/patterns/wood_mixed_transparent.svg" symbol-width="40" />
 			</rule>
 		</rule>
 		
 		<!-- wood captions -->
-		<rule e="way" k="boundary" v="~|no|false" >
-			<rule e="way" k="*" v="*" zoom-min="13">
-				<caption k="name" font-style="bold" font-size="10" fill="#164526" stroke="#FFFFFF" stroke-width="2.0" />
-			</rule>
+		<rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
+			<caption k="name" font-style="bold" font-size="11" fill="#164526" stroke="#FFFFFF" stroke-width="1.5" />
 		</rule>
 	</rule>
 	

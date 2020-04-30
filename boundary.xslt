@@ -12,14 +12,15 @@
 		</rule>
 
 		<!-- captions -->
-		<rule e="way" k="boundary" v="national_park" zoom-min="12" zoom-max="14">
+		<rule e="way" k="boundary" v="national_park|protect_class" zoom-min="13" zoom-max="15">
 			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#164526" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
-		<!-- Deaktivert da es in Mapsforge Probleme mit den Kachelgrenzen gibt	
-		<rule e="way" k="protect_class" v="1|~" zoom-min="15">
+
+		<!-- Deaktivert da es in Mapsforge Probleme mit den Kachelgrenzen gibt -->
+<!--		<rule e="way" k="boundary" v="national_park|protect_class" zoom-min="15">
 			<pathText k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#164526" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
-		-->
+-->		
 	</rule>
 </xsl:template>
 </xsl:stylesheet>

@@ -95,8 +95,8 @@
 		<rule e="way" k="natural" v="beach" zoom-min="13">
 			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#a98663" />
 		</rule>
-		<rule e="way" k="natural" v="heath|marsh|wetland" zoom-min="14">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#797979" />
+		<rule e="way" k="natural" v="heath|marsh|wetland|scrub" zoom-min="15">
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#797979" />
 		</rule>
 	</rule>
 </xsl:template>

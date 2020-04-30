@@ -52,7 +52,7 @@
 		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="11">
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
-		<rule e="way" k="hknetwork" v="rwn|lwn" zoom-min="12">
+		<rule e="way" k="hknetwork" v="rwn|lwn" zoom-min="13">
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
 	</rule>
@@ -166,10 +166,10 @@
 		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="11" >
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
-		<rule e="way" k="hknetwork" v="rwn" zoom-min="12">
+		<rule e="way" k="hknetwork" v="rwn" zoom-min="13">
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
-		<rule e="way" k="hknetwork" v="lwn" zoom-min="13">
+		<rule e="way" k="hknetwork" v="lwn" zoom-min="14">
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
 	</rule>
