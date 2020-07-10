@@ -68,11 +68,13 @@
 				</rule>
 			</rule>
 
-			<rule e="node" k="tourism" v="information" zoom-min="14">
+			<rule e="node" k="tourism" v="information" zoom-min="15">
 				<rule e="node" k="information" v="guidepost">
 					<symbol id="id_guidepost" src="file:/symbols/guidepost.svg" symbol-percent="70" />
 					<rule e="node" k="information" v="*" zoom-min="15">
-						<caption symbol-id="id_guidepost" k="name" font-style="bold_italic" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="2.0" />
+						<caption symbol-id="id_guidepost" k="name" position="below" font-style="bold_italic" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+						<!--OAM Transform ref to addr:housenumber -->
+						<caption symbol-id="id_guidepost" k="addr:housenumber" position="above" font-style="bold_italic" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 					</rule>
 				</rule>
 			</rule>
@@ -84,9 +86,19 @@
 				</rule>
 			</rule>
 			
+			<rule e="any" k="tourism" v="attraction" zoom-min="13">
+				<rule e="any" k="historic|amenity|natural|leisure|boundary|man_made" v="~">
+					<symbol id="id_attraction" src="file:/symbols/attraction.svg" symbol-percent="70" />
+					<rule e="any" k="*" v="*" zoom-min="16">
+						<caption symbol-id="id_attraction" k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+					</rule>
+				</rule>
+			</rule>
+			
 			<rule e="any" k="information" v="map|board" zoom-min="14">
 				<symbol src="file:/symbols/information.svg" symbol-percent="60" />
 			</rule>
+		
 		</rule>
 	</xsl:template>
 

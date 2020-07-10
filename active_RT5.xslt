@@ -76,12 +76,12 @@
 	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="man_made"/>
 
-	<xsl:call-template name="tourism_nodes"/>
 	<xsl:call-template name="barrier"/>
 	<xsl:call-template name="natural_nodes"/>
 	<xsl:call-template name="amenity_nodes"/>
 	<xsl:call-template name="historic_nodes"/>
 	<xsl:call-template name="military_nodes"/>
+	<xsl:call-template name="tourism_nodes"/>
 	<xsl:call-template name="poi"/>
   
 	<xsl:call-template name="hikingtrails"/>
