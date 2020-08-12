@@ -13,8 +13,7 @@
 				<area src="file:/patterns/glacier.svg" />
 			</rule>
 			<rule e="way" k="natural" v="grassland" closed="yes">
-				<area fill="#faf8e5" />
-				<area src="file:/patterns/medow.svg" />
+				<area fill="#E7E7E7" />
 			</rule>
 			<rule e="way" k="natural" v="fell" closed="yes">
 				<area fill="#dae2cb" />
@@ -40,31 +39,31 @@
 
 		<rule e="way" k="natural" v="*" zoom-min="11">
 			<rule e="way" k="natural" v="marsh|wetland" closed="yes">
-				<area src="file:/patterns/marsh.svg" symbol-width="16" />
+				<area fill="#DDE3D6" />
+				<area src="file:/patterns/marsh.svg" symbol-width="40" />
 			</rule>
 			<rule e="way" k="natural" v="beach" closed="yes">
-				<area fill="#f4e3be" />
+				<area fill="#FAFCFD" />
 			</rule>
 			<rule e="way" k="natural" v="heath" closed="yes">
-				<area fill="#faf8e5" />
-				<area src="file:/patterns/heath.svg" />
+				<area fill="#DCE0DA" />
+				<area src="file:/patterns/heath.svg" symbol-width="40" />
 			</rule>
 			<rule e="way" k="natural" v="scrub" closed="yes">
-				<area fill="#faf8e5" />
-				<area src="file:/patterns/scrub.svg" symbol-width="16" />
+				<area fill="#E5EFD8" />
 			</rule>
 		</rule>
 
 		<rule e="way" k="natural" v="*" zoom-min="12">
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat" > <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
-				<line stroke="#70606060" stroke-width="1.0" stroke-dasharray="1.8,2" stroke-linecap="butt"/>
+				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
 				<pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 				<rule e="way" k="natural" v="*" zoom-min="13">
 					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-width="5" symbol-height="9" />
 				</rule>		
 			</rule>
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
-				<line stroke="#70606060" stroke-width="1.0" stroke-dasharray="1.8,2" stroke-linecap="butt" />
+				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" />
 				<caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 			</rule>
 			<rule e="way" k="natural" v="crevasse" closed="no">
@@ -89,14 +88,14 @@
 				<pathText k="name" font-style="bold_italic" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.8" />
 			</rule>
 		</rule>
-		<rule e="any" k="natural" v="bay" zoom-min="11">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#595959" stroke="#FFFFFF" stroke-width="1.5" />
+		<rule e="any" k="natural" v="bay" zoom-min="12">
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 		</rule>
-		<rule e="way" k="natural" v="beach" zoom-min="13">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#a98663" />
+		<rule e="way" k="natural" v="beach" zoom-min="15">
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8" />
 		</rule>
 		<rule e="way" k="natural" v="heath|marsh|wetland|scrub" zoom-min="15">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#797979" />
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.8" />
 		</rule>
 	</rule>
 </xsl:template>

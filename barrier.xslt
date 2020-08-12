@@ -4,8 +4,11 @@
     <xsl:template name="barrier">
 		<!-- wall, barries -->
 		<rule e="way" k="barrier" v="*" zoom-min="12">
-			<rule e="way" k="barrier" v="fence|wall|city_wall">
+			<rule e="way" k="barrier" v="fence|city_wall">
 				<line stroke="#545454" stroke-width="0.05" stroke-linecap="butt" />
+			</rule>
+			<rule e="way" k="barrier" v="wall">
+				<line stroke="#C3C3C3" stroke-width="0.3" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="barrier" v="retaining_wall">
 				<line stroke="#888888" stroke-width="0.05" stroke-linecap="butt" />

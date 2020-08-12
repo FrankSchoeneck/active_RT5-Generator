@@ -7,18 +7,24 @@
 		<rule e="way" k="tourism" v="*">
 			<!-- tourism zoom > 11 -->
 			<rule e="way" k="tourism" v="*" zoom-min="11">
-				<rule e="way" k="tourism" v="camp_site|zoo">
-					<area fill="#E5E5C5" stroke="#6fc18e" stroke-width="0.15" />
+				<rule e="way" k="tourism" v="zoo">
+					<area fill="#D7E9CE" stroke="#6fc18e" stroke-width="0.15" />
 				</rule>
 			</rule>
+			<rule e="way" k="tourism" v="*" zoom-min="11">
+				<rule e="way" k="tourism" v="camp_site">
+					<area fill="#FFFEFE" stroke="#6fc18e" stroke-width="0.15" />
+				</rule>
+			</rule>
+
 
 			<!-- tourism zoom > 12 -->
 			<rule e="way" k="tourism" v="*" zoom-min="12">
 				<rule e="way" k="tourism" v="picnic_site" >
-					<area fill="#c7f1a3" />
+					<area fill="#D7E9CE" />
 				</rule>
 				<rule e="way" k="tourism" v="attraction" >
-					<area fill="#e0e0e0" stroke="#707070" stroke-width="0.15"/>
+					<area fill="#CBCBCB" stroke="#707070" stroke-width="0.15"/>
 				</rule>
 			</rule>
 

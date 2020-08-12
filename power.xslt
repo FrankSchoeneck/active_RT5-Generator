@@ -7,7 +7,7 @@
 	<rule e="way" k="power" v="*" zoom-min="11">
 		<!-- power generator -->
 		<rule e="way" k="power" v="generator|station|sub_station|substation" >
-			<area fill="#C1C1C1" />
+			<area fill="#C7C7C7" />
 		</rule>
 		<!--power line -->
 		<rule e="way" k="power" v="line" zoom-min="12" cat="landscapefeat">

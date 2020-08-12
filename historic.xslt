@@ -5,13 +5,13 @@
 <xsl:template name="historic_ways">
 	<rule e="way" k="historic" v="*" zoom-min="10">
 		<rule e="way" k="historic" v="archaeological_site"> <!-- Historische Wälle/Schanzen -->
-			<area fill="#f5f4e1" stroke="#818181" stroke-width="0.1" />
+			<area fill="#DBDBDB" stroke="#C3C3C3" stroke-width="0.1" />
 			<rule e="way" k="building" v="~" zoom-min="12">	<!-- nur dargestellt, wenn es kein Gebäude ist -->
-				<line stroke="#70606060" stroke-width="0.8" dy="0.4" stroke-dasharray="1.8,2" stroke-linecap="butt"/>
+				<line stroke="#70606060" stroke-width="0.2" stroke-dasharray="4,4" stroke-linecap="butt"/>
 			</rule>
 		</rule>
 		<rule e="way" k="historic" v="wayside_shrine"> <!-- Bildstock -->
-			<area fill="#f5f4e1" stroke="#818181" stroke-width="0.1" />
+			<area fill="#DBDBDB" stroke="#818181" stroke-width="0.1" />
 		</rule>
 	</rule>
 </xsl:template>

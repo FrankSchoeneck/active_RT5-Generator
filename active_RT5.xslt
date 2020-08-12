@@ -32,16 +32,16 @@
 
 <rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme-V5.xsd"
-			version="5" map-background-outside="#dddddd" map-background="#f4f3e9">
+			version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
 
 	<xsl:comment>
-		active RT5
+		active RT5 (active RenderTheme Version 5)
 		Mapsforge Rendertheme for Apps with Mapsforge support and Openandromaps
 		
 		by LocusUser#1 (Frank Schöneck)
 		Contact: LocusUser1@gmx.de
 		
-		inspiriert from Outdooractive.com map, style Summer
+		inspiriert from Outdooractive.com map, style OSM-Summer
 	</xsl:comment> 
 
 	<xsl:call-template name="menu"/>
@@ -57,25 +57,19 @@
 	<xsl:call-template name="contour_lines"/>
 	<xsl:call-template name="aeroway"/>
 	<xsl:call-template name="highway_area"/>
-	<xsl:call-template name="highway"/>
-	<xsl:call-template name="military_ways"/>
 	<xsl:call-template name="railway_tunnel"/>
 	<xsl:call-template name="railway_no_tunnel"/>
+	<xsl:call-template name="buildings"/>
+	<xsl:call-template name="highway"/>	
 	<xsl:call-template name="railway_node"/>
 	<xsl:call-template name="military_ways"/>
-	
 	<xsl:call-template name="historic_ways"/>
-
-	<xsl:call-template name="buildings"/>
 	<xsl:call-template name="route"/>
 	<xsl:call-template name="power"/>
-
 	<xsl:call-template name="places"/>
 	<xsl:call-template name="boundary"/>
-	
 	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="man_made"/>
-
 	<xsl:call-template name="barrier"/>
 	<xsl:call-template name="natural_nodes"/>
 	<xsl:call-template name="amenity_nodes"/>
@@ -83,7 +77,6 @@
 	<xsl:call-template name="military_nodes"/>
 	<xsl:call-template name="tourism_nodes"/>
 	<xsl:call-template name="poi"/>
-  
 	<xsl:call-template name="hikingtrails"/>
 </rendertheme>
 

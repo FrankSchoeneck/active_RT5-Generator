@@ -1,3 +1,5 @@
+29.07.2020, geändert: Es wurde das komplette Farbenkonzept auf die neue Darstellung der Outdooractive.com Karte umgestellt
+
 10.07.2020, neu hinzu: tourism=attraction wird nun als Stern dargestellt
 
 30.04.2020, neu hinzu: information=guidepost wird nun zusätzlich das ref bei OpenAndroMaps ab 04.2020 angezeigt
@@ -41,3 +43,6 @@
 12.08.2019, geändert: steps, stroke-dasharray="1.5,1.5"
 12.08.2019, geändert: historic=archaeological_site, stroke + stroke-dasharray an cliff angepasst
 12.08.2019, geändert: natural=cliff um |earth_bank erweitert, einzelnes natural=earth_bank entfernt
+
+01.08.2019, geändert: natural=earth_bank (Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang) wird wie cliff dargestellt (nur bei OpenAndroMaps)
+01.08.2019, geändert: historic=archaeological_site und kein building (Historische Wälle/Schanzen) wird ab Zoom 12 dargestellt

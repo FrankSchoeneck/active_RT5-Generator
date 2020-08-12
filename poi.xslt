@@ -4,8 +4,8 @@
 
 <xsl:template name="poi">
 	<!-- Bushaltestellen -->
-	<rule e="node" k="highway" v="bus_stop" zoom-min="15" cat="pub_transp">
-		<symbol id="id_bus_stop" src="file:/symbols/bus_stop_germany.svg" symbol-percent="50" />
+	<rule e="node" k="highway" v="bus_stop" zoom-min="14" cat="pub_transp">
+		<symbol id="id_bus_stop" src="file:/symbols/bus_stop.svg" symbol-percent="60" />
 		<rule e="node" k="highway" v="*" zoom-min="17">
 			<caption symbol-id="id_bus_stop" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
@@ -22,13 +22,13 @@
 	</rule>
 
 	<!-- leisure -->
-	<rule e="any" k="leisure" v="playground" zoom-min="15">
-		<symbol id="id_playground" src="file:/symbols/playground.svg"  symbol-percent="70" />
+	<rule e="any" k="leisure" v="playground" zoom-min="16">
+		<symbol id="id_playground" src="file:/symbols/playground.svg"  symbol-percent="100" />
 		<rule e="any" k="*" v="*" zoom-min="16">
 			<caption symbol-id="id_playground" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 		</rule>
 	</rule>
-	<rule e="node" k="leisure" v="picnic_table" zoom-min="15">
+	<rule e="node" k="leisure" v="picnic_table" zoom-min="16">
 		<symbol id="id_picnic_table" src="file:/symbols/picnic_site.svg" symbol-percent="70" />
 		<rule e="any" k="*" v="*" zoom-min="16">
 			<caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
@@ -58,7 +58,7 @@
 	<!-- tower -->
 	<rule e="node" k="tower" v="*" zoom-min="12">
 		<rule e="node" k="tower" v="communication" >
-			<symbol id="id_communication" src="file:/symbols/tower_communication.svg" symbol-width="14" />
+			<symbol id="id_communication" src="file:/symbols/tower_communication.svg" symbol-width="18" />
 			<caption symbol-id="id_communication" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 		</rule>
 		<rule e="node" k="tower" v="~|observation" >

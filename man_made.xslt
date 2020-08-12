@@ -14,10 +14,10 @@
 	<!-- cutline (Schneise im Wald) -->
 	<rule e="way" k="man_made" v="cutline" zoom-min="11">
 		<rule e="way" k="*" v="*" closed="no">
-			<line stroke="#90faf8e5" stroke-width="1.4" stroke-linecap="butt" />
+			<line stroke="#90EEEFEC" stroke-width="1.4" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" closed="yes">
-			<area fill="#90faf8e5" />
+			<area fill="#90EEEFEC" />
 		</rule>
 	</rule>
 
@@ -25,14 +25,14 @@
 	<rule e="way" k="man_made" v="*" zoom-min="12">
 		<rule e="way" k="man_made" v="pier" zoom-min="13">
 			<rule e="way" k="*" v="*" closed="no">
-				<line stroke="#676867" stroke-width="0.6" stroke-linecap="butt" />
+				<line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="*" v="*" closed="yes">
-				<area fill="#676867" stroke="#d0d0d0" stroke-width="0.2" />
+				<area fill="#E7E7E7" stroke="#d0d0d0" stroke-width="0.2" />
 			</rule>
 		</rule>
 		<rule e="way" k="man_made" v="groyne" zoom-min="13"> <!-- Nur bei OpenAndroMaps -->
-			<line stroke="#aaaaaa" stroke-width="0.6" stroke-linecap="butt" />
+			<line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="man_made" v="watermill" zoom-min="12">
 			<symbol id="id_watermill" src="file:/symbols/watermill.svg" symbol-width="18" />

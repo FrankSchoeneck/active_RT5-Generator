@@ -28,7 +28,7 @@
 		lwn = Lokaler Weg ( < 50 km, in einem Landkreis, eine mehrere Gemeinden)
 	-->
 	<!-- cat Wanderwege Transparent (Darstellung gemäß Outdooractive) -->
-	<rule e="way" k="hknetwork" v="*" cat="hikingtrails_transp">
+	<rule e="way" k="hknetwork" v="*" cat="hikingtrails">
 		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="5" zoom-max="9">
 			<line stroke="#F2221E" stroke-width="1.8" />
 			<line stroke="#E7B3B3" stroke-width="1.3" />
@@ -53,123 +53,6 @@
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
 		<rule e="way" k="hknetwork" v="rwn|lwn" zoom-min="13">
-			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
-		</rule>
-	</rule>
-
-	<!-- cat Wanderwege Farbig -->
-	<rule e="way" k="hknetwork" v="*" cat="hikingtrails_color">
-		<!-- Wanderwege die kein Farb-Tag haben (Darstellung gemäß Waymarked Trails) -->
-		<rule e="way" k="osmc_color" v="~">
-			<rule e="way" k="hknetwork" v="*" zoom-min="5" zoom-max="10">
-				<rule e="way" k="hknetwork" v="iwn">
-					<line stroke="{$iwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="nwn">
-					<line stroke="{$nwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-			</rule>
-		
-			<rule e="way" k="hknetwork" v="rwn" zoom-min="10" zoom-max="10">
-				<line stroke="{$rwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-			</rule>
-
-			<rule e="way" k="hknetwork" v="*" zoom-min="11" zoom-max="16">
-				<rule e="way" k="hknetwork" v="iwn">
-					<line dy="-{$color-width}" stroke="{$iwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="nwn">
-					<line dy="-{$color-width}" stroke="{$nwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="rwn">
-					<line dy="{$color-width}" stroke="{$rwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="lwn">
-					<line dy="{$color-width}" stroke="{$lwn_color}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-			</rule>
-
-			<rule e="way" k="hknetwork" v="*" zoom-min="17">
-				<rule e="way" k="hknetwork" v="iwn">
-					<line dy="-{$color-width}" stroke="{$iwn_color2}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="nwn">
-					<line dy="-{$color-width}" stroke="{$nwn_color2}" stroke-width="{$color-width}" stroke-linecap="butt"/>
-				</rule>
-				<rule e="way" k="hknetwork" v="rwn">
-					<line dy="{$color-width}" stroke="{$rwn_color2}" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="hknetwork" v="lwn">
-					<line dy="{$color-width}" stroke="{$lwn_color2}" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-			</rule>
-		</rule>
-		
-		<!-- HIKING PATH OSMC:COLOR --> 
-		<rule e="way" k="osmc_color" v="*">
-			<rule e="way" k="osmc_color" v="*" zoom-min="10" zoom-max="16">
-				<rule e="way" k="osmc_color" v="wmco_blue|blue">
-					<line dy="{$color-width}" stroke="#0026ff" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_yellow|yellow">
-					<line dy="{$color-width}" stroke="#DEC90A" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_green|green">
-					<line dy="-{$color-width}" stroke="#267f00" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_red|red">
-					<line dy="-{$color-width}" stroke="#EA3200" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_black|black">
-					<line dy="{$color-width}" stroke="#000000" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_white|white">
-					<line dy="-{$color-width}" stroke="#EDEDED" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_purple|purple">
-					<line dy="{$color-width}" stroke="#fe67fe" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_orange|orange">
-					<line dy="{$color-width}" stroke="#ff8000" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-			</rule>
-
-			<rule e="way" k="osmc_color" v="*" zoom-min="17">
-				<rule e="way" k="osmc_color" v="wmco_blue|blue">
-					<line dy="{$color-width}" stroke="#500026ff" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_yellow|yellow">
-					<line dy="{$color-width}" stroke="#50F2DB0A" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_green|green">
-					<line dy="-{$color-width}" stroke="#50267f00" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_red|red">
-					<line dy="-{$color-width}" stroke="#50EA3200" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_black|black">
-					<line dy="{$color-width}" stroke="#50000000" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_white|white">
-					<line dy="-{$color-width}" stroke="#50EDEDED" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_purple|purple">
-					<line dy="{$color-width}" stroke="#50fe67fe" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-				<rule e="way" k="osmc_color" v="wmco_orange|orange">
-					<line dy="{$color-width}" stroke="#50ff8000" stroke-width="{$color-width}" stroke-linecap="butt" />
-				</rule>
-			</rule>
-		</rule>
-
-		<!-- TEXT TO PATH -->
-		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="11" >
-			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
-		</rule>
-		<rule e="way" k="hknetwork" v="rwn" zoom-min="13">
-			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
-		</rule>
-		<rule e="way" k="hknetwork" v="lwn" zoom-min="14">
 			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
 		</rule>
 	</rule>

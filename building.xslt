@@ -4,14 +4,9 @@
 
 	<xsl:template name="buildings">
 		<!-- um Basilika bei OAM darzustellen -->
-		<rule e="way" k="building" v="~" zoom-min="12" zoom-max="13">
+		<rule e="way" k="building" v="~" zoom-min="15">
 			<rule e="way" k="amenity" v="place_of_worship">
-				<area fill="#b2b2b2" />
-			</rule>
-		</rule>
-		<rule e="way" k="building" v="~" zoom-min="14">
-			<rule e="way" k="amenity" v="place_of_worship">
-				<area fill="#999999" stroke="#818181" stroke-width="0.1" />
+				<area fill="#C3C3C3" stroke="#818181" stroke-width="0.1" />
 			</rule>
 		</rule>
 		<rule e="way" k="building" v="~" zoom-min="17">
@@ -21,25 +16,19 @@
 		</rule>
 		
 		<!-- building -->
-		<rule e="way" k="building" v="*" zoom-min="12" zoom-max="13">
-			<area fill="#b2b2b2" />
+		<rule e="way" k="building" v="*" zoom-min="15">
+			<area fill="#C3C3C3" stroke="#BDBDBD" stroke-width="0.1" />
 		</rule>
-		<rule e="way" k="building" v="*" zoom-min="14">
-			<area fill="#999999" stroke="#818181" stroke-width="0.1" />
-		</rule>
-		<rule e="way" k="building" v="construction" zoom-min="12" zoom-max="13"> <!-- only OpenAndroMaps -->
-			<area fill="#cccccc" />
-		</rule>
-		<rule e="way" k="building" v="construction" zoom-min="14"> <!-- only OpenAndroMaps -->
-			<area fill="#cccccc" stroke="#818181" stroke-width="0.1" />
+		<rule e="way" k="building" v="construction" zoom-min="15"> <!-- only OpenAndroMaps -->
+			<area fill="#C3C3C3" stroke="#BDBDBD" stroke-width="0.1" />
 			<line stroke="#C0F8F8F8" stroke-width="0.2" stroke-dasharray="2,2" />
 		</rule>
-		<rule e="way" k="building" v="*" zoom-min="17">
+		<rule e="way" k="building" v="*" zoom-min="18">
 			<caption k="name" position="below" dy="8" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 		</rule>
 		
 		<!-- house numbers -->
-		<rule e="any" k="*" v="*" zoom-min="17">
+		<rule e="any" k="*" v="*" zoom-min="18">
 			<caption k="addr:housenumber" font-style="normal" font-size="8" fill="#424251" />
 		</rule>
 	</xsl:template>

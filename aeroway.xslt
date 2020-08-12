@@ -6,30 +6,28 @@
 		<!-- runways casings and areas -->
 		<rule e="way" k="aeroway" v="*" zoom-min="8">
 			<rule e="way" k="aeroway" v="aerodrome" closed="yes" zoom-min="11" >
-				<area fill="#D1D1D1" />
+				<area fill="#DADECF" />
 			</rule>
 			<rule e="way" k="aeroway" v="apron" zoom-min="11" >
-				<area fill="#B5B5B5" />
+				<area fill="#CFCFCF" />
 			</rule>
 			<rule e="way" k="aeroway" v="terminal" zoom-min="11" >
-				<area fill="#999898" stroke="#858585" stroke-width="0.1" />
+				<area fill="#C7C7C7" stroke="#BFBFBF" stroke-width="0.1" />
 			</rule>
 			<rule e="way" k="aeroway" v="*" closed="yes">
 				<rule e="way" k="aeroway" v="taxiway" zoom-min="10" >
-					<area stroke="#A8A6A6" fill="#FEFEFE" stroke-width="2.0" />
+					<area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1" />
 				</rule>
 				<rule e="way" k="aeroway" v="runway" zoom-min="8" >
-					<area stroke="#A8A6A6" fill="#FEFEFE" stroke-width="2.0" />
+					<area fill="#C9C9C9" stroke="#BFBFBF" stroke-width="0.1" />
 				</rule>
 			</rule>
 			<rule e="way" k="aeroway" v="*" closed="no">
 				<rule e="way" k="aeroway" v="taxiway" zoom-min="10" >
-					<line stroke="#A8A6A6" stroke-width="2.4" stroke-linecap="butt" />
-					<line stroke="#FEFEFE" stroke-width="2.0" stroke-linecap="butt" />
+					<line stroke="#C9C9C9" stroke-width="2.4" stroke-linecap="butt" />
 				</rule>
 				<rule e="way" k="aeroway" v="runway" zoom-min="8" >
-					<line stroke="#A8A6A6" stroke-width="6.0" stroke-linecap="square" />
-					<line stroke="#FEFEFE" stroke-width="5.2" stroke-linecap="square" />
+					<line stroke="#C9C9C9" stroke-width="6.0" stroke-linecap="square" />
 				</rule>
 			</rule>
 

@@ -5,10 +5,10 @@
 	<xsl:template name="areas">
 		<!-- Render sea -->
 		<rule e="way" k="natural" v="sea">
-			<area fill="#9ec8f6" />
+			<area fill="#A2CBED" />
 		</rule>
 		<rule e="way" k="natural" v="nosea">
-			<area fill="#f4f3e9" />
+			<area fill="#FFFEFE" />
 		</rule>
 
 		<!-- coastline -->
@@ -23,7 +23,7 @@
 
 		<!-- sport -->
 		<rule e="way" k="sport" v="*" zoom-min="12">
-			<area fill="#C9D998" />
+			<area fill="#F0F7D2" />
 		</rule>
 
 	</xsl:template>

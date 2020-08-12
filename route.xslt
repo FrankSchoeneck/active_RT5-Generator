@@ -5,11 +5,11 @@
 <xsl:template name="route">
 	<!-- ferry routes -->
 	<rule e="way" k="route" v="ferry" zoom-max="11">
-		<line stroke="#1E71C6" stroke-width="0.6" stroke-dasharray="10,5" stroke-linecap="butt" />
+		<line stroke="#1E71C6" stroke-width="0.4" stroke-dasharray="6,5" stroke-linecap="butt" />
 	</rule>
 	<rule e="way" k="route" v="ferry" zoom-min="12">
-		<line stroke="#1E71C6" stroke-width="0.3" stroke-dasharray="10,5" stroke-linecap="butt" />
-		<pathText k="name" font-style="bold" font-size="10" dy="-2" fill="#1E71C6" stroke="#ffffff" stroke-width="1.0" />
+		<line stroke="#1E71C6" stroke-width="0.2" stroke-dasharray="6,5" stroke-linecap="butt" />
+		<pathText k="name" font-style="italic" font-size="10" dy="-1" fill="#1E71C6" stroke="#ffffff" stroke-width="0.5" />
 	</rule>
 </xsl:template>
 

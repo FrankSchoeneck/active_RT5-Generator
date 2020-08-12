@@ -5,17 +5,17 @@
 <xsl:template name="amenity_ways">
 	<!-- amenity -->
 	<rule e="way" k="amenity" v="hospital" zoom-min="12">
-		<area fill="#F2D9D7" stroke="#DBBDBA" stroke-width="0.2" />
+		<area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1" />
 	</rule>
 
-	<rule e="any" k="amenity" v="parking" zoom-min="13">
-		<area fill="#E2E2E2" stroke="#707070" stroke-width="0.2" />
+	<rule e="any" k="amenity" v="parking" zoom-min="12">
+		<area fill="#F3F3F3" />
 		<rule e="any" k="access" v="private|acc_no|permit|permissive" cat="parking">
-			<area src="file:/patterns/access-private.svg" symbol-percent="70" />
+			<area src="file:/patterns/access-private.svg" symbol-percent="50" />
 			<symbol src="file:/symbols/parking_private.svg" symbol-percent="50" />
 		</rule>
 		<rule e="any" k="access" v="destination" cat="parking">
-			<area src="file:/patterns/access-destination.svg" symbol-percent="70" />
+			<area src="file:/patterns/access-destination.svg" symbol-percent="50" />
 			<symbol src="file:/symbols/parking_private.svg" symbol-percent="50" />
 		</rule>
 		<rule e="any" k="access" v="~|yes|public" cat="parking">
@@ -24,7 +24,8 @@
 	</rule>
 		
 	<rule e="way" k="amenity" v="grave_yard" zoom-min="14">
-		<area fill="#AACAAE" stroke="#e4e4e4" stroke-width="0.2" />
+		<area fill="#CDD9CA" />
+		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
 		<area src="file:/patterns/cemetery.svg" />
 	</rule>
 </xsl:template>
@@ -74,9 +75,9 @@
 			</rule>
 		</rule>
 		
-		<rule e="any" k="amenity" v="bus_station" zoom-min="13" cat="pub_transp">
+		<rule e="any" k="amenity" v="bus_station" zoom-min="12" cat="pub_transp">
 			<symbol id="id_bus_station" src="file:/symbols/bus_station.svg" symbol-percent="70" />
-			<rule e="any" k="amenity" v="*" zoom-min="15" cat="pub_transp">
+			<rule e="any" k="amenity" v="*" zoom-min="16" cat="pub_transp">
 				<caption symbol-id="id_bus_station" k="name" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
@@ -111,7 +112,7 @@
 		</rule>
 		
 		<rule e="any" k="amenity" v="fountain" zoom-min="14">
-			<symbol src="file:/symbols/fountain.svg" symbol-percent="60" />
+			<symbol src="file:/symbols/fountain.svg" symbol-percent="50" />
 		</rule>
 
 		<rule e="any" k="amenity" v="bench" zoom-min="15">
@@ -119,7 +120,7 @@
 		</rule>
 		
 		<rule e="any" k="amenity" v="toilets" zoom-min="15">
-			<symbol src="file:/symbols/toilets.svg" symbol-percent="60" />
+			<symbol src="file:/symbols/toilets.svg" symbol-percent="50" />
 		</rule>
 	</rule>
 </xsl:template>

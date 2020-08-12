@@ -5,7 +5,7 @@
 <xsl:template name="military_ways">
 	<rule e="way" k="military" v="*" zoom-min="11">
 		<rule e="way" k="military" v="airfield|naval_base" >
-			<area fill="#D2BCB9" />
+			<area fill="#F0DCD8" />
 		</rule>
 		<rule e="way" k="military" v="bunker|bunker_disused" >
 			<symbol src="file:/symbols/bunker.svg" symbol-width="11" />
