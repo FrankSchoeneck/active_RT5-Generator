@@ -18,12 +18,12 @@
 		</rule>
 		<!-- admin_level 2 = Staatsgrenze -->
 		<rule e="way" k="admin_level" v="2" zoom-max="12">
-			<line stroke="#60995499" stroke-width="12" stroke-linecap="butt" />
+			<line stroke="#60995499" stroke-width="6" stroke-linecap="butt" />
 			<line stroke="#995499" stroke-width="1.5" stroke-dasharray="15,5,4,5" stroke-linecap="butt" />
 			<line stroke="#995499" stroke-width="3" stroke-dasharray="1,13,1,14" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="admin_level" v="2" zoom-min="13" zoom-max="18">
-			<line stroke="#60995499" stroke-width="6" stroke-linecap="butt" />
+			<line stroke="#60995499" stroke-width="4" stroke-linecap="butt" />
 			<line stroke="#995499" stroke-width="0.75" stroke-dasharray="15,5,2,5" stroke-linecap="butt" />
 			<line stroke="#995499" stroke-width="2" stroke-dasharray="0.5,14,0.5,12" stroke-linecap="butt" />
 			<pathText k="name" dy="-6" font-style="normal" font-family="sans_serif" font-size="12" fill="#995499" stroke="#ffffff" stroke-width="2.0" />

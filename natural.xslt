@@ -16,14 +16,14 @@
 				<area fill="#E7E7E7" />
 			</rule>
 			<rule e="way" k="natural" v="fell" closed="yes">
-				<area fill="#dae2cb" />
+				<area fill="#D4E5EB" />
 			</rule>
 			<rule e="way" k="natural" v="rock" closed="yes">
-				<area fill="#dddddd" />
+				<area fill="#D4E5EB" />
 				<area src="file:/patterns/rock.svg" symbol-width="32" />
 			</rule>
 			<rule e="way" k="natural" v="scree|shingle" closed="yes">
-				<area fill="#dddddd" />
+				<area fill="#D4E5EB" />
 				<area src="file:/patterns/scree.svg" symbol-width="32" />
 			</rule>
 		</rule>

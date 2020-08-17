@@ -12,11 +12,11 @@
 <xsl:variable name="hw-unclassified">#ffffff</xsl:variable>
 <xsl:variable name="hw-pedestrian">#E8D1E2</xsl:variable>
 <xsl:variable name="hw-living">#ffffff</xsl:variable>
-<xsl:variable name="hw-track">#575757</xsl:variable>
+<xsl:variable name="hw-track">#53534e</xsl:variable>
 <xsl:variable name="hw-service">#ffffff</xsl:variable>
 <xsl:variable name="hw-cycleway">#ffffff</xsl:variable>
-<xsl:variable name="hw-footway">#575757</xsl:variable>
-<xsl:variable name="hw-steps">#575757</xsl:variable>
+<xsl:variable name="hw-footway">#53534e</xsl:variable>
+<xsl:variable name="hw-steps">#53534e</xsl:variable>
 <xsl:variable name="hw-construction">#d0d0d0</xsl:variable>
 
 <!-- road casing colors -->
@@ -29,10 +29,10 @@
 <xsl:variable name="cs-unclassified">#575757</xsl:variable>
 <xsl:variable name="cs-pedestrian">#575757</xsl:variable>
 <xsl:variable name="cs-living">#575757</xsl:variable>
-<xsl:variable name="cs-track">#575757</xsl:variable>
+<xsl:variable name="cs-track">#53534e</xsl:variable>
 <xsl:variable name="cs-service">#575757</xsl:variable>
-<xsl:variable name="cs-cycleway">#575757</xsl:variable>
-<xsl:variable name="cs-footway">#575757</xsl:variable>
+<xsl:variable name="cs-cycleway">#53534e</xsl:variable>
+<xsl:variable name="cs-footway">#53534e</xsl:variable>
 <xsl:variable name="cs-construction">#575757</xsl:variable>
 
 <!-- road min zoom -->
@@ -47,9 +47,9 @@
 <xsl:variable name="z-pedestrian">11</xsl:variable>
 <xsl:variable name="z-living">11</xsl:variable>
 <xsl:variable name="z-service">11</xsl:variable>
-<xsl:variable name="z-track">11</xsl:variable>
-<xsl:variable name="z-cycleway">12</xsl:variable>
-<xsl:variable name="z-footway">12</xsl:variable>
+<xsl:variable name="z-track">13</xsl:variable>
+<xsl:variable name="z-cycleway">13</xsl:variable>
+<xsl:variable name="z-footway">13</xsl:variable>
 <xsl:variable name="z-construction">11</xsl:variable>
 
 <!-- road pathText font-size -->
@@ -287,19 +287,22 @@
 						<rule e="way" k="sac_scale" v="~">
 							<line stroke="{$hw-footway}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="sac_scale" v="T1|hiking">
+						<rule e="way" k="sac_scale" v="T1|hiking"> <!-- DAV: gelb -->
+							<line stroke="#ffff00" stroke-width="0.4" stroke-linecap="butt" scale="stroke"/>
 							<line stroke="{$hw-footway}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="sac_scale" v="T2|mountain_hiking">
-							<line stroke="#3052FF" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+						<rule e="way" k="sac_scale" v="T2|mountain_hiking"> <!-- DAV: blau -->
+							<line stroke="#7bcaff" stroke-width="0.4" stroke-linecap="butt" />
+							<line stroke="{$hw-footway}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="sac_scale" v="T3|demanding_mountain_hiking">
-							<line stroke="#FF0000" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+						<rule e="way" k="sac_scale" v="T3|demanding_mountain_hiking"> <!-- DAV: rot -->
+							<line stroke="#FF4C4C" stroke-width="0.4" stroke-linecap="butt" />
+							<line stroke="{$hw-footway}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="sac_scale" v="T4|alpine_hiking">
-							<line stroke="#000000" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+						<rule e="way" k="sac_scale" v="T4|alpine_hiking"> <!-- DAV: schwarz -->
+							<line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,5" stroke-linecap="butt" scale="stroke"/>
 						</rule>
-						<rule e="way" k="sac_scale" v="T5|demanding_alpine_hiking|T6|difficult_alpine_hiking">
+						<rule e="way" k="sac_scale" v="T5|demanding_alpine_hiking|T6|difficult_alpine_hiking"> <!-- DAV: schwarz -->
 							<line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,1,0.5,1,0.5,1" stroke-linecap="butt" scale="stroke"/>
 						</rule>
 						<rule e="way" k="foot" v="ft_no"> <!-- Rote Markierung falls Weg nicht für Füßgänger -->

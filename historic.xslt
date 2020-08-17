@@ -30,11 +30,11 @@
 				<caption symbol-id="id_ruins" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
-		<rule e="any" k="historic" v="wayside_cross|wayside_shrine" zoom-min="12" >
-			<symbol src="file:/symbols/wayside_cross.svg" symbol-width="8" />
+		<rule e="any" k="historic" v="wayside_cross|wayside_shrine" zoom-min="13" >
+			<symbol src="file:/symbols/wayside_cross.svg" symbol-width="10" />
 		</rule>
 		<rule e="any" k="historic" v="monument" zoom-min="12" >
-			<symbol id="id_monument" src="file:/symbols/monument.svg" symbol-width="12" />
+			<symbol id="id_monument" src="file:/symbols/monument.svg" symbol-width="13" />
 			<rule e="any" k="*" v="*" zoom-min="15" >
 				<caption symbol-id="id_monument" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
