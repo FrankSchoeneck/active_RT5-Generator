@@ -34,7 +34,7 @@
 		</rule>
 		<rule e="way" k="landuse" v="quarry">
 			<area fill="#E7E9EB" stroke="#556b2f" stroke-width="0.2" />
-			<rule e="way" k="*" v="*" zoom-min="15">
+			<rule e="way" k="*" v="*" zoom-min="13">
 				<area src="file:/patterns/quarry.svg" symbol-width="40" />
 			</rule>
 		</rule>
