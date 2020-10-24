@@ -8,25 +8,36 @@
 		<area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1" />
 	</rule>
 
-	<rule e="any" k="amenity" v="parking" zoom-min="12">
+	<rule e="way" k="amenity" v="church|monastery" zoom-min="12">
+		<rule e="way" k="area" v="yes|true">
+			<area fill="#EBE3E1" stroke="#DBBDBA" stroke-width="0.1" />
+		</rule>
+	</rule>
+
+	<rule e="any" k="amenity" v="parking" cat="parking" zoom-min="14">
 		<area fill="#F3F3F3" />
 		<rule e="any" k="access" v="private|acc_no|permit|permissive" cat="parking">
 			<area src="file:/patterns/access-private.svg" symbol-percent="50" />
 			<symbol src="file:/symbols/parking_private.svg" symbol-percent="50" />
 		</rule>
-		<rule e="any" k="access" v="destination" cat="parking">
+		<rule e="any" k="access" v="destination">
 			<area src="file:/patterns/access-destination.svg" symbol-percent="50" />
 			<symbol src="file:/symbols/parking_private.svg" symbol-percent="50" />
 		</rule>
-		<rule e="any" k="access" v="~|yes|public" cat="parking">
-			<symbol src="file:/symbols/parking.svg" symbol-percent="50" />
+		<rule e="any" k="access" v="~|yes|public">
+			<rule e="any" k="parking" v="~">
+				<symbol src="file:/symbols/parking.svg" symbol-width="10" />
+			</rule>
+			<rule e="any" k="parking" v="multi-storey">
+				<symbol src="file:/symbols/parking_multi-storey.svg" symbol-width="10" />
+			</rule>
 		</rule>
 	</rule>
 		
 	<rule e="way" k="amenity" v="grave_yard" zoom-min="14">
 		<area fill="#CDD9CA" />
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
-		<area src="file:/patterns/cemetery.svg" />
+		<area src="file:/patterns/grave_yard.svg" />
 	</rule>
 </xsl:template>
 
@@ -43,34 +54,22 @@
 		<rule e="any" k="amenity" v="place_of_worship" zoom-min="12">
 			<rule e="any" k="religion" v="christian">
 				<rule e="any" k="building" v="cathedral|church|yes|~">
-					<symbol id="place_of_worship_christian" src="file:/symbols/church.svg" symbol-width="16" />
+					<symbol id="place_of_worship_christian" src="file:/symbols/church.svg" symbol-width="14" />
 					<rule e="any" k="building" v="*" zoom-min="17">
 						<caption symbol-id="place_of_worship_christian" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 					</rule>
 				</rule>
 				<rule e="any" k="building" v="chapel">
-					<symbol id="place_of_worship_chapel" src="file:/symbols/chapel.svg" symbol-width="16" />
+					<symbol id="place_of_worship_chapel" src="file:/symbols/chapel.svg" symbol-width="10" />
 					<rule e="any" k="building" v="*" zoom-min="17">
 						<caption symbol-id="place_of_worship_chapel" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 					</rule>
 				</rule>
 			</rule>
-			<rule e="any" k="religion" v="jewish">
-				<symbol id="id_jewish" src="file:/symbols/synagogue.svg" symbol-width="12" />
+			<rule e="any" k="religion" v="jewish|muslim|moslem|buddhist">
+				<symbol id="id_religion" src="file:/symbols/religion_diverse.svg" symbol-width="12" />
 				<rule e="any" k="building" v="*" zoom-min="17">
-					<caption symbol-id="id_jewish" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
-				</rule>
-			</rule>
-			<rule e="any" k="religion" v="muslim|moslem">
-				<symbol id="id_muslim" src="file:/symbols/muslim.svg" symbol-width="14" />
-				<rule e="any" k="building" v="*" zoom-min="17">
-					<caption symbol-id="id_muslim" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
-				</rule>
-			</rule>
-			<rule e="any" k="religion" v="buddhist">
-				<symbol id="id_buddhist" src="file:/symbols/buddhist.svg" symbol-width="14" />
-				<rule e="any" k="building" v="*" zoom-min="17">
-					<caption symbol-id="id_buddhist" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+					<caption symbol-id="id_religion" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 				</rule>
 			</rule>
 		</rule>
@@ -83,7 +82,7 @@
 		</rule>
 		
 		<rule e="any" k="amenity" v="shelter" zoom-min="14">
-			<symbol id="id_shelter" src="file:/symbols/shelter.svg" symbol-percent="70" display="always" />
+			<symbol id="id_shelter" src="file:/symbols/shelter.svg" symbol-width="12" display="always" />
 			<rule e="any" k="amenity" v="*" zoom-min="15">
 				<caption symbol-id="id_shelter" k="name" position="below" font-style="bold" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
@@ -98,21 +97,28 @@
 		</rule>
 		
 		<rule e="node" k="amenity" v="restaurant" cat="restaurant" zoom-min="14">
-			<symbol id="id_restaurant" src="file:/symbols/restaurant.svg"  symbol-percent="60" />
-			<rule e="node" k="amenity" v="*" zoom-min="17" cat="restaurant">
+			<symbol id="id_restaurant" src="file:/symbols/restaurant.svg"  symbol-width="12" />
+			<rule e="node" k="amenity" v="*" zoom-min="17">
 				<caption symbol-id="id_restaurant" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
 		
 		<rule e="node" k="amenity" v="cafe" cat="restaurant" zoom-min="14">
-			<symbol id="id_cafe" src="file:/symbols/cafe.svg" symbol-percent="60" />
-			<rule e="node" k="amenity" v="*" zoom-min="17" cat="restaurant">
+			<symbol id="id_cafe" src="file:/symbols/cafe.svg" symbol-width="14" />
+			<rule e="node" k="amenity" v="*" zoom-min="17">
 				<caption symbol-id="id_cafe" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+			</rule>
+		</rule>
+
+		<rule e="node" k="amenity" v="theatre" zoom-min="14">
+			<symbol id="id_theatre" src="file:/symbols/theatre.svg" symbol-width="14" />
+			<rule e="node" k="amenity" v="*" zoom-min="17">
+				<caption symbol-id="id_theatre" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
 		
 		<rule e="any" k="amenity" v="fountain" zoom-min="14">
-			<symbol src="file:/symbols/fountain.svg" symbol-percent="50" />
+			<symbol src="file:/symbols/fountain.svg" symbol-width="12" />
 		</rule>
 
 		<rule e="any" k="amenity" v="bench" zoom-min="15">

@@ -122,30 +122,25 @@
     <xsl:template name="railway_node">
 		<rule e="node" k="railway" v="*" zoom-min="12" cat="pub_transp">
 			<!-- Bahnhof -->
-			<rule e="node" k="railway" v="station" zoom-min="12" zoom-max="13">
-				<circle radius="3.5" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-			</rule>
-			<rule e="node" k="railway" v="station" zoom-min="14">
-				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-percent="80" />
-				<rule e="node" k="*" v="*" zoom-min="14">
+			<rule e="node" k="railway" v="station" zoom-min="13">
+				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-width="12" priority="-10" />
+				<rule e="node" k="*" v="*" zoom-min="15">
 					<caption symbol-id="id_station" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>
 			</rule>
 			<!-- Straßenbahnhaltestelle -->
-			<rule e="node" k="railway" v="tram_stop" zoom-min="13" zoom-max="14">
-				<circle radius="3.5" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-			</rule>
-			<rule e="node" k="railway" v="tram_stop" zoom-min="15">
-				<circle radius="5.0" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-				<caption k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+			<rule e="node" k="railway" v="tram_stop" zoom-min="14">
+				<symbol id="id_tram_stop" src="file:/symbols/railway_tram_stop.svg" symbol-width="10" />
+				<rule e="node" k="*" v="*" zoom-min="15">
+					<caption symbol-id="id_tram_stop" k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+				</rule>
 			</rule>
 			<!-- Haltepunkt -->
-			<rule e="node" k="railway" v="halt" zoom-min="13" zoom-max="13">
-				<circle radius="3.5" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-			</rule>
-			<rule e="node" k="railway" v="halt" zoom-min="14">
-				<circle radius="5.0" fill="#CC0000" stroke="#FFFFFF" stroke-width="0.5" />
-				<caption k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+			<rule e="node" k="railway" v="halt" zoom-min="13">
+				<symbol id="id_halt" src="file:/symbols/railway_station.svg" symbol-width="12" priority="-10"/>
+				<rule e="node" k="*" v="*" zoom-min="15">
+					<caption symbol-id="id_halt" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+				</rule>
 			</rule>
 		</rule>
     </xsl:template>

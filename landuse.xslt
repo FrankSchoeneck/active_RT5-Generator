@@ -34,7 +34,7 @@
 		</rule>
 		<rule e="way" k="landuse" v="quarry">
 			<area fill="#E7E9EB" stroke="#556b2f" stroke-width="0.2" />
-			<rule e="way" k="*" v="*" zoom-min="13">
+			<rule e="way" k="*" v="*" zoom-min="14">
 				<area src="file:/patterns/quarry.svg" symbol-width="40" />
 			</rule>
 		</rule>
@@ -96,9 +96,10 @@
 	<rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes">
 		<area fill="#DAE5C1" />
 	</rule>
+	
 	<rule e="way" k="landuse" v="vineyard" zoom-min="10" closed="yes">
 		<area fill="#EFECF6" />
-		<rule e="way" k="*" v="*" zoom-min="13">
+		<rule e="way" k="*" v="*" zoom-min="14">
 			<area src="file:/patterns/vineyard.svg" symbol-width="14" />
 		</rule>
 	</rule>
@@ -106,10 +107,15 @@
 	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes">
 		<area fill="#EEEFEC" />
 	</rule>
+	
 	<rule e="way" k="landuse" v="cemetery" zoom-min="12" closed="yes">
 		<area fill="#CDD9CA" />
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
 		<area src="file:/patterns/cemetery.svg" symbol-width="40"/>
+		<symbol id="cemetery" src="file:/symbols/cemetery.svg" symbol-width="22" />
+		<rule e="any" k="*" v="*" zoom-min="15">
+			<caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+		</rule>
 	</rule>
 	
 	<!-- amenity -->

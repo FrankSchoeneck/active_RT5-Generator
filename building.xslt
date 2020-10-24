@@ -32,4 +32,15 @@
 			<caption k="addr:housenumber" font-style="normal" font-size="8" fill="#424251" />
 		</rule>
 	</xsl:template>
+	
+	<xsl:template name="building_nodes">
+		<!-- Kloster -->
+		<rule e="any" k="building" v="monastery" zoom-min="12">
+			<symbol id="id_monastery" src="file:/symbols/monastery.svg" symbol-width="20" />
+			<rule e="any" k="*" v="*" zoom-min="16">
+				<caption symbol-id="id_monastery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			</rule>
+		</rule>
+	</xsl:template>
+
 </xsl:stylesheet>

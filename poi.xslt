@@ -5,7 +5,7 @@
 <xsl:template name="poi">
 	<!-- Bushaltestellen -->
 	<rule e="node" k="highway" v="bus_stop" zoom-min="14" cat="pub_transp">
-		<symbol id="id_bus_stop" src="file:/symbols/bus_stop.svg" symbol-percent="60" />
+		<symbol id="id_bus_stop" src="file:/symbols/bus_stop.svg" symbol-width="12" />
 		<rule e="node" k="highway" v="*" zoom-min="17">
 			<caption symbol-id="id_bus_stop" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
@@ -43,7 +43,7 @@
 		</rule>
 	</rule>
 	<rule e="node" k="man_made" v="adit|adit_disused" zoom-min="12">
-		<symbol src="file:/symbols/cave_entrance.svg" symbol-width="12" />
+		<symbol src="file:/symbols/cave_entrance.svg" symbol-width="16" />
 	</rule>
 	<rule e="any" k="man_made" v="mineshaft" zoom-min="12">
 		<symbol src="file:/symbols/mineshaft.svg" symbol-width="14" />
@@ -62,8 +62,10 @@
 			<caption symbol-id="id_communication" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 		</rule>
 		<rule e="node" k="tower" v="~|observation" >
-			<symbol id="id_observation" src="file:/symbols/tower_observation.svg" symbol-width="12" />
-			<caption symbol-id="id_observation" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			<symbol id="id_observation" src="file:/symbols/tower_observation.svg" symbol-width="9" />
+			<rule e="any" k="*" v="*" zoom-min="15">
+				<caption symbol-id="id_observation" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			</rule>
 		</rule>
 	</rule>
 

@@ -1,4 +1,4 @@
-<?xml-stylesheet type="text/xsl" href="active_RT5.xslt"?>
+<?xml-stylesheet type="text/xsl" href="active_RT4.xslt"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -35,7 +35,7 @@
 			version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
 
 	<xsl:comment>
-		active RT5 (active RenderTheme Version 5)
+		active RT4 (active RenderTheme for Mapsforge Maps Version 4)
 		Mapsforge Rendertheme for Apps with Mapsforge support and Openandromaps
 		
 		by LocusUser#1 (Frank Schöneck)
@@ -73,6 +73,7 @@
 	<xsl:call-template name="barrier"/>
 	<xsl:call-template name="natural_nodes"/>
 	<xsl:call-template name="amenity_nodes"/>
+	<xsl:call-template name="building_nodes"/>
 	<xsl:call-template name="historic_nodes"/>
 	<xsl:call-template name="military_nodes"/>
 	<xsl:call-template name="tourism_nodes"/>

@@ -24,7 +24,10 @@
 	<!-- power generator -->
 	<rule e="node" k="power" v="generator" zoom-min="13">
 		<rule e="node" k="generator:source" v="wind" >
-			<symbol src="file:/symbols/power_generator_wind.svg" symbol-percent="100" />
+			<symbol id = "power_generator_wind" src="file:/symbols/power_generator_wind.svg" symbol-percent="100" />
+			<rule e="node" k="*" v="*" zoom-min="15" >
+				<caption symbol-id="power_generator_wind" k="name" position="below" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
+			</rule>
 		</rule>
 	</rule>
 </xsl:template>

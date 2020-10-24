@@ -59,6 +59,12 @@
 				<cat id="restaurant" />
 			</layer>
 
+			<layer id="L_hotel" enabled="false" visible="false">
+				<name lang="de" value="Hotels + Unterkünfte" />
+				<name lang="en" value="Hotels + Accommodation" />
+				<cat id="hotel" />
+			</layer>
+
 			<layer id="L_emergency_access_point" enabled="false" visible="false">
 				<name lang="de" value="Rettungspunkte" />
 				<name lang="en" value="Emergency access points" />
@@ -78,6 +84,7 @@
 				<overlay id="L_publictransport" />
 				<overlay id="L_parking" />
 				<overlay id="L_restaurant" />
+				<overlay id="L_hotel" />
 				<overlay id="L_emergency_access_point" />
 			</layer>
 

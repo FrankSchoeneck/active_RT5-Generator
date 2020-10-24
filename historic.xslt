@@ -19,15 +19,15 @@
 <xsl:template name="historic_nodes">
 	<rule e="any" k="historic" v="*" zoom-min="11">
 		<rule e="any" k="historic" v="castle">
-			<symbol id="id_castle" src="file:/symbols/castle.svg" symbol-width="14" />
+			<symbol id="id_castle" src="file:/symbols/castle.svg" symbol-width="18" />
 			<rule e="any" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_castle" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="ruins">
-			<symbol id="id_ruins" src="file:/symbols/ruins.svg" symbol-width="12" />
+			<symbol id="id_ruins" src="file:/symbols/ruins.svg" symbol-width="14" />
 			<rule e="any" k="*" v="*" zoom-min="15">
-				<caption symbol-id="id_ruins" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+				<caption symbol-id="id_ruins" k="name" dy="-2" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="wayside_cross|wayside_shrine" zoom-min="13" >
@@ -40,7 +40,7 @@
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="memorial" zoom-min="13" >
-			<symbol id="id_memorial" src="file:/symbols/memorial.svg" symbol-width="12" />
+			<symbol id="id_memorial" src="file:/symbols/memorial.svg" symbol-width="10" />
 			<rule e="any" k="*" v="*" zoom-min="15" >
 				<caption symbol-id="id_memorial" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>

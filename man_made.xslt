@@ -35,13 +35,13 @@
 			<line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="man_made" v="watermill" zoom-min="12">
-			<symbol id="id_watermill" src="file:/symbols/watermill.svg" symbol-width="18" />
+			<symbol id="id_watermill" src="file:/symbols/watermill.svg" symbol-width="14" />
 			<rule e="way" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_watermill" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
 		<rule e="way" k="man_made" v="windmill" zoom-min="12">
-			<symbol id="id_windmill" src="file:/symbols/windmill.svg" symbol-width="12" />
+			<symbol id="id_windmill" src="file:/symbols/windmill.svg" symbol-width="14" />
 			<rule e="way" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_windmill" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
