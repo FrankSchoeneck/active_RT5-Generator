@@ -108,6 +108,7 @@
 		<area fill="#EEEFEC" />
 	</rule>
 	
+	<!-- Friedhöfe -->
 	<rule e="way" k="landuse" v="cemetery" zoom-min="12" closed="yes">
 		<area fill="#CDD9CA" />
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />

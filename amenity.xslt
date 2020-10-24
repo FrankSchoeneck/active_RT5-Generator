@@ -37,7 +37,7 @@
 	<rule e="way" k="amenity" v="grave_yard" zoom-min="14">
 		<area fill="#CDD9CA" />
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
-		<area src="file:/patterns/grave_yard.svg" />
+		<area src="file:/patterns/cemetery.svg" symbol-width="40"/>
 	</rule>
 </xsl:template>
 
