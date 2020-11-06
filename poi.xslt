@@ -13,7 +13,7 @@
 		
 	<!-- Rettungspunkte (only for OpenAndroMaps) -->
 	<rule e="any" k="highway" v="emergency_access_point" zoom-min="14" cat="emergency_access_point">
-		<symbol id="id_emergency_access_point" src="file:/symbols/emergency_access_point.svg" symbol-percent="60" display="always" />
+		<symbol id="id_emergency_access_point" src="file:/symbols/emergency_access_point.svg" symbol-width="10" display="always" />
 		<rule e="any" k="*" v="*" zoom-min="16">
 			<caption symbol-id="id_emergency_access_point" k="name" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#DA0092" stroke="#FFFFFF" stroke-width="1.5" />
 			<!--OAM Transform ref to addr:housenumber -->

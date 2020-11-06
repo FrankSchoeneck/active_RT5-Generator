@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <xsl:template name="barrier">
 		<!-- wall, barries -->
-		<rule e="way" k="barrier" v="*" zoom-min="12">
+		<rule e="way" k="barrier" v="*" zoom-min="14">
 			<rule e="way" k="barrier" v="fence|city_wall">
 				<line stroke="#545454" stroke-width="0.05" stroke-linecap="butt" />
 			</rule>
@@ -12,6 +12,9 @@
 			</rule>
 			<rule e="way" k="barrier" v="retaining_wall">
 				<line stroke="#888888" stroke-width="0.05" stroke-linecap="butt" />
+			</rule>
+			<rule e="way" k="barrier" v="hedge">
+				<line stroke="#CBE0B3" stroke-width="0.6" stroke-linecap="round" />
 			</rule>
 		</rule>
 

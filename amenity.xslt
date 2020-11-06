@@ -93,7 +93,7 @@
 		</rule>
 
 		<rule e="any" k="amenity" v="hunting_stand" zoom-min="14">
-			<symbol src="file:/symbols/hunting_stand.svg" symbol-percent="70" />
+			<symbol src="file:/symbols/hunting_stand.svg" symbol-height="14" />
 		</rule>
 		
 		<rule e="node" k="amenity" v="restaurant" cat="restaurant" zoom-min="14">

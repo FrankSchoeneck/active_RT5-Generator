@@ -50,7 +50,7 @@
 				</rule>
 				<rule e="any" k="tourism" v="information" >
 					<rule e="any" k="information" v="office|information_office">
-						<symbol id="id_office" src="file:/symbols/information_office.svg" display="always" symbol-percent="60" />
+						<symbol id="id_office" src="file:/symbols/information_office.svg" display="always" symbol-height="14" />
 						<rule e="any" k="*" v="*" zoom-min="15">
 							<caption symbol-id="id_office" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 						</rule>		
@@ -63,6 +63,12 @@
 					<symbol id="id_camp_site" src="file:/symbols/campSite.svg" symbol-width="16" />
 					<rule e="any" k="*" v="*" zoom-min="15">
 						<caption symbol-id="id_camp_site" k="name" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="1.5" />
+					</rule>
+				</rule>
+				<rule e="any" k="tourism" v="caravan_site">
+					<symbol id="id_caravan_site" src="file:/symbols/caravanSite.svg" symbol-width="16" />
+					<rule e="any" k="*" v="*" zoom-min="15">
+						<caption symbol-id="id_caravan_site" k="name" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="1.5" />
 					</rule>
 				</rule>
 				<rule e="any" k="tourism" v="alpine_hut">
@@ -111,10 +117,6 @@
 				</rule>
 			</rule>
 			
-			<rule e="any" k="information" v="map|board" zoom-min="14">
-				<symbol src="file:/symbols/information.svg" symbol-percent="60" />
-			</rule>
-		
 		</rule>
 	</xsl:template>
 

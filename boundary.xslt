@@ -4,10 +4,10 @@
 <xsl:template name="boundary">
 	<!-- NATIONAL PARK -->
 	<rule e="way" k="boundary" v="national_park|protected_area" cat="boundaries_areas">
-		<rule e="way" k="protect_class" v="1|2|3|4|~">
+		<rule e="way" k="protect_class" v="1|2|3|4|~|pr_1|pr_2|pr_3|pr_4">
 			<area fill="#2034972d" />
 		</rule>
-		<rule e="way" k="protect_class" v="1|2|3|4|~" zoom-min="14">
+		<rule e="way" k="protect_class" v="1|2|3|4|~|pr_1|pr_2|pr_3|pr_4" zoom-min="14">
 			<line stroke="#6bb96c" stroke-width="0.8" stroke-linecap="butt" />
 		</rule>
 
