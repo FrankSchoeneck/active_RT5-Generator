@@ -123,21 +123,21 @@
 		<rule e="node" k="railway" v="*" zoom-min="12" cat="pub_transp">
 			<!-- Bahnhof -->
 			<rule e="node" k="railway" v="station" zoom-min="13">
-				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-width="12" priority="-10" />
+				<symbol id="id_station" src="file:/symbols/railway_station.svg" symbol-percent="60" priority="-10" />
 				<rule e="node" k="*" v="*" zoom-min="15">
 					<caption symbol-id="id_station" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>
 			</rule>
 			<!-- Straßenbahnhaltestelle -->
 			<rule e="node" k="railway" v="tram_stop" zoom-min="14">
-				<symbol id="id_tram_stop" src="file:/symbols/railway_tram_stop.svg" symbol-width="10" />
+				<symbol id="id_tram_stop" src="file:/symbols/railway_tram_stop.svg" symbol-percent="50" />
 				<rule e="node" k="*" v="*" zoom-min="15">
 					<caption symbol-id="id_tram_stop" k="name" dy="13" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>
 			</rule>
 			<!-- Haltepunkt -->
 			<rule e="node" k="railway" v="halt" zoom-min="13">
-				<symbol id="id_halt" src="file:/symbols/railway_station.svg" symbol-width="12" priority="-10"/>
+				<symbol id="id_halt" src="file:/symbols/railway_station.svg" symbol-percent="60" priority="-10"/>
 				<rule e="node" k="*" v="*" zoom-min="15">
 					<caption symbol-id="id_halt" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 				</rule>

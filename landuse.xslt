@@ -113,7 +113,7 @@
 		<area fill="#CDD9CA" />
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
 		<area src="file:/patterns/cemetery.svg" symbol-width="40"/>
-		<symbol id="cemetery" src="file:/symbols/cemetery.svg" symbol-width="22" />
+		<symbol id="cemetery" src="file:/symbols/cemetery.svg" symbol-percent="110" />
 		<rule e="any" k="*" v="*" zoom-min="15">
 			<caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 		</rule>

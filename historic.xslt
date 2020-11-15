@@ -19,34 +19,34 @@
 <xsl:template name="historic_nodes">
 	<rule e="any" k="historic" v="*" zoom-min="11">
 		<rule e="any" k="historic" v="castle">
-			<symbol id="id_castle" src="file:/symbols/castle.svg" symbol-width="18" />
+			<symbol id="id_castle" src="file:/symbols/castle.svg" symbol-percent="90" />
 			<rule e="any" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_castle" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="ruins">
-			<symbol id="id_ruins" src="file:/symbols/ruins.svg" symbol-width="14" />
+			<symbol id="id_ruins" src="file:/symbols/ruins.svg" symbol-percent="70" />
 			<rule e="any" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_ruins" k="name" dy="-2" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="wayside_cross|wayside_shrine" zoom-min="13" >
-			<symbol src="file:/symbols/wayside_cross.svg" symbol-width="10" />
+			<symbol src="file:/symbols/wayside_cross.svg" symbol-percent="50" />
 		</rule>
 		<rule e="any" k="historic" v="monument" zoom-min="12" >
-			<symbol id="id_monument" src="file:/symbols/monument.svg" symbol-width="13" />
+			<symbol id="id_monument" src="file:/symbols/monument.svg" symbol-percent="65" />
 			<rule e="any" k="*" v="*" zoom-min="15" >
 				<caption symbol-id="id_monument" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="memorial" zoom-min="13" >
-			<symbol id="id_memorial" src="file:/symbols/memorial.svg" symbol-width="10" />
+			<symbol id="id_memorial" src="file:/symbols/memorial.svg" symbol-percent="50" />
 			<rule e="any" k="*" v="*" zoom-min="15" >
 				<caption symbol-id="id_memorial" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="mine" zoom-min="12">
-			<symbol id="id_mine" src="file:/symbols/mineshaft.svg" symbol-width="14" />
+			<symbol id="id_mine" src="file:/symbols/mineshaft.svg" symbol-percent="70" />
 			<rule e="any" k="historic" v="*" zoom-min="16" >
 				<caption symbol-id="id_mine" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
@@ -58,7 +58,7 @@
 			</rule>
 		</rule>
 		<rule e="any" k="historic" v="boundary_stone" zoom-min="14" > <!-- only for OpenAndroMaps -->
-			<symbol src="file:/symbols/boundary_stone.svg" symbol-width="6" />
+			<symbol src="file:/symbols/boundary_stone.svg" symbol-percent="30" />
 		</rule>
 	</rule>
 </xsl:template>

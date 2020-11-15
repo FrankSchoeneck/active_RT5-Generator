@@ -87,7 +87,7 @@
 	</rule>	
 	<!-- Wasserfall -->
 	<rule e="any" k="waterway|natural" v="waterfall" zoom-min="13">
-		<symbol src="file:/symbols/waterfall.svg" symbol-width="16" />
+		<symbol src="file:/symbols/waterfall.svg" symbol-percent="80" />
 	</rule>
 	<!-- end of water -->
 </xsl:template>

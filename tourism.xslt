@@ -43,14 +43,14 @@
 		<rule e="any" k="tourism" v="*">
 			<rule e="any" k="tourism" v="*" zoom-min="14">
 				<rule e="node" k="tourism" v="viewpoint">
-					<symbol id="id_viewpoint" src="file:/symbols/viewpoint.svg" symbol-width="16" />
+					<symbol id="id_viewpoint" src="file:/symbols/viewpoint.svg" symbol-percent="80" />
 					<rule e="any" k="*" v="*" zoom-min="15">
 						<caption symbol-id="id_viewpoint" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 					</rule>
 				</rule>
 				<rule e="any" k="tourism" v="information" >
 					<rule e="any" k="information" v="office|information_office">
-						<symbol id="id_office" src="file:/symbols/information_office.svg" display="always" symbol-height="14" />
+						<symbol id="id_office" src="file:/symbols/information_office.svg" display="always" symbol-percent="40" />
 						<rule e="any" k="*" v="*" zoom-min="15">
 							<caption symbol-id="id_office" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 						</rule>		
@@ -60,30 +60,30 @@
 
 			<rule e="any" k="tourism" v="*" zoom-min="14">
 				<rule e="any" k="tourism" v="camp_site">
-					<symbol id="id_camp_site" src="file:/symbols/campSite.svg" symbol-width="16" />
+					<symbol id="id_camp_site" src="file:/symbols/campSite.svg" symbol-percent="80" />
 					<rule e="any" k="*" v="*" zoom-min="15">
 						<caption symbol-id="id_camp_site" k="name" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="1.5" />
 					</rule>
 				</rule>
 				<rule e="any" k="tourism" v="caravan_site">
-					<symbol id="id_caravan_site" src="file:/symbols/caravanSite.svg" symbol-width="16" />
+					<symbol id="id_caravan_site" src="file:/symbols/caravanSite.svg" symbol-percent="80" />
 					<rule e="any" k="*" v="*" zoom-min="15">
 						<caption symbol-id="id_caravan_site" k="name" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="1.5" />
 					</rule>
 				</rule>
 				<rule e="any" k="tourism" v="alpine_hut">
-					<symbol id="id_alpine_hut" src="file:/symbols/alpine_hut.svg" symbol-width="16" display="always" />
+					<symbol id="id_alpine_hut" src="file:/symbols/alpine_hut.svg" symbol-percent="80" display="always" />
 					<caption symbol-id="id_alpine_hut" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 					<caption symbol-id="id_alpine_hut" k="ele" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 				</rule>
 				<rule e="any" k="tourism" v="museum">
-					<symbol id="id_museum" src="file:/symbols/museum.svg" symbol-width="12" />
+					<symbol id="id_museum" src="file:/symbols/museum.svg" symbol-percent="60" />
 					<rule e="any" k="tourism" v="*" zoom-min="15">
 						<caption symbol-id="id_museum" k="name" font-style="bold" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 					</rule>
 				</rule>
 				<rule e="any" k="tourism" v="hotel|hostel" cat="hotel">
-					<symbol id="id_hotel" src="file:/symbols/hotel.svg" symbol-width="12" />
+					<symbol id="id_hotel" src="file:/symbols/hotel.svg" symbol-percent="60" />
 					<rule e="any" k="tourism" v="*" zoom-min="15">
 						<caption symbol-id="id_hotel" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 					</rule>

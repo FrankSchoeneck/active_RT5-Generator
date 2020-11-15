@@ -20,10 +20,10 @@
 
 		<!-- barrier -->
 		<rule e="node" k="barrier" v="gate" zoom-min="15">
-			<symbol src="file:/symbols/gate.svg"  symbol-width="13" />
+			<symbol src="file:/symbols/gate.svg"  symbol-percent="65" />
 		</rule>
 		<rule e="node" k="barrier" v="lift_gate" zoom-min="16">
-			<symbol src="file:/symbols/lift_gate.svg"  symbol-width="13" />
+			<symbol src="file:/symbols/lift_gate.svg"  symbol-percent="65" />
 		</rule>
     </xsl:template>
 </xsl:stylesheet>

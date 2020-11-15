@@ -59,7 +59,7 @@
 				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
 				<pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 				<rule e="way" k="natural" v="*" zoom-min="13">
-					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-width="5" symbol-height="9" />
+					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-percent="30" />
 				</rule>		
 			</rule>
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
@@ -106,7 +106,7 @@
 		<rule e="node" k="natural" v="peak">
 			<rule e="any" k="peak_dist" v="pd_1" zoom-min="7">
 				<rule e="node" k="summit:cross" v="yes">
-					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-width="8"/>
+					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-percent="40"/>
 					<rule e="node" k="*" v="*" zoom-min="9" >
 						<caption symbol-id="id_peak_cross" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -115,7 +115,7 @@
 					</rule>
 				</rule>
 				<rule e="node" k="summit:cross" v="~|no">
-					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-width="8" />
+					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-percent="40" />
 					<rule e="node" k="*" v="*" zoom-min="9" >
 						<caption symbol-id="id_peak" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -126,7 +126,7 @@
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_2" zoom-min="9">
 				<rule e="node" k="summit:cross" v="yes">
-					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-width="8"/>
+					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-percent="40"/>
 					<rule e="node" k="*" v="*" zoom-min="11" >
 						<caption symbol-id="id_peak_cross" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -135,7 +135,7 @@
 					</rule>
 				</rule>
 				<rule e="node" k="summit:cross" v="~|no">
-					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-width="8" />
+					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-percent="40" />
 					<rule e="node" k="*" v="*" zoom-min="11" >
 						<caption symbol-id="id_peak" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -146,7 +146,7 @@
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_3|~" zoom-min="10">
 				<rule e="node" k="summit:cross" v="yes">
-					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-width="8"/>
+					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-percent="40"/>
 					<rule e="node" k="*" v="*" zoom-min="11" >
 						<caption symbol-id="id_peak_cross" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -155,7 +155,7 @@
 					</rule>
 				</rule>
 				<rule e="node" k="summit:cross" v="~|no">
-					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-width="8" />
+					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-percent="40" />
 					<rule e="node" k="*" v="*" zoom-min="11" >
 						<caption symbol-id="id_peak" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
@@ -166,14 +166,14 @@
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_4" zoom-min="11">
 				<rule e="node" k="summit:cross" v="yes">
-					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-width="8"/>
+					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-percent="40"/>
 					<caption symbol-id="id_peak_cross" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					<rule e="node" k="*" v="*" zoom-min="12">
 						<caption symbol-id="id_peak_cross" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					</rule>
 				</rule>
 				<rule e="node" k="summit:cross" v="~|no">
-					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-width="8" />
+					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-percent="40" />
 					<caption symbol-id="id_peak" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					<rule e="node" k="*" v="*" zoom-min="12">
 						<caption symbol-id="id_peak" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
@@ -182,12 +182,12 @@
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_5" zoom-min="12">
 				<rule e="node" k="summit:cross" v="yes">
-					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-width="8"/>
+					<symbol id="id_peak_cross" src="file:/symbols/peak_cross.svg" symbol-percent="40"/>
 					<caption symbol-id="id_peak_cross" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					<caption symbol-id="id_peak_cross" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 				</rule>
 				<rule e="node" k="summit:cross" v="~|no">
-					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-width="8" />
+					<symbol id="id_peak" src="file:/symbols/peak.svg" symbol-percent="40" />
 					<caption symbol-id="id_peak" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 					<caption symbol-id="id_peak" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.2" />
 				</rule>
@@ -197,7 +197,7 @@
 		<!-- Vulkane -->
 		<rule e="node" k="natural" v="volcano">
 			<rule e="any" k="peak_dist" v="pd_1" zoom-min="7">
-				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-width="14" />
+				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-percent="70" />
 				<rule e="node" k="*" v="*" zoom-min="11" >
 					<caption symbol-id="id_volcano" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				</rule>
@@ -206,7 +206,7 @@
 				</rule>
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_2" zoom-min="9">
-				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-width="14" />
+				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-percent="70" />
 				<rule e="node" k="*" v="*" zoom-min="11" >
 					<caption symbol-id="id_volcano" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				</rule>
@@ -215,7 +215,7 @@
 				</rule>
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_3|~" zoom-min="10">
-				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-width="14" />
+				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-percent="70" />
 				<rule e="node" k="*" v="*" zoom-min="11" >
 					<caption symbol-id="id_volcano" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				</rule>
@@ -224,14 +224,14 @@
 				</rule>
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_4" zoom-min="11">
-				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-width="14" />
+				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-percent="70" />
 				<caption symbol-id="id_volcano" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				<rule e="node" k="*" v="*" zoom-min="12">
 					<caption symbol-id="id_volcano" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				</rule>
 			</rule>
 			<rule e="any" k="peak_dist" v="pd_5" zoom-min="12">
-				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-width="14" />
+				<symbol id="id_volcano" src="file:/symbols/volcano.svg" symbol-percent="70" />
 				<caption symbol-id="id_volcano" k="name" dy="{$dy-peak-caption}" position="above" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 				<caption symbol-id="id_volcano" k="ele" dy="-{$dy-peak-caption}" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.8" />
 			</rule>
@@ -248,28 +248,28 @@
 				</rule>
 			</rule>
 			<rule e="any" k="dir_saddle" v="ds_0" >
-				<symbol id="id_ds_0" src="file:/symbols/mountain_pass_0.svg" symbol-width="16" />
+				<symbol id="id_ds_0" src="file:/symbols/mountain_pass_0.svg" symbol-percent="80" />
 				<caption symbol-id="id_ds_0" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 				<rule e="any" k="*" v="*" zoom-min="13">
 					<caption k="ele" symbol-id="id_ds_0" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 				</rule>
 			</rule>
 			<rule e="any" k="dir_saddle" v="ds_45" >
-				<symbol id="id_ds_45" src="file:/symbols/mountain_pass_45.svg" symbol-width="16" />
+				<symbol id="id_ds_45" src="file:/symbols/mountain_pass_45.svg" symbol-percent="80" />
 				<caption symbol-id="id_ds_45" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 				<rule e="any" k="*" v="*" zoom-min="13">
 					<caption k="ele" symbol-id="id_ds_45" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 				</rule>
 			</rule>
 			<rule e="any" k="dir_saddle" v="ds_90" >
-				<symbol id="id_ds_90" src="file:/symbols/mountain_pass_90.svg" symbol-width="16" />
+				<symbol id="id_ds_90" src="file:/symbols/mountain_pass_90.svg" symbol-percent="80" />
 				<caption symbol-id="id_ds_90" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 				<rule e="any" k="*" v="*" zoom-min="13">
 					<caption k="ele" symbol-id="id_ds_90" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 				</rule>
 			</rule>
 			<rule e="any" k="dir_saddle" v="ds_135" >
-				<symbol id="id_ds_135" src="file:/symbols/mountain_pass_135.svg" symbol-width="16" />
+				<symbol id="id_ds_135" src="file:/symbols/mountain_pass_135.svg" symbol-percent="80" />
 				<caption symbol-id="id_ds_135" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 				<rule e="any" k="*" v="*" zoom-min="13">
 					<caption k="ele" symbol-id="id_ds_135" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
@@ -277,7 +277,7 @@
 			</rule>
 		</rule>
 		<rule e="node" k="natural" v="cave_entrance">
-			<symbol id="id_cave_entrance" src="file:/symbols/cave_entrance.svg" symbol-width="16" />
+			<symbol id="id_cave_entrance" src="file:/symbols/cave_entrance.svg" symbol-percent="80" />
 			<rule e="node" k="natural" v="*" zoom-min="15" >
 				<caption symbol-id="id_cave_entrance" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
@@ -289,13 +289,13 @@
 			</rule>
 		</rule>
 		<rule e="node" k="natural" v="rock|stone|nat_stone" cat="landscapefeat">
-			<symbol id="id_rock" src="file:/symbols/rock.svg" symbol-width="20" />
+			<symbol id="id_rock" src="file:/symbols/rock.svg" symbol-percent="100" />
 			<rule e="node" k="natural" v="*" zoom-min="15" >
 				<caption symbol-id="id_rock" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 			</rule>
 		</rule>
 		<rule e="node" k="natural" v="spring">
-			<symbol src="file:/symbols/spring.svg" symbol-width="16" />
+			<symbol src="file:/symbols/spring.svg" symbol-percent="80" />
 		</rule>
 	</rule>
 </xsl:template>

@@ -5,7 +5,7 @@
 <xsl:template name="poi">
 	<!-- Bushaltestellen -->
 	<rule e="node" k="highway" v="bus_stop" zoom-min="14" cat="pub_transp">
-		<symbol id="id_bus_stop" src="file:/symbols/bus_stop.svg" symbol-width="12" />
+		<symbol id="id_bus_stop" src="file:/symbols/bus_stop.svg" symbol-percent="60" />
 		<rule e="node" k="highway" v="*" zoom-min="17">
 			<caption symbol-id="id_bus_stop" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
@@ -13,7 +13,7 @@
 		
 	<!-- Rettungspunkte (only for OpenAndroMaps) -->
 	<rule e="any" k="highway" v="emergency_access_point" zoom-min="14" cat="emergency_access_point">
-		<symbol id="id_emergency_access_point" src="file:/symbols/emergency_access_point.svg" symbol-width="10" display="always" />
+		<symbol id="id_emergency_access_point" src="file:/symbols/emergency_access_point.svg" symbol-percent="50" display="always" />
 		<rule e="any" k="*" v="*" zoom-min="16">
 			<caption symbol-id="id_emergency_access_point" k="name" position="below" font-style="bold" font-family="sans_serif" font-size="10" fill="#DA0092" stroke="#FFFFFF" stroke-width="1.5" />
 			<!--OAM Transform ref to addr:housenumber -->
@@ -37,32 +37,32 @@
 
 	<!-- man_made -->
 	<rule e="any" k="man_made" v="lighthouse" zoom-min="12">
-		<symbol id="id_lighthouse" src="file:/symbols/lighthouse.svg" symbol-width="12" />
+		<symbol id="id_lighthouse" src="file:/symbols/lighthouse.svg" symbol-percent="60" />
 		<rule e="way" k="*" v="*" zoom-min="15">
 			<caption symbol-id="id_lighthouse" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>
 	<rule e="node" k="man_made" v="adit|adit_disused" zoom-min="12">
-		<symbol src="file:/symbols/cave_entrance.svg" symbol-width="16" />
+		<symbol src="file:/symbols/cave_entrance.svg" symbol-percent="80" />
 	</rule>
 	<rule e="any" k="man_made" v="mineshaft" zoom-min="12">
-		<symbol src="file:/symbols/mineshaft.svg" symbol-width="14" />
+		<symbol src="file:/symbols/mineshaft.svg" symbol-percent="70" />
 	</rule>
 	<rule e="node" k="man_made" v="cross" zoom-min="12">
-		<symbol src="file:/symbols/cross.svg" symbol-width="18" />
+		<symbol src="file:/symbols/cross.svg" symbol-percent="70" />
 	</rule>
 	<rule e="node" k="man_made" v="cairn" zoom-min="13" cat="landscapefeat"> <!-- Nur bei OpenAndroMaps -->
-		<symbol src="file:/symbols/cairn.svg" symbol-width="20" />
+		<symbol src="file:/symbols/cairn.svg" symbol-percent="100" />
 	</rule>
 
 	<!-- tower -->
 	<rule e="node" k="tower" v="*" zoom-min="12">
 		<rule e="node" k="tower" v="communication" >
-			<symbol id="id_communication" src="file:/symbols/tower_communication.svg" symbol-width="18" />
+			<symbol id="id_communication" src="file:/symbols/tower_communication.svg" symbol-percent="90" />
 			<caption symbol-id="id_communication" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 		</rule>
 		<rule e="node" k="tower" v="~|observation" >
-			<symbol id="id_observation" src="file:/symbols/tower_observation.svg" symbol-width="9" />
+			<symbol id="id_observation" src="file:/symbols/tower_observation.svg" symbol-percent="45" />
 			<rule e="any" k="*" v="*" zoom-min="15">
 				<caption symbol-id="id_observation" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
 			</rule>
@@ -100,28 +100,28 @@
 			</rule>
 		</rule>
 		<rule e="any" k="dir_saddle" v="ds_0" >
-			<symbol id="id_ds_0" src="file:/symbols/mountain_pass_0.svg" symbol-width="16" />
+			<symbol id="id_ds_0" src="file:/symbols/mountain_pass_0.svg" symbol-percent="80" />
 			<caption symbol-id="id_ds_0" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 			<rule e="any" k="*" v="*" zoom-min="13">
 				<caption k="ele" symbol-id="id_ds_0" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 			</rule>
 		</rule>
 		<rule e="any" k="dir_saddle" v="ds_45" >
-			<symbol id="id_ds_45" src="file:/symbols/mountain_pass_45.svg" symbol-width="16" />
+			<symbol id="id_ds_45" src="file:/symbols/mountain_pass_45.svg" symbol-percent="80" />
 			<caption symbol-id="id_ds_45" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 			<rule e="any" k="*" v="*" zoom-min="13">
 				<caption k="ele" symbol-id="id_ds_45" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 			</rule>
 		</rule>
 		<rule e="any" k="dir_saddle" v="ds_90" >
-			<symbol id="id_ds_90" src="file:/symbols/mountain_pass_90.svg" symbol-width="16" />
+			<symbol id="id_ds_90" src="file:/symbols/mountain_pass_90.svg" symbol-percent="80" />
 			<caption symbol-id="id_ds_90" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 			<rule e="any" k="*" v="*" zoom-min="13">
 				<caption k="ele" symbol-id="id_ds_90" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
 			</rule>
 		</rule>
 		<rule e="any" k="dir_saddle" v="ds_135" >
-			<symbol id="id_ds_135" src="file:/symbols/mountain_pass_135.svg" symbol-width="16" />
+			<symbol id="id_ds_135" src="file:/symbols/mountain_pass_135.svg" symbol-percent="80" />
 			<caption symbol-id="id_ds_135" k="name" position="above" font-style="bold" font-size="10" fill="#797979" stroke="#ffffff" stroke-width="0.8" />
 			<rule e="any" k="*" v="*" zoom-min="13">
 				<caption k="ele" symbol-id="id_ds_135" position="below" font-style="bold" font-size="8" fill="#797979" stroke="#ffffff" stroke-width="2.0" />
@@ -132,13 +132,13 @@
 	<!-- safety_rope, ladder, rungs -->
 	<rule e="any" k="safety_rope|ladder|rungs" v="*" zoom-min="13">
 		<rule e="any" k="safety_rope" v="sr_yes" >
-			<symbol src="file:/symbols/safety_rope.svg" display="always" symbol-width="16" />
+			<symbol src="file:/symbols/safety_rope.svg" display="always" symbol-percent="80" />
 		</rule>
 		<rule e="any" k="ladder" v="ld_yes" >
-			<symbol src="file:/symbols/ladder.svg" display="always" symbol-width="16" />
+			<symbol src="file:/symbols/ladder.svg" display="always" symbol-percent="80" />
 		</rule>
 		<rule e="any" k="rungs" v="rn_yes" >
-			<symbol src="file:/symbols/rungs.svg" display="always" symbol-width="16" />
+			<symbol src="file:/symbols/rungs.svg" display="always" symbol-percent="80" />
 		</rule>
 	<rule e="way" k="safety_rope|ladder|rungs" v="sr_yes|ld_yes|rn_yes" zoom-min="14">
 		<line stroke="#BFBFBF" stroke-width="1.4" stroke-dasharray="1,5" stroke-linecap="round" />
