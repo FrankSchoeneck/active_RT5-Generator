@@ -410,16 +410,16 @@
 
 				<!-- Abzweige -->
 				<rule e="way" k="highway" v="tertiary_link" zoom-min="{$z-tertiary}">
-					<line stroke="{$hw-tertiary}" stroke-width="1.0" />
+					<line stroke="{$hw-tertiary}" stroke-width="1.4" />
 				</rule>
 				<rule e="way" k="highway" v="secondary_link" zoom-min="{$z-secondary}">
-					<line stroke="{$hw-secondary}" stroke-width="1.0" />
+					<line stroke="{$hw-secondary}" stroke-width="1.4" />
 				</rule>
 				<rule e="way" k="highway" v="primary_link" zoom-min="{$z-primary}">
-					<line stroke="{$hw-primary}" stroke-width="1.0" />
+					<line stroke="{$hw-primary}" stroke-width="1.4" />
 				</rule>
 				<rule e="way" k="highway" v="trunk_link" zoom-min="{$z-trunk_link}">
-					<line stroke="{$hw-trunk}" stroke-width="1.0" />
+					<line stroke="{$hw-trunk}" stroke-width="1.4" />
 				</rule>
 				<rule e="way" k="highway" v="motorway_link" zoom-min="{$z-motorway_link}">
 					<line stroke="{$hw-motorway}" stroke-width="1.0"/>
@@ -467,6 +467,10 @@
 				<!-- Wege wo der Zugang eine Lizenz oder eine Genehmigung verlangt -->
 				<rule e="way" k="access" v="permit" zoom-min="12">
 					<line stroke="#88DD0000" stroke-width="1.0" stroke-dasharray="1,12" stroke-linecap="round" />
+				</rule>
+				<!-- Symbole für Fahrtrichtung -->
+				<rule e="way" k="oneway" v="yes|1" zoom-min="16">
+					<lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="35" align-center="true" repeat="true" repeat-gap="100" repeat-start="2"/>
 				</rule>
 			</rule>
 		</rule>
