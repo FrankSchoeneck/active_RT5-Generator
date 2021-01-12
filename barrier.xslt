@@ -8,7 +8,7 @@
 				<line stroke="#545454" stroke-width="0.05" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="barrier" v="wall">
-				<line stroke="#C3C3C3" stroke-width="0.3" stroke-linecap="butt" />
+				<line stroke="#C3C3C3" stroke-width="0.5" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="barrier" v="retaining_wall">
 				<line stroke="#888888" stroke-width="0.05" stroke-linecap="butt" />

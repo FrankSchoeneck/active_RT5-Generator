@@ -83,7 +83,7 @@
 					<line stroke="{$cs-motorway}" stroke-width="2.0" stroke-linecap="butt"/>
 				</rule>
 				<rule e="way" k="highway" v="trunk" zoom-min="{$z-trunk}">
-					<line stroke="{$cs-trunk}" stroke-width="2.0" stroke-linecap="butt"/>
+					<line stroke="{$cs-trunk}" stroke-width="2.2" stroke-linecap="butt"/>
 				</rule>
 				<rule e="way" k="highway" v="trunk_link" zoom-min="{$z-trunk_link}">
 					<line stroke="{$cs-trunk}" stroke-width="2.0" stroke-linecap="butt"/>
@@ -226,10 +226,6 @@
 					<rule e="way" k="highway" v="construction" zoom-min="{$z-construction}">
 						<line stroke="{$cs-construction}" stroke-width="1.2" stroke-linecap="round" />
 					</rule>
-					<!-- Private Wege -->
-					<rule e="way" k="access" v="private|acc_no|destination" zoom-min="{$z-service}">
-						<line stroke="{$cs-service}" stroke-width="1.2" stroke-linecap="round" />
-					</rule>
 					<!-- Zufahrtsstrase -->
 					<rule e="way" k="highway" v="service|road" zoom-min="{$z-service}">
 						<line stroke="{$cs-service}" stroke-width="1.2" stroke-linecap="round" />
@@ -241,6 +237,18 @@
 					<rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
 						<line stroke="{$cs-living}" stroke-width="1.2" stroke-linecap="round" />
 					</rule>
+					<!-- Private Wege -->
+					<rule e="way" k="access" v="private|destination" zoom-min="{$z-living}">
+						<rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
+							<line stroke="#575757" stroke-width="1.2" stroke-linecap="round" />
+						</rule>
+					</rule>
+					<!-- Private Wege ohne Zugang-->
+					<rule e="way" k="access" v="acc_no" zoom-min="{$z-living}">
+						<rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
+							<line stroke="#C3C3C3" stroke-width="1.2" stroke-linecap="round" />
+						</rule>
+					</rule>
 					<!-- Nebenstraßen -->
 					<rule e="way" k="highway" v="tertiary|tertiary_link|raceway" zoom-min="{$z-tertiary}">
 						<line stroke="{$cs-tertiary}" stroke-width="1.8" stroke-linecap="butt" />
@@ -250,7 +258,10 @@
 						<line stroke="{$cs-secondary}" stroke-width="2.0" stroke-linecap="butt" />
 					</rule>
 					<!-- Bundesstrassen -->
-					<rule e="way" k="highway" v="primary|primary_link" zoom-min="{$z-primary}">
+					<rule e="way" k="highway" v="primary" zoom-min="{$z-primary}">
+						<line stroke="{$cs-primary}" stroke-width="2.2" stroke-linecap="butt" />
+					</rule>
+					<rule e="way" k="highway" v="primary_link" zoom-min="{$z-primary}">
 						<line stroke="{$cs-primary}" stroke-width="2.0" stroke-linecap="butt" />
 					</rule>
 					<!-- Schnellstrassen -->
@@ -258,11 +269,11 @@
 						<line stroke="{$cs-trunk}" stroke-width="2.0" stroke-linecap="butt" />
 					</rule>
 					<rule e="way" k="highway" v="trunk" zoom-min="{$z-trunk}">
-						<line stroke="{$cs-trunk}" stroke-width="2.0" stroke-linecap="butt" />
+						<line stroke="{$cs-trunk}" stroke-width="2.2" stroke-linecap="butt" />
 					</rule>
 					<!-- Autobahnen -->
 					<rule e="way" k="highway" v="motorway_link" zoom-min="{$z-motorway_link}">
-						<line stroke="{$cs-motorway}" stroke-width="1.8" stroke-linecap="butt" />
+						<line stroke="{$cs-motorway}" stroke-width="2.0" stroke-linecap="butt" />
 					</rule>
 					<rule e="way" k="highway" v="motorway" zoom-min="{$z-motorway}">
 						<line stroke="{$cs-motorway}" stroke-width="2.4" stroke-linecap="butt" />
@@ -322,7 +333,7 @@
 				<rule e="way" k="highway" v="track|byway" zoom-min="{$z-track}">
 					<!-- Wiesenweg|Unbefestigt -->
 					<rule e="way" k="tracktype" v="grade4|grade5" zoom-min="12">
-						<line stroke="{$hw-track}" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+						<line stroke="{$hw-track}" stroke-width="0.4" stroke-dasharray="14,6" stroke-linecap="butt" scale="stroke"/>
 					</rule>
 					<!-- Feldweg -->
 					<rule e="way" k="tracktype" v="grade3" zoom-min="12">
@@ -373,13 +384,6 @@
 						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-cycleway}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
-				<!-- Private Wege -->
-				<rule e="way" k="access" v="private|acc_no|destination" zoom-min="{$z-service}">
-					<line stroke="#CCCCCC" stroke-width="0.8" />
-					<rule e="way" k="*" v="*" zoom-min="16" >
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
-					</rule>
-				</rule>
 				<!-- Zufahrtsstrasse -->
 				<rule e="way" k="highway" v="service|road" zoom-min="{$z-service}">
 					<line stroke="{$hw-service}" stroke-width="0.8" />
@@ -407,6 +411,39 @@
 						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-construction}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
+				<!-- Private Wege -->
+				<rule e="way" k="access" v="private|acc_no|destination" zoom-min="{$z-service}">
+					<rule e="way" k="highway" v="turning_circle|mini_roundabout|pedestrian|service|road|living_street|residential|unclassified|construction">
+						<line stroke="#DBDBDB" stroke-width="0.8" />
+						<rule e="way" k="*" v="*" zoom-min="16" >
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+					</rule>
+					<rule e="way" k="highway" v="path|footway">
+						<line stroke="#9F9F9F" stroke-width="0.4" stroke-dasharray="8,6" stroke-linecap="butt" scale="stroke"/>
+						<rule e="way" k="*" v="*" zoom-min="16" >
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+					</rule>
+					<rule e="way" k="tracktype" v="grade1|grade2">
+						<line stroke="#DBDBDB" stroke-width="0.8" />
+						<rule e="way" k="*" v="*" zoom-min="16" >
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+					</rule>
+					<rule e="way" k="tracktype" v="grade3">
+						<line stroke="#9F9F9F" stroke-width="0.4" />
+						<rule e="way" k="*" v="*" zoom-min="16" >
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+					</rule>
+					<rule e="way" k="tracktype" v="grade4|grade5">
+						<line stroke="#9F9F9F" stroke-width="0.4" stroke-dasharray="14,6" stroke-linecap="butt" scale="stroke"/>
+						<rule e="way" k="*" v="*" zoom-min="16" >
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-service}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+					</rule>
+				</rule>
 
 				<!-- Abzweige -->
 				<rule e="way" k="highway" v="tertiary_link" zoom-min="{$z-tertiary}">
@@ -422,7 +459,7 @@
 					<line stroke="{$hw-trunk}" stroke-width="1.4" />
 				</rule>
 				<rule e="way" k="highway" v="motorway_link" zoom-min="{$z-motorway_link}">
-					<line stroke="{$hw-motorway}" stroke-width="1.0"/>
+					<line stroke="{$hw-motorway}" stroke-width="1.4"/>
 				</rule>
 
 				<!-- Hauptstrasse -->
@@ -440,7 +477,7 @@
 				</rule>
 				<!-- Bundesstrassen -->
 				<rule e="way" k="highway" v="primary" zoom-min="{$z-primary}">
-					<line stroke="{$hw-primary}" stroke-width="1.4" />
+					<line stroke="{$hw-primary}" stroke-width="1.6" />
 					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-primary}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
 						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
@@ -448,7 +485,7 @@
 				</rule>
 				<!-- Schnellstrassen -->
 				<rule e="way" k="highway" v="trunk" zoom-min="{$z-trunk}">
-					<line stroke="{$hw-trunk}" stroke-width="1.4" />
+					<line stroke="{$hw-trunk}" stroke-width="1.6" />
 					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-trunk}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
 						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="10" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
@@ -456,7 +493,7 @@
 				</rule>
 				<!-- Autobahnen -->
 				<rule e="way" k="highway" v="motorway" zoom-min="{$z-motorway}">
-					<line stroke="{$hw-motorway}" stroke-width="1.6" stroke-linecap="butt" />
+					<line stroke="{$hw-motorway}" stroke-width="1.8" stroke-linecap="butt" />
 					<pathText k="ref" repeat-start="50" repeat-gap="400" font-family="sans_serif" font-style="bold" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 				</rule>
 		

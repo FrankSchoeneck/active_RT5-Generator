@@ -282,12 +282,6 @@
 				<caption symbol-id="id_cave_entrance" k="name" font-style="bold" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
 			</rule>
 		</rule>
-		<rule e="node" k="natural" v="tree" zoom-min="14" cat="landscapefeat">
-			<symbol id="id_tree" src="file:/symbols/tree.svg" symbol-percent="60" />
-			<rule e="node" k="natural" v="*" zoom-min="16" >
-				<caption symbol-id="id_tree" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#164526" stroke="#FFFFFF" stroke-width="0.5" />
-			</rule>
-		</rule>
 		<rule e="node" k="natural" v="rock|stone|nat_stone" cat="landscapefeat">
 			<symbol id="id_rock" src="file:/symbols/rock.svg" symbol-percent="100" />
 			<rule e="node" k="natural" v="*" zoom-min="15" >

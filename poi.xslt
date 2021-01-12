@@ -25,13 +25,13 @@
 	<rule e="any" k="leisure" v="playground" zoom-min="16">
 		<symbol id="id_playground" src="file:/symbols/playground.svg"  symbol-percent="100" />
 		<rule e="any" k="*" v="*" zoom-min="16">
-			<caption symbol-id="id_playground" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+			<caption symbol-id="id_playground" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>
 	<rule e="node" k="leisure" v="picnic_table" zoom-min="16">
 		<symbol id="id_picnic_table" src="file:/symbols/picnic_site.svg" symbol-percent="70" />
 		<rule e="any" k="*" v="*" zoom-min="16">
-			<caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="bold" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+			<caption symbol-id="id_picnic_table" k="name" dy="-4" font-style="normal" font-family="sans_serif" font-size="8" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>
 

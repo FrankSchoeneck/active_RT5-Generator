@@ -1,3 +1,15 @@
+27.12.2020, geändert: Breite von Autobahnen, Schnellstrassen, Bundesstrassen und deren Abzweige
+
+14.12.2020, geändert: access=private|destination wird nun korrekt dargestellt 
+14.12.2020, geändert: access=no wird nun farblich separat dargestellt
+14.12.2020, geändert: Es wird nun der caption von Industriegebieten angezeigt.
+
+08.12.2020, geändert: Der caption von boundary=national_park|protect_class (geschützten Gebieten) wird nun besser dargestellt.
+08.12.2020, geändert: Der caption von wood (Waldgebieten) wird nun besser dargestellt.
+08.12.2020, geändert: Es wird nun der caption von Miltärgebieten angezeigt.
+
+07.12.2020, geändert. natural=tree entfernt.
+
 29.07.2020, geändert: Es wurde das komplette Farbenkonzept auf die neue Darstellung der Outdooractive.com Karte umgestellt
 
 10.07.2020, neu hinzu: tourism=attraction wird nun als Stern dargestellt

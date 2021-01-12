@@ -28,9 +28,15 @@
 		</rule>
 		<rule e="way" k="landuse" v="industrial">
 			<area fill="#DBDBDB" stroke="#e4e4e4" stroke-width="0.2" />
+			<rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
+				<caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5" />
+			</rule>
 		</rule>
 		<rule e="way" k="landuse" v="landfill">
 			<area fill="#EFF5E1" stroke="#556b2f" stroke-width="0.2" />
+			<rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
+				<caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5" />
+			</rule>
 		</rule>
 		<rule e="way" k="landuse" v="quarry">
 			<area fill="#E7E9EB" stroke="#556b2f" stroke-width="0.2" />
@@ -53,16 +59,16 @@
 
 	<!-- park captions -->
 	<rule e="way" k="leisure|landuse" v="park|village_green|recreation_ground" zoom-min="15">
-		<caption k="name" font-style="normal" font-size="10" fill="#1f5c1b" stroke="#FFFFFF" stroke-width="1.5" />
+		<caption k="name" font-style="normal" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 	</rule>
 
 	<!-- wood -->
 	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
-		<rule e="way" k="*" v="*" zoom-max="12" >
-			<area fill="#D9E8C7" />
+		<rule e="way" k="*" v="*" zoom-max="13" >
+			<area fill="#C9E0B4" />
 		</rule>
-		<rule e="way" k="*" v="*" zoom-min="13">
-			<area fill="#CBE0B3" />
+		<rule e="way" k="*" v="*" zoom-min="14">
+			<area fill="#C9E0B4" />
 			<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
 				<area src="file:/patterns/wood_coniferous.svg" symbol-width="40" />
 			</rule>
@@ -76,7 +82,7 @@
 		
 		<!-- wood captions -->
 		<rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
-			<caption k="name" font-style="bold" font-size="11" fill="#164526" stroke="#FFFFFF" stroke-width="1.5" />
+			<caption k="name" font-style="italic" font-size="12" fill="#77856D" stroke="#FFFFFF" stroke-width="1.5" />
 		</rule>
 	</rule>
 
@@ -91,6 +97,9 @@
 	<!-- military -->
 	<rule e="way" k="landuse" v="military" zoom-min="8" closed="yes">
 		<area fill="#F0DCD8" />
+		<rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
+			<caption k="name" font-style="normal" font-size="10" fill="#F0846E" stroke="#FFFFFF" stroke-width="1.5" />
+		</rule>
 	</rule>
 	
 	<rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes">
@@ -115,7 +124,7 @@
 		<area src="file:/patterns/cemetery.svg" symbol-width="40"/>
 		<symbol id="cemetery" src="file:/symbols/cemetery.svg" symbol-percent="110" />
 		<rule e="any" k="*" v="*" zoom-min="15">
-			<caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			<caption symbol-id="cemetery" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>
 	

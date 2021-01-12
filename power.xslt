@@ -6,7 +6,11 @@
 	<!-- Power areas and lines -->
 	<rule e="way" k="power" v="*" zoom-min="11">
 		<!-- power generator -->
-		<rule e="way" k="power" v="generator|station|sub_station|substation" >
+		<rule e="way" k="power" v="generator" >
+			<area fill="#DBDCDC" />
+		</rule>
+		<!-- power station -->
+		<rule e="way" k="power" v="station|sub_station|substation" >
 			<area fill="#C7C7C7" />
 		</rule>
 		<!--power line -->
