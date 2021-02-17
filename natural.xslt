@@ -74,6 +74,9 @@
 				<line stroke="#73dcff" stroke-width="0.3" />
 				<area fill="#50ff7396" />
 			</rule>
+			<rule e="way" k="natural" v="tree_row">
+				<line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round" />
+			</rule>
 		</rule>
 
 		<!-- Natural captions -->

@@ -1,3 +1,9 @@
+17.02.2021, geändert: contourlines (Höhenlinien) werden nun erst an Zoom 15 komplett dargestellt.
+
+19.01.2021, geändert: Texte der Strassennummern bei Landstrassen, Bundesstrassen und Schnellstrassen in Fett
+
+12.01.2021, neu hinzu: natural=tree_row (Baumreihe) wird nun angezeigt. OpenAndroMaps ab 12.01.2021 nötig
+
 27.12.2020, geändert: Breite von Autobahnen, Schnellstrassen, Bundesstrassen und deren Abzweige
 
 14.12.2020, geändert: access=private|destination wird nun korrekt dargestellt 

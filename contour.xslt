@@ -27,11 +27,13 @@
 			</rule>
 		</rule>
 		<rule e="way" k="contour_ext" v="*" zoom-min="14" zoom-max="14" cat="contourlines">
+			<!-- Estmal für ZOOM 14 deaktiviert, kann später gelöscht werden. 17.02.2021
 			<rule e="way" k="contour_ext" v="elevation_minor">
 				<line stroke="#A9641B" stroke-width="0.1" />
 			</rule>
+			-->
 			<rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
-				<line stroke="#A9641B" stroke-width="0.3" />
+				<line stroke="#A9641B" stroke-width="0.2" />
 				<pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false" />
 			</rule>
 		</rule>

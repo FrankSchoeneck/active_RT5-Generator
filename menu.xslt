@@ -23,7 +23,7 @@
 				<cat id="hikingnodes" />
 			</layer>
 
-			<layer id="L_contourlines" enabled="false" visible="false">
+			<layer id="L_contourlines" enabled="true" visible="false">
 				<name lang="de" value="Höhenlinien" />
 				<name lang="en" value="Contour lines" />
 				<cat id="contourlines" />

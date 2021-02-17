@@ -66,6 +66,7 @@
 <xsl:variable name="fs-secondary">8</xsl:variable>
 <xsl:variable name="fs-primary">9</xsl:variable>
 <xsl:variable name="fs-trunk">9</xsl:variable>
+<xsl:variable name="fs-motorway">12</xsl:variable>
 
 
 <xsl:template name="highway">
@@ -472,7 +473,7 @@
 					<line stroke="{$hw-secondary}" stroke-width="1.4" />
 					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-secondary}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
-						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
+						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="{$fs-secondary}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Bundesstrassen -->
@@ -480,7 +481,7 @@
 					<line stroke="{$hw-primary}" stroke-width="1.6" />
 					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-primary}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
-						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
+						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="{$fs-primary}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Schnellstrassen -->
@@ -488,13 +489,13 @@
 					<line stroke="{$hw-trunk}" stroke-width="1.6" />
 					<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-trunk}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					<rule e="way" k="network|hknetwork" v="~" zoom-min="14"> <!-- Nötig damit bei OAM keine Radwege/Wanderwege Namen angezeigt werden -->
-						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="normal" font-size="10" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
+						<pathText k="ref" repeat-start="50" repeat-gap="200" font-family="sans_serif" font-style="bold" font-size="{$fs-trunk}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
 				<!-- Autobahnen -->
 				<rule e="way" k="highway" v="motorway" zoom-min="{$z-motorway}">
 					<line stroke="{$hw-motorway}" stroke-width="1.8" stroke-linecap="butt" />
-					<pathText k="ref" repeat-start="50" repeat-gap="400" font-family="sans_serif" font-style="bold" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
+					<pathText k="ref" repeat-start="50" repeat-gap="400" font-family="sans_serif" font-style="bold" font-size="{$fs-motorway}" fill="#000000" stroke="#FFFFFF" stroke-width="2.0" />
 				</rule>
 		
 				<!-- Maut pflichtige werden mit roten Punkten versehen -->
