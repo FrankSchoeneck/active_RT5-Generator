@@ -565,24 +565,26 @@
 		</rule>
 
 		<!-- Text in Wanderwegemarkierung, OpenAndroMaps only -->
-		<rule e="any" k="osmc_foreground" v="~|no|false"> <!-- nur wenn foreground nichts enthält -->
-			<rule e="any" k="osmc_textcolor" v="~|wmtc_black|wmtc_brown|wmtc_purple|wmtc_red|wmtc_green|wmtc_blue|wmtc_orange">
-				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
-				</rule>
-				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
-				</rule>
+		<!-- Erstmal testweise deaktiviert, geht wohl nun ohne besser, kann später entfernt werden -->
+		<!-- nur wenn foreground nichts enthält -->
+		<!--<rule e="any" k="osmc_foreground" v="~|no|false"> --> 
+		<rule e="any" k="osmc_textcolor" v="~|wmtc_black|wmtc_brown|wmtc_purple|wmtc_red|wmtc_green|wmtc_blue|wmtc_orange">
+			<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+				<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
 			</rule>
-			<rule e="any" k="osmc_textcolor" v="wmtc_grey|wmtc_white|wmtc_yellow">
-				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
-				</rule>
-				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
-				</rule>
+			<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
+				<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
 			</rule>
 		</rule>
+		<rule e="any" k="osmc_textcolor" v="wmtc_grey|wmtc_white|wmtc_yellow">
+			<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+				<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
+			</rule>
+			<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
+				<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
+			</rule>
+		</rule>
+		<!--</rule>-->
 	</rule>
 </xsl:template>
 
