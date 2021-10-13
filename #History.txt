@@ -1,3 +1,5 @@
+13.10.2021, neu hinzu: Wanderwegesymbol für wmfg_bridleway (Reitwege) ergänzt
+
 12.03.2021, geändert: Wanderwegesymbole, die Beschriftung wird nun nicht mehr abhängig vom Vordergrundsymbol angezeigt
 11.03.2021, geändert: Wanderwegesymbole, die Beschriftung hat nun eine eigene priority, damit diese über den Vordergrungsymbolen dargestellt wird.
 

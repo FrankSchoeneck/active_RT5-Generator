@@ -530,6 +530,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_ammonit">
 			<symbol src="file:/osmc/frg_ammonit.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_bridleway">
+			<symbol src="file:/osmc/frg_bridleway.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_heart">
 			<symbol src="file:/osmc/frg_heart.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
