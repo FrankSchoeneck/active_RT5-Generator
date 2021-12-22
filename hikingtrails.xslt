@@ -40,22 +40,28 @@
 			<line stroke="#95F2221E" stroke-width="3.0" />
 			<line stroke="#95E7B3B3" stroke-width="2.0" />
 		</rule>
-		<rule e="way" k="hknetwork" v="lwn|rwn" zoom-min="10" zoom-max="11">
+		<rule e="way" k="hknetwork" v="own|lwn|rwn" zoom-min="10" zoom-max="11">
 			<line stroke="#95db8c8c" stroke-width="2.0" />
 		</rule>
 
-		<rule e="way" k="hknetwork" v="iwn|nwn|lwn|rwn" zoom-min="12">
+		<rule e="way" k="hknetwork" v="own|iwn|nwn|lwn|rwn" zoom-min="12">
 			<line dy="-0.6" stroke="#80e60707" stroke-width="0.2" />
 			<line stroke="#60f66966" stroke-width="1.0" />
 			<line dy="0.6" stroke="#80e60707" stroke-width="0.2" />
 		</rule>
 
 		<!-- TEXT TO PATH -->
-		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="11">
-			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
+		<rule e="way" k="hknetwork" v="own|lwn" zoom-min="13">
+			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
 		</rule>
-		<rule e="way" k="hknetwork" v="rwn|lwn" zoom-min="13">
-			<pathText k="ref" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" />
+		<rule e="way" k="hknetwork" v="rwn" zoom-min="13">
+			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="30" repeat-gap="100" />
+		</rule>
+		<rule e="way" k="hknetwork" v="nwn" zoom-min="11">
+			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
+		</rule>
+		<rule e="way" k="hknetwork" v="iwn" zoom-min="11">
+			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
 		</rule>
 	</rule>
 
@@ -68,12 +74,23 @@
 	<!-- HIKING PATH OSMC:SYMBOL für OpenAndroMaps -->
 	<rule e="any" k="osmc" v="osmc_yes" zoom-min="14" cat="trail_markings"> <!-- rule für cat=Wegemarkierungen -->
 		<!-- ================= OSMC_BACKGROUND ======================== -->
+		<rule e="any" k="osmc_background" v="~|no|false"> <!-- nur wenn background nichts enthält -->
+			<symbol src="file:/osmc/bcg_white.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+
 		<rule e="any" k="osmc_background" v="wmbg_black" >
 			<symbol src="file:/osmc/bcg_black.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_background" v="wmbg_black_circle">
 			<symbol src="file:/osmc/bcg_black_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_black_frame">
+			<symbol src="file:/osmc/bcg_black_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_black_round">
+			<symbol src="file:/osmc/bcg_black_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_blue">
 			<symbol src="file:/osmc/bcg_blue.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
@@ -86,9 +103,20 @@
 		<rule e="any" k="osmc_background" v="wmbg_blue_round">
 			<symbol src="file:/osmc/bcg_blue_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_brown">
 			<symbol src="file:/osmc/bcg_brown.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_brown_circle">
+			<symbol src="file:/osmc/bcg_brown_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_brown_frame">
+			<symbol src="file:/osmc/bcg_brown_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_brown_round">
+			<symbol src="file:/osmc/bcg_brown_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_green">
 			<symbol src="file:/osmc/bcg_green.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
@@ -101,12 +129,33 @@
 		<rule e="any" k="osmc_background" v="wmbg_green_round">
 			<symbol src="file:/osmc/bcg_green_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_orange">
 			<symbol src="file:/osmc/bcg_orange.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_orange_circle">
+			<symbol src="file:/osmc/bcg_orange_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_orange_frame">
+			<symbol src="file:/osmc/bcg_orange_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_orange_round">
+			<symbol src="file:/osmc/bcg_orange_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_purple">
 			<symbol src="file:/osmc/bcg_purple.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_purple_circle">
+			<symbol src="file:/osmc/bcg_purple_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_purple_frame">
+			<symbol src="file:/osmc/bcg_purple_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_purple_round">
+			<symbol src="file:/osmc/bcg_purple_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_red">
 			<symbol src="file:/osmc/bcg_red.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
@@ -119,15 +168,20 @@
 		<rule e="any" k="osmc_background" v="wmbg_red_round">
 			<symbol src="file:/osmc/bcg_red_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_white">
 			<symbol src="file:/osmc/bcg_white.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_background" v="wmbg_white_circle">
 			<symbol src="file:/osmc/bcg_white_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_white_frame">
+			<symbol src="file:/osmc/bcg_white_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_background" v="wmbg_white_round">
 			<symbol src="file:/osmc/bcg_white_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		
 		<rule e="any" k="osmc_background" v="wmbg_yellow">
 			<symbol src="file:/osmc/bcg_yellow.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
@@ -137,14 +191,31 @@
 		<rule e="any" k="osmc_background" v="wmbg_yellow_frame">
 			<symbol src="file:/osmc/bcg_yellow_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_yellow_round">
+			<symbol src="file:/osmc/bcg_yellow_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
+		<rule e="any" k="osmc_background" v="wmbg_gray">
+			<symbol src="file:/osmc/bcg_gray.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_gray_circle">
+			<symbol src="file:/osmc/bcg_gray_circle.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_gray_frame">
+			<symbol src="file:/osmc/bcg_gray_frame.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_background" v="wmbg_gray_round">
+			<symbol src="file:/osmc/bcg_gray_round.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />
+		</rule>
+		
 
 		<!-- ================= OSMC_FOREGROUND ======================== -->
 		<!-- =============== FRG BLUE ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_arch">
 			<symbol src="file:/osmc/frg_blue_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_blue_l">
-			<symbol src="file:/osmc/frg_blue_L.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		<rule e="any" k="osmc_foreground" v="wmfg_blue_backslash" >
+			<symbol src="file:/osmc/frg_blue_backslash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_bar">
 			<symbol src="file:/osmc/frg_blue_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -170,6 +241,12 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_fork" >
 			<symbol src="file:/osmc/frg_blue_fork.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_blue_hiker" >
+			<symbol src="file:/osmc/frg_blue_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_blue_l">
+			<symbol src="file:/osmc/frg_blue_L.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_lower" >
 			<symbol src="file:/osmc/frg_blue_lower.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -191,6 +268,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_triangle" >
 			<symbol src="file:/osmc/frg_blue_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_line" >
+			<symbol src="file:/osmc/frg_blue_triangle_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_triangle_turned" >
 			<symbol src="file:/osmc/frg_blue_triangle_turned.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -200,6 +280,7 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_blue_x" >
 			<symbol src="file:/osmc/frg_blue_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		
 		<!-- =============== FRG RED ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_red_arch" >
 			<symbol src="file:/osmc/frg_red_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -225,6 +306,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_red_diamond" >
 			<symbol src="file:/osmc/frg_red_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_red_diamond_line" >
+			<symbol src="file:/osmc/frg_red_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_dot" >
 			<symbol src="file:/osmc/frg_red_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -234,11 +318,11 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_red_drop_line" >
 			<symbol src="file:/osmc/frg_red_drop_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_red_hiker" >
-			<symbol src="file:/osmc/frg_red_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_fork" >
 			<symbol src="file:/osmc/frg_red_fork.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_red_hiker" >
+			<symbol src="file:/osmc/frg_red_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_l" >
 			<symbol src="file:/osmc/frg_red_L.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -255,6 +339,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_red_right" >
 			<symbol src="file:/osmc/frg_red_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_red_shell" >
+			<symbol src="file:/osmc/frg_red_shell.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_slash" >
 			<symbol src="file:/osmc/frg_red_slash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -264,15 +351,22 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_red_triangle" >
 			<symbol src="file:/osmc/frg_red_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_red_triangle_line" >
+			<symbol src="file:/osmc/frg_red_triangle_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_triangle_turned" >
 			<symbol src="file:/osmc/frg_red_triangle_turned.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_turned_t" >
 			<symbol src="file:/osmc/frg_red_turned_T.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_red_wheel" >
+			<symbol src="file:/osmc/frg_red_wheel.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_red_x" >
 			<symbol src="file:/osmc/frg_red_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		
 		<!-- =============== FRG YELLOW ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_arch" >
 			<symbol src="file:/osmc/frg_yellow_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -298,14 +392,20 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond" >
 			<symbol src="file:/osmc/frg_yellow_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_diamond_line" >
+			<symbol src="file:/osmc/frg_yellow_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_dot" >
 			<symbol src="file:/osmc/frg_yellow_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_yellow_hiker" >
-			<symbol src="file:/osmc/frg_yellow_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_fork" >
 			<symbol src="file:/osmc/frg_yellow_fork.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_hexagon" >
+			<symbol src="file:/osmc/frg_yellow_hexagon.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_hiker" >
+			<symbol src="file:/osmc/frg_yellow_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_l" >
 			<symbol src="file:/osmc/frg_yellow_L.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -325,6 +425,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_right" >
 			<symbol src="file:/osmc/frg_yellow_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_shell" >
+			<symbol src="file:/osmc/frg_yellow_shell.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_slash" >
 			<symbol src="file:/osmc/frg_yellow_slash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -334,21 +437,34 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle" >
 			<symbol src="file:/osmc/frg_yellow_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_line" >
+			<symbol src="file:/osmc/frg_yellow_triangle_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_yellow_triangle_turned" >
+			<symbol src="file:/osmc/frg_yellow_triang_turned.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_turned_t" >
 			<symbol src="file:/osmc/frg_yellow_turned_T.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_yellow_x" >
 			<symbol src="file:/osmc/frg_yellow_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		
 		<!-- =============== FRG BLACK	 ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_black_arch" >
 			<symbol src="file:/osmc/frg_black_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_backslash" >
+			<symbol src="file:/osmc/frg_black_backslash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_bar" >
 			<symbol src="file:/osmc/frg_black_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_circle" >
 			<symbol src="file:/osmc/frg_black_circle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_corner" >
+			<symbol src="file:/osmc/frg_black_corner.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_crest" >
 			<symbol src="file:/osmc/frg_black_crest.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -359,14 +475,23 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_black_diamond" >
 			<symbol src="file:/osmc/frg_black_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_diamond_line" >
+			<symbol src="file:/osmc/frg_black_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_dot" >
 			<symbol src="file:/osmc/frg_black_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_fork" >
 			<symbol src="file:/osmc/frg_black_fork.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_hiker" >
+			<symbol src="file:/osmc/frg_black_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_horse" >
 			<symbol src="file:/osmc/frg_black_horse.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_lower" >
+			<symbol src="file:/osmc/frg_black_lower.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_pointer" >
 			<symbol src="file:/osmc/frg_black_pointer.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -383,15 +508,22 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_black_right" >
 			<symbol src="file:/osmc/frg_black_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_stripe" >
+			<symbol src="file:/osmc/frg_black_stripe.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_triangle" >
 			<symbol src="file:/osmc/frg_black_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_triangle_line" >
 			<symbol src="file:/osmc/frg_black_triangle_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_black_turned_t" >
+			<symbol src="file:/osmc/frg_black_turned_T.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_black_x" >
 			<symbol src="file:/osmc/frg_black_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		
 		<!-- =============== FRG GREEN ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_green_arch" >
 			<symbol src="file:/osmc/frg_green_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -417,17 +549,20 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_green_diamond" >
 			<symbol src="file:/osmc/frg_green_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_green_diamond_line" >
+			<symbol src="file:/osmc/frg_green_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_green_dot" >
 			<symbol src="file:/osmc/frg_green_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_green_drop_line" >
 			<symbol src="file:/osmc/frg_green_drop_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_green_hiker" >
-			<symbol src="file:/osmc/frg_green_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_green_fork" >
 			<symbol src="file:/osmc/frg_green_fork.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_green_hiker" >
+			<symbol src="file:/osmc/frg_green_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_green_horse" >
 			<symbol src="file:/osmc/frg_green_horse.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -465,18 +600,28 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_green_turned_t" >
 			<symbol src="file:/osmc/frg_green_turned_T.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_green_wheel" >
+			<symbol src="file:/osmc/frg_green_wheel.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_green_x" >
 			<symbol src="file:/osmc/frg_green_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		
 		<!-- =============== FRG WHITE	 ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_white_arch" >
 			<symbol src="file:/osmc/frg_white_arch.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_white_backslash" >
+			<symbol src="file:/osmc/frg_white_backslash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_bar" >
 			<symbol src="file:/osmc/frg_white_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_circle" >
 			<symbol src="file:/osmc/frg_white_circle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_white_corner" >
+			<symbol src="file:/osmc/frg_white_corner.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_cross" >
 			<symbol src="file:/osmc/frg_white_cross.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -511,6 +656,9 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_white_right" >
 			<symbol src="file:/osmc/frg_white_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_white_slash" >
+			<symbol src="file:/osmc/frg_white_slash.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_stripe" >
 			<symbol src="file:/osmc/frg_white_stripe.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -520,12 +668,129 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_white_triangle_line" >
 			<symbol src="file:/osmc/frg_white_triangle_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_white_triangle_turned" >
+			<symbol src="file:/osmc/frg_white_triangle_turned.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_turned_t" >
 			<symbol src="file:/osmc/frg_white_turned_T.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_white_x" >
 			<symbol src="file:/osmc/frg_white_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
+
+		<!-- =============== FRG BROWN	 ================ -->
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_bar" >
+			<symbol src="file:/osmc/frg_brown_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_diamond" >
+			<symbol src="file:/osmc/frg_brown_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_dot" >
+			<symbol src="file:/osmc/frg_brown_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_hiker" >
+			<symbol src="file:/osmc/frg_brown_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_lower" >
+			<symbol src="file:/osmc/frg_brown_lower.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_pointer" >
+			<symbol src="file:/osmc/frg_brown_pointer.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_rectangle" >
+			<symbol src="file:/osmc/frg_brown_rectangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_stripe" >
+			<symbol src="file:/osmc/frg_brown_stripe.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_brown_x" >
+			<symbol src="file:/osmc/frg_brown_x.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+
+		<!-- =============== FRG GRAY	 ================ -->
+		<rule e="any" k="osmc_foreground" v="wmfg_gray_bar" >
+			<symbol src="file:/osmc/frg_gray_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_gray_pointer" >
+			<symbol src="file:/osmc/frg_gray_pointer.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_gray_triangle" >
+			<symbol src="file:/osmc/frg_gray_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+
+		<!-- =============== FRG ORANGE ================ -->
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_bar" >
+			<symbol src="file:/osmc/frg_orange_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_circle" >
+			<symbol src="file:/osmc/frg_orange_circle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_cross" >
+			<symbol src="file:/osmc/frg_orange_cross.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_diamond" >
+			<symbol src="file:/osmc/frg_orange_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_diamond_line" >
+			<symbol src="file:/osmc/frg_orange_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_dot" >
+			<symbol src="file:/osmc/frg_orange_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_hexagon" >
+			<symbol src="file:/osmc/frg_orange_hexagone.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_hiker" >
+			<symbol src="file:/osmc/frg_orange_hiker.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_lower" >
+			<symbol src="file:/osmc/frg_orange_lower.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_pointer" >
+			<symbol src="file:/osmc/frg_orange_pointer.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_rectangle" >
+			<symbol src="file:/osmc/frg_orange_rectangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_right" >
+			<symbol src="file:/osmc/frg_orange_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_stripe" >
+			<symbol src="file:/osmc/frg_orange_stripe.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_orange_triangle" >
+			<symbol src="file:/osmc/frg_orange_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+
+		<!-- =============== FRG PURPLE ================ -->
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_bar" >
+			<symbol src="file:/osmc/frg_purple_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_circle" >
+			<symbol src="file:/osmc/frg_purple_circle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_diamond" >
+			<symbol src="file:/osmc/frg_purple_diamond.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_dot" >
+			<symbol src="file:/osmc/frg_purple_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_lower" >
+			<symbol src="file:/osmc/frg_purple_lower.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_pointer" >
+			<symbol src="file:/osmc/frg_purple_pointer.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_rectangle" >
+			<symbol src="file:/osmc/frg_purple_rectangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_stripe" >
+			<symbol src="file:/osmc/frg_purple_stripe.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		<rule e="any" k="osmc_foreground" v="wmfg_purple_triangle" >
+			<symbol src="file:/osmc/frg_purple_triangle.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
+		</rule>
+		
 		<!-- =============== FRG SYMBOLS	 ================ -->
 		<rule e="any" k="osmc_foreground" v="wmfg_ammonit">
 			<symbol src="file:/osmc/frg_ammonit.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
@@ -542,18 +807,6 @@
 		<rule e="any" k="osmc_foreground" v="wmfg_mine">
 			<symbol src="file:/osmc/frg_mine.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_orange_bar">
-			<symbol src="file:/osmc/frg_orange_bar.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_orange_diamond_line">
-			<symbol src="file:/osmc/frg_orange_diamond_line.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_orange_dot">
-			<symbol src="file:/osmc/frg_orange_dot.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
-		<rule e="any" k="osmc_foreground" v="wmfg_orange_right" >
-			<symbol src="file:/osmc/frg_orange_right.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
-		</rule>
 		<rule e="any" k="osmc_foreground" v="wmfg_shell">
 			<symbol src="file:/osmc/frg_shell.svg" display="always" priority="{$osmc-frg-sym-prio}" symbol-percent="{$osmc-frg-sym-perc}" />
 		</rule>
@@ -568,26 +821,88 @@
 		</rule>
 
 		<!-- Text in Wanderwegemarkierung, OpenAndroMaps only -->
-		<!-- Erstmal testweise deaktiviert, geht wohl nun ohne besser, kann später entfernt werden -->
-		<!-- nur wenn foreground nichts enthält -->
-		<!--<rule e="any" k="osmc_foreground" v="~|no|false"> --> 
-		<rule e="any" k="osmc_textcolor" v="~|wmtc_black|wmtc_brown|wmtc_purple|wmtc_red|wmtc_green|wmtc_blue|wmtc_orange">
-			<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-				<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
+		<rule e="any" k="osmc_foreground" v="~|no|false"> <!-- nur wenn foreground nichts enthält -->
+			<rule e="any" k="osmc_textcolor" v="~|wmtc_black">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
 			</rule>
-			<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-				<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#000000" stroke="#E5FFFFFF" stroke-width="1.0" />
+			<rule e="any" k="osmc_textcolor" v="wmtc_red">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#FF3333" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_green">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#267F00" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_blue">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#0242C1" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_brown">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#BC6823" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_orange">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#EB8D00" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_purple">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#C17FFF" stroke="#E5FFFFFF" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_white">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_yellow">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#F2DB0A" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
+			</rule>
+			<rule e="any" k="osmc_textcolor" v="wmtc_grey">
+				<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
+					<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
+				<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4|wmtl_5">
+					<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#CCCCCC" stroke="#E5000000" stroke-width="1.0" />
+				</rule>
 			</rule>
 		</rule>
-		<rule e="any" k="osmc_textcolor" v="wmtc_grey|wmtc_white|wmtc_yellow">
-			<rule e="any" k="osmc_text_len" v="wmtl_1|wmtl_2">
-				<caption k="name" priority="{$osmc-wmtl_1-prio}" display="always" font-size="{$osmc-wmtl_1-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
-			</rule>
-			<rule e="any" k="osmc_text_len" v="wmtl_3|wmtl_4">
-				<caption k="name" priority="{$osmc-wmtl_3-prio}" display="always" font-size="{$osmc-wmtl_3-font-size}" position="center" font-style="bold" fill="#FFFFFF" stroke="#E5000000" stroke-width="1.0" />
-			</rule>
-		</rule>
-		<!--</rule>-->
 	</rule>
 </xsl:template>
 

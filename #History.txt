@@ -1,3 +1,20 @@
+24.11.2021, geändert: Wanderwegenamen werden nun in definierten Abständen abgezeigt
+
+14.11.2021, geändert: Wenn bei OSMC Symbolen keine Hintergrund angegeben ist wird nun ein weisser Hintergrund angezeigt
+
+12.11.2021, geändert: Symbol für via_ferrata geändert
+
+09.11.2021, neu hinzu: Kostenpflichtige Parkplätze werden nun mit einem eigenen Symbol (kleines € Zeichen neben dem P) dargestellt
+09.11.2021, geändert: Bei Parkplätzen wird nun auch, ab Zoom 16, der Name angezeigt
+
+02.11.2021, neu hinzu: Bei OSMC Symbolen die Textfarben auf alle Farbmöglichkeiten erweitert
+
+20.10.2021, geändert: Darstellung pedestrian (Fussgängerzone) verbessert
+20.10.2021, neu hinzu: hillshading tag hinzugefügt, funktioniert nur mit APP's die dies auch unterstützen
+
+15.10.2021, neu hinzu: Neue Symbole für die erweiteren OSMC Symbole bei OpenAndroMaps ab 25.12.2021
+15.10.2021, geändert: Wanderwegenamen kommen nun bei OpenAndroMaps ab 25.12.2021 aus dem ref_hike Tag
+
 13.10.2021, neu hinzu: Wanderwegesymbol für wmfg_bridleway (Reitwege) ergänzt
 
 12.03.2021, geändert: Wanderwegesymbole, die Beschriftung wird nun nicht mehr abhängig vom Vordergrundsymbol angezeigt

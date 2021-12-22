@@ -215,10 +215,6 @@
 							<line stroke="{$cs-track}" stroke-width="1.1" stroke-linecap="butt"/>
 						</rule>
 					</rule>
-					<!-- Fussgängerzone -->
-					<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}">
-						<line stroke="{$cs-pedestrian}" stroke-width="1.3" />
-					</rule>
 					<!-- Radweg -->
 					<rule e="way" k="highway" v="cycleway" zoom-min="{$z-cycleway}">
 						<line stroke="{$cs-cycleway}" stroke-width="0.7" />
@@ -371,13 +367,6 @@
 						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
 					</rule>
 				</rule>
-				<!-- Fussgängerzone -->
-				<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}">
-					<line stroke="{$hw-pedestrian}" stroke-width="1.1" />
-					<rule e="way" k="*" v="*" zoom-min="16">
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-pedestrian}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
-					</rule>
-				</rule>
 				<!-- Radweg -->
 				<rule e="way" k="highway" v="cycleway" zoom-min="{$z-cycleway}">
 					<line stroke="{$hw-cycleway}" stroke-width="0.4" />
@@ -516,33 +505,47 @@
 </xsl:template>
 
 <xsl:template name="highway_area">
-    <rule e="way" k="area" v="yes|true">
-		<rule e="way" k="highway" v="*">
-            <rule e="way" k="highway" v="footway|path" zoom-min="{$z-footway}">
-                <area fill="#E8D1E2" stroke="#585858" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}">
-                <area fill="{$hw-pedestrian}" stroke="{$cs-pedestrian}" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="service" zoom-min="{$z-service}">
-                <area fill="{$hw-service}" stroke="{$cs-service}" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="unclassified" zoom-min="{$z-residential}">
-                <area fill="{$hw-residential}" stroke="{$cs-residential}" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="residential" zoom-min="{$z-residential}">
-                <area fill="{$hw-residential}" stroke="{$cs-residential}" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="road" zoom-min="{$z-residential}">
-                <area fill="#ffffff"/>
-            </rule>
-            <rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
-                <area fill="{$hw-living}" stroke="{$cs-living}" stroke-width="0.1"/>
-            </rule>
-            <rule e="way" k="highway" v="*" zoom-min="15">
-              <caption k="name" font-style="bold" font-size="{$fs-service}" fill="#000000" stroke="#ffffff" stroke-width="3"/>
-            </rule>
-        </rule>
+	<rule e="way" k="tunnel" v="~|no|false">
+		<!-- Fussgängerzone -->
+		<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}" closed="no">
+			<line stroke="{$cs-pedestrian}" stroke-width="1.3" />
+			<line stroke="{$hw-pedestrian}" stroke-width="1.1" />
+			<rule e="way" k="*" v="*" zoom-min="16">
+				<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-pedestrian}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+			</rule>
+		</rule>
+		<rule e="way" k="highway" v="pedestrian" zoom-min="{$z-pedestrian}" closed="yes">
+			<area fill="{$hw-pedestrian}"/>
+			<rule e="any" k="*" v="*" zoom-min="15">
+				<caption k="name" font-style="bold" font-size="{$fs-pedestrian}" fill="#000000" stroke="#ffffff" stroke-width="3"/>
+			</rule>
+		</rule>
+		
+		<rule e="way" k="area" v="yes|true">
+			<rule e="way" k="highway" v="*">
+				<rule e="way" k="highway" v="footway|path" zoom-min="{$z-footway}">
+					<area fill="#E8D1E2" stroke="#585858" stroke-width="0.1"/>
+				</rule>
+				<rule e="way" k="highway" v="service" zoom-min="{$z-service}">
+					<area fill="{$hw-service}" stroke="{$cs-service}" stroke-width="0.1"/>
+				</rule>
+				<rule e="way" k="highway" v="unclassified" zoom-min="{$z-residential}">
+					<area fill="{$hw-residential}" stroke="{$cs-residential}" stroke-width="0.1"/>
+				</rule>
+				<rule e="way" k="highway" v="residential" zoom-min="{$z-residential}">
+					<area fill="{$hw-residential}" stroke="{$cs-residential}" stroke-width="0.1"/>
+				</rule>
+				<rule e="way" k="highway" v="road" zoom-min="{$z-residential}">
+					<area fill="#ffffff"/>
+				</rule>
+				<rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
+					<area fill="{$hw-living}" stroke="{$cs-living}" stroke-width="0.1"/>
+				</rule>
+				<rule e="way" k="highway" v="*" zoom-min="15">
+				  <caption k="name" font-style="bold" font-size="{$fs-service}" fill="#000000" stroke="#ffffff" stroke-width="3"/>
+				</rule>
+			</rule>
+		</rule>
     </rule>  
 </xsl:template>
 

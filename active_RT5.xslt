@@ -50,7 +50,6 @@
 	<xsl:call-template name="landuse"/>
 	<xsl:call-template name="leisure"/>
 	<xsl:call-template name="tourism_areas"/>
-	<xsl:call-template name="natural_ways"/>
 	<xsl:call-template name="waterways"/>
 	<xsl:call-template name="waterbodies"/>
 	<xsl:call-template name="amenity_ways"/>
@@ -58,6 +57,7 @@
 	<xsl:call-template name="contour_lines"/>
 	<xsl:call-template name="aeroway"/>
 	<xsl:call-template name="highway_area"/>
+	<xsl:call-template name="natural_ways"/>
 	<xsl:call-template name="railway_tunnel"/>
 	<xsl:call-template name="railway_no_tunnel"/>
 	<xsl:call-template name="buildings"/>

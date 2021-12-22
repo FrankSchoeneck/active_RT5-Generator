@@ -5,8 +5,11 @@
 	<xsl:template name="buildings">
 		<!-- um Basilika bei OAM darzustellen -->
 		<rule e="way" k="building" v="~" zoom-min="15">
-			<rule e="way" k="amenity" v="place_of_worship">
+			<rule e="way" k="amenity" v="place_of_worship" zoom-max="17">
 				<area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
+			</rule>
+			<rule e="way" k="amenity" v="place_of_worship" zoom-min="18">
+				<area fill="#A0c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
 			</rule>
 		</rule>
 		<rule e="way" k="building" v="~" zoom-min="17">
@@ -16,11 +19,18 @@
 		</rule>
 		
 		<!-- building -->
-		<rule e="way" k="building" v="*" zoom-min="15">
+		<rule e="way" k="building" v="*" zoom-min="15" zoom-max="17">
 			<area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
 		</rule>
-		<rule e="way" k="building" v="construction" zoom-min="15"> <!-- only OpenAndroMaps -->
+		<rule e="way" k="building" v="*" zoom-min="18">
+			<area fill="#A0c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
+		</rule>
+		<rule e="way" k="building" v="construction" zoom-min="15" zoom-max="17"> <!-- only OpenAndroMaps -->
 			<area fill="#c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
+			<line stroke="#C0F8F8F8" stroke-width="0.3" stroke-dasharray="2,2" />
+		</rule>
+		<rule e="way" k="building" v="construction" zoom-min="18"> <!-- only OpenAndroMaps -->
+			<area fill="#A0c7c7c7" stroke="#b0b0b0" stroke-width="0.2" />
 			<line stroke="#C0F8F8F8" stroke-width="0.3" stroke-dasharray="2,2" />
 		</rule>
 		<rule e="way" k="building" v="*" zoom-min="18">

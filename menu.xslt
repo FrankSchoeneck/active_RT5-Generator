@@ -23,7 +23,7 @@
 				<cat id="hikingnodes" />
 			</layer>
 
-			<layer id="L_contourlines" enabled="true" visible="false">
+			<layer id="L_contourlines" enabled="false" visible="false">
 				<name lang="de" value="Höhenlinien" />
 				<name lang="en" value="Contour lines" />
 				<cat id="contourlines" />
@@ -89,6 +89,8 @@
 			</layer>
 
 		</stylemenu>
+		
+		<hillshading zoom-min="8" zoom-max="18" />
     </xsl:template>
 
 </xsl:stylesheet>

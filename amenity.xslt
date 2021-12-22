@@ -26,10 +26,21 @@
 		</rule>
 		<rule e="any" k="access" v="~|yes|public">
 			<rule e="any" k="parking" v="~">
-				<symbol src="file:/symbols/parking.svg" symbol-percent="50" />
-			</rule>
-			<rule e="any" k="parking" v="multi-storey">
-				<symbol src="file:/symbols/parking_multi-storey.svg" symbol-percent="50" />
+				<rule e="any" k="fee" v="~">
+					<symbol id="id_parking" src="file:/symbols/parking.svg" symbol-percent="50" />
+					<rule e="any" k="fee" v="~" zoom-min="16">
+						<caption symbol-id="id_parking" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+					</rule>
+				</rule>
+				<rule e="any" k="fee" v="fee_yes">
+					<symbol id="id_parking_fee" src="file:/symbols/parking_fee.svg" symbol-percent="50" />
+					<rule e="any" k="fee" v="fee_yes" zoom-min="16">
+						<caption symbol-id="id_parking_fee" k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+					</rule>					
+				</rule>
+				<rule e="any" k="parking" v="multi-storey">
+					<symbol src="file:/symbols/parking_multi-storey.svg" symbol-percent="50" />
+				</rule>
 			</rule>
 		</rule>
 	</rule>
