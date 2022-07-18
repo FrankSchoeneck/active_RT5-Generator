@@ -1,3 +1,17 @@
+18.07.2022, neu hinzu: Es wird nun auch highway=busway dargestellt, bei OpenAndroMaps ab 08.06.2022
+
+25.04.2022, neu hinzu: Es wird nun auch man_made=breakwater dargestellt, bei OpenAndroMaps ab 23.04.2022
+
+11.04.2022, geändert: natural=beach Farbe korrigiert
+11.04.2022, geändert: water_ways und water_bodys werden nun nach natural_ways gerendert
+11.04.2022, geändert: highway_area werden nun nach water_bodys gerendert
+
+04.03.2022, geändert: railway bridge (Eisenbahnbrücken) werden dezenter dargestellt
+
+29.12.2021, neu hinzu: Es können nun im Winter Style die Pisten angezeigt werden, ich habe dazu den Code von peter@danninger.eu integriert
+
+22.12.2021, neu hinzu: Es gibt nun einen Sommer Style und einen Winter Style für die Darstellung der Karte
+
 24.11.2021, geändert: Wanderwegenamen werden nun in definierten Abständen abgezeigt
 
 14.11.2021, geändert: Wenn bei OSMC Symbolen keine Hintergrund angegeben ist wird nun ein weisser Hintergrund angezeigt

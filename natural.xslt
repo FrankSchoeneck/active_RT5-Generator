@@ -12,8 +12,11 @@
 				<area fill="#50D3E9FF" />
 				<area src="file:/patterns/glacier.svg" />
 			</rule>
-			<rule e="way" k="natural" v="grassland" closed="yes">
-				<area fill="#E7E7E7" />
+			<rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Summer">
+				<area fill="#E7E7E7" stroke="#b7c7b9" />
+			</rule>
+			<rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Winter">
+				<area fill="#fcfdff" stroke="#b7c7b9" />
 			</rule>
 			<rule e="way" k="natural" v="fell" closed="yes">
 				<area fill="#D4E5EB" />
@@ -38,19 +41,26 @@
 		</rule>
 
 		<rule e="way" k="natural" v="*" zoom-min="11">
-			<rule e="way" k="natural" v="marsh|wetland" closed="yes">
-				<area fill="#DDE3D6" />
+			<rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Summer">
+				<area fill="#e0e5d6" />
+				<area src="file:/patterns/marsh.svg" symbol-width="40" />
+			</rule>
+			<rule e="way" k="natural" v="marsh|wetland" closed="yes" cat="Style_Winter">
+				<area fill="#fcfdff" />
 				<area src="file:/patterns/marsh.svg" symbol-width="40" />
 			</rule>
 			<rule e="way" k="natural" v="beach" closed="yes">
-				<area fill="#FAFCFD" />
+				<area fill="#fffce4" />
 			</rule>
 			<rule e="way" k="natural" v="heath" closed="yes">
 				<area fill="#DCE0DA" />
 				<area src="file:/patterns/heath.svg" symbol-width="40" />
 			</rule>
-			<rule e="way" k="natural" v="scrub" closed="yes">
-				<area fill="#E5EFD8" />
+			<rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Summer">
+				<area fill="#e1edd5" />
+			</rule>
+			<rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Winter">
+				<area fill="#e8f2e2" />
 			</rule>
 		</rule>
 
@@ -74,8 +84,11 @@
 				<line stroke="#73dcff" stroke-width="0.3" />
 				<area fill="#50ff7396" />
 			</rule>
-			<rule e="way" k="natural" v="tree_row">
+			<rule e="way" k="natural" v="tree_row" cat="Style_Summer">
 				<line stroke="#CBE0B3" stroke-width="0.7" stroke-linecap="round" />
+			</rule>
+			<rule e="way" k="natural" v="tree_row" cat="Style_Winter">
+				<line stroke="#d9e3f4" stroke-width="0.7" stroke-linecap="round" />
 			</rule>
 		</rule>
 

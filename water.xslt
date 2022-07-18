@@ -2,7 +2,7 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-<xsl:template name="waterways">
+<xsl:template name="water_ways">
 	<!-- waterways and water -->
 	<rule e="way" k="waterway" v="*">
 		<!-- drain = Abwassergraben, Abfluss -->
@@ -46,9 +46,13 @@
 		</rule>
 		<!-- Fluss -->
 		<rule e="way" k="waterway" v="river">
-			<rule e="way" k="intermittent|seasonal" v="~">
+			<rule e="way" k="intermittent|seasonal" v="~" cat="Style_Summer">
 				<line stroke="#60A4D9" stroke-width="2.0"  />
 				<line stroke="#A2CBED" stroke-width="1.6"  />
+			</rule>
+			<rule e="way" k="intermittent|seasonal" v="~" cat="Style_Winter">
+				<line stroke="#82b3d9" stroke-width="2.0"  />
+				<line stroke="#82b3d9" stroke-width="1.6"  />
 			</rule>
 			<rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes"> <!-- Beschreibt, nicht ständig Wasser führend, only OpenAndroMaps -->
 				<line stroke="#60A4D9" stroke-width="2.0" stroke-dasharray="3,6"  />
@@ -92,15 +96,23 @@
 	<!-- end of water -->
 </xsl:template>
 
-<xsl:template name="waterbodies">
+<xsl:template name="water_bodys">
 	<!-- bodys of water-->
-	<rule e="way" k="landuse|natural" v="reservoir|basin|water">
+	<rule e="way" k="landuse|natural" v="reservoir|basin|water" cat="Style_Summer">
 		<line stroke="#60A4D9" stroke-width="0.5" />
 		<area fill="#A2CBED"/>
 		<rule e="way" k="natural" v="water" zoom-min="14">
 			<caption k="name" font-style="normal" font-size="10" fill="#035FBC" stroke="#ffffff" stroke-width="0.5"/>
 		</rule>
 	</rule>
+	<rule e="way" k="landuse|natural" v="reservoir|basin|water" cat="Style_Winter">
+		<line stroke="#82b3d9" stroke-width="0.5" />
+		<area fill="#bed8ed"/>
+		<rule e="way" k="natural" v="water" zoom-min="14">
+			<caption k="name" font-style="normal" font-size="10" fill="#035FBC" stroke="#ffffff" stroke-width="0.5"/>
+		</rule>
+	</rule>
+
 	<!-- Breiter Fluss (muß hinter body of water gerendert werden) -->
 	<rule e="way" k="waterway" v="riverbank">
 		<area fill="#A2CBED" />

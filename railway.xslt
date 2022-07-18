@@ -18,20 +18,23 @@
 		<rule e="way" k="tunnel" v="~|no">
 			<!-- railway bridge casings -->
 			<rule e="way" k="bridge" v="yes|movable|true">
-				<rule e="way" k="railway" v="tram">
-					<line stroke="#FFFEFE" stroke-width="1.2" stroke-linecap="butt" />
+				<rule e="way" k="railway" v="tram" zoom-min="13" cat="pub_transp">
+					<line stroke="#FFFFFF" stroke-width="0.7" stroke-linecap="butt" />
 				</rule>
-				<rule e="way" k="railway" v="subway">
-					<line stroke="#FFFEFE" stroke-width="1.2" stroke-linecap="butt" />
+				<rule e="way" k="railway" v="subway" zoom-min="13" cat="pub_transp">
+					<line stroke="#FFFFFF" stroke-width="0.7" stroke-linecap="butt" />
 				</rule>
 				<rule e="way" k="railway" v="funicular" zoom-min="12">
-					<line stroke="#FFFEFE" stroke-width="2.0" stroke-linecap="butt" />
+					<line stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="butt" />
 				</rule>
-				<rule e="way" k="railway" v="preserved" zoom-min="11">
-					<line stroke="#FFFEFE" stroke-width="2.0" stroke-linecap="butt" />
+				<rule e="way" k="railway" v="preserved" zoom-min="13">
+					<line stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="butt" />
 				</rule>
-				<rule e="way" k="railway" v="rail|light_rail|narrow_gauge">
-					<line stroke="#FFFEFE" stroke-width="2.0" stroke-linecap="butt" />
+				<rule e="way" k="railway" v="light_rail|narrow_gauge" zoom-min="12">
+					<line stroke="#FFFFFF" stroke-width="0.7" stroke-linecap="butt" />
+				</rule>
+				<rule e="way" k="railway" v="rail" zoom-min="12">
+					<line stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="butt" />
 				</rule>
 			</rule>
 

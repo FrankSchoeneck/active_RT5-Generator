@@ -85,11 +85,6 @@
 		</rule>
 	</rule>
 
-	<!-- military -->
-	<rule e="node" k="military" v="bunker|bunker_disused" zoom-min="12" >
-		<symbol src="file:/symbols/bunker.svg" symbol-percent="70" />
-	</rule>
-	
 	<!-- mountain_pass -->
 	<rule e="any" k="mountain_pass" v="yes" zoom-min="12" cat="landscapefeat">
 		<rule e="any" k="dir_saddle" v="~" >

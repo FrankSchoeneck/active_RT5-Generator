@@ -29,6 +29,7 @@
 	<xsl:include href="areas.xslt" />
 	<xsl:include href="man_made.xslt" />
 	<xsl:include href="route.xslt" />
+	<xsl:include href="winter.xslt" />
 <xsl:template match="/">
 
 <rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -43,6 +44,9 @@
 		Contact: LocusUser1@gmx.de
 		
 		inspiriert from Outdooractive.com map, style OSM-Summer
+		
+		Wintersport-Ergänzungen | Wintersport-addons
+		peter@danninger.eu, V2.8, 28.01.2022
 	</xsl:comment> 
 
 	<xsl:call-template name="menu"/>
@@ -50,18 +54,19 @@
 	<xsl:call-template name="landuse"/>
 	<xsl:call-template name="leisure"/>
 	<xsl:call-template name="tourism_areas"/>
-	<xsl:call-template name="waterways"/>
-	<xsl:call-template name="waterbodies"/>
 	<xsl:call-template name="amenity_ways"/>
 	<xsl:call-template name="admin"/>
 	<xsl:call-template name="contour_lines"/>
 	<xsl:call-template name="aeroway"/>
-	<xsl:call-template name="highway_area"/>
 	<xsl:call-template name="natural_ways"/>
+	<xsl:call-template name="water_ways"/>
+	<xsl:call-template name="water_bodys"/>
+	<xsl:call-template name="highway_area"/>
 	<xsl:call-template name="railway_tunnel"/>
 	<xsl:call-template name="railway_no_tunnel"/>
 	<xsl:call-template name="buildings"/>
-	<xsl:call-template name="highway"/>	
+	<xsl:call-template name="highway"/>
+	<xsl:call-template name="winter"/>	
 	<xsl:call-template name="railway_node"/>
 	<xsl:call-template name="military_ways"/>
 	<xsl:call-template name="historic_ways"/>

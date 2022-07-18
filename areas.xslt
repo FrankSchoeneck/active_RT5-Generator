@@ -25,7 +25,7 @@
 		<rule e="way" k="sport" v="*" zoom-min="12">
 			<area fill="#F0F7D2" />
 		</rule>
-	
+
 	</xsl:template>
 
 </xsl:stylesheet>

@@ -10,7 +10,7 @@
 <xsl:variable name="hw-tertiary">#ffffff</xsl:variable>
 <xsl:variable name="hw-residential">#ffffff</xsl:variable>
 <xsl:variable name="hw-unclassified">#ffffff</xsl:variable>
-<xsl:variable name="hw-pedestrian">#E8D1E2</xsl:variable>
+<xsl:variable name="hw-pedestrian">#f9ecfd</xsl:variable>
 <xsl:variable name="hw-living">#ffffff</xsl:variable>
 <xsl:variable name="hw-track">#53534e</xsl:variable>
 <xsl:variable name="hw-service">#ffffff</xsl:variable>
@@ -234,6 +234,10 @@
 					<rule e="way" k="highway" v="living_street" zoom-min="{$z-living}">
 						<line stroke="{$cs-living}" stroke-width="1.2" stroke-linecap="round" />
 					</rule>
+					<!-- Busway -->
+					<rule e="way" k="highway" v="busway" zoom-min="{$z-residential}">
+						<line stroke="{$cs-residential}" stroke-width="1.2" stroke-linecap="round" />
+					</rule>
 					<!-- Private Wege -->
 					<rule e="way" k="access" v="private|destination" zoom-min="{$z-living}">
 						<rule e="way" k="highway" v="pedestrian|service|road|living_street|residential|unclassified|construction">
@@ -394,6 +398,13 @@
 						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-residential}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
 					</rule>
 				</rule>
+				<!-- Busway -->
+				<rule e="way" k="highway" v="busway" zoom-min="{$z-residential}">
+					<line stroke="#DBDBDB" stroke-width="0.8" />
+					<rule e="way" k="*" v="*" zoom-min="16" >
+						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-residential}" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+					</rule>
+				</rule>
 				<!-- Strasse im Bau -->
 				<rule e="way" k="highway" v="construction" zoom-min="{$z-construction}">
 					<line stroke="#d0d0d0" stroke-width="0.8" />
@@ -524,7 +535,7 @@
 		<rule e="way" k="area" v="yes|true">
 			<rule e="way" k="highway" v="*">
 				<rule e="way" k="highway" v="footway|path" zoom-min="{$z-footway}">
-					<area fill="#E8D1E2" stroke="#585858" stroke-width="0.1"/>
+					<area fill="{$hw-pedestrian}" stroke="#585858" stroke-width="0.1"/>
 				</rule>
 				<rule e="way" k="highway" v="service" zoom-min="{$z-service}">
 					<area fill="{$hw-service}" stroke="{$cs-service}" stroke-width="0.1"/>

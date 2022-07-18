@@ -31,8 +31,11 @@
 				</rule>
 			</rule>
 
-			<rule e="way" k="*" v="*" zoom-min="14">
-				<caption k="name" font-style="bold" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+			<rule e="way" k="aeroway" v="aerodrome|apron|terminal" zoom-min="14">
+				<caption k="name" font-family="sans_serif" font-style="normal" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="0.5" />
+			</rule>
+			<rule e="way" k="aeroway" v="taxiway|runway" zoom-min="14">
+				<pathText k="ref" font-family="sans_serif" font-style="normal" font-size="8" fill="#333333" stroke="#FFFFFF" stroke-width="0.5" />
 			</rule>
 		</rule>
 	</xsl:template>

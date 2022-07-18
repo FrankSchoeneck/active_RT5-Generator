@@ -11,7 +11,7 @@
 		</rule>
 		<!-- power station -->
 		<rule e="way" k="power" v="station|sub_station|substation" >
-			<area fill="#C7C7C7" />
+			<line stroke="#727272" stroke-width="0.2" stroke-linecap="butt" />
 		</rule>
 		<!--power line -->
 		<rule e="way" k="power" v="line" zoom-min="12" cat="landscapefeat">

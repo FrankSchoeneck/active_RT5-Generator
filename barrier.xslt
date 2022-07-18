@@ -13,9 +13,13 @@
 			<rule e="way" k="barrier" v="retaining_wall">
 				<line stroke="#888888" stroke-width="0.05" stroke-linecap="butt" />
 			</rule>
-			<rule e="way" k="barrier" v="hedge">
+			<rule e="way" k="barrier" v="hedge" cat="Style_Summer">
 				<line stroke="#CBE0B3" stroke-width="0.6" stroke-linecap="round" />
 			</rule>
+			<rule e="way" k="barrier" v="hedge" cat="Style_Winter">
+				<line stroke="#d9e3f4" stroke-width="0.6" stroke-linecap="round" />
+			</rule>
+
 		</rule>
 
 		<!-- barrier -->

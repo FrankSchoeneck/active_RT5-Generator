@@ -31,7 +31,7 @@
 				<area fill="#E7E7E7" stroke="#d0d0d0" stroke-width="0.2" />
 			</rule>
 		</rule>
-		<rule e="way" k="man_made" v="groyne" zoom-min="13"> <!-- Nur bei OpenAndroMaps -->
+		<rule e="way" k="man_made" v="groyne|breakwater" zoom-min="13"> <!-- Nur bei OpenAndroMaps -->
 			<line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="man_made" v="watermill" zoom-min="12">
