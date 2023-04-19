@@ -30,37 +30,37 @@
 		lwn = Lokaler Weg ( < 50 km, in einem Landkreis, eine mehrere Gemeinden)
 	-->
 	<!-- cat Wanderwege Transparent (Darstellung gemäß Outdooractive) -->
-	<rule e="way" k="hknetwork" v="*" cat="hikingtrails">
-		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="5" zoom-max="9">
+	<rule e="way" k="network|hknetwork" v="*" cat="hikingtrails">
+		<rule e="way" k="network|hknetwork" v="iwn|nwn" zoom-min="5" zoom-max="9">
 			<line stroke="#F2221E" stroke-width="1.8" />
 			<line stroke="#E7B3B3" stroke-width="1.3" />
 		</rule>
 
-		<rule e="way" k="hknetwork" v="iwn|nwn" zoom-min="10" zoom-max="11">
+		<rule e="way" k="network|hknetwork" v="iwn|nwn" zoom-min="10" zoom-max="11">
 			<line stroke="#95F2221E" stroke-width="3.0" />
 			<line stroke="#95E7B3B3" stroke-width="2.0" />
 		</rule>
-		<rule e="way" k="hknetwork" v="own|lwn|rwn" zoom-min="10" zoom-max="11">
+		<rule e="way" k="network|hknetwork" v="own|lwn|rwn" zoom-min="10" zoom-max="11">
 			<line stroke="#95db8c8c" stroke-width="2.0" />
 		</rule>
 
-		<rule e="way" k="hknetwork" v="own|iwn|nwn|lwn|rwn" zoom-min="12">
+		<rule e="way" k="network|hknetwork" v="own|iwn|nwn|lwn|rwn" zoom-min="12">
 			<line dy="-0.6" stroke="#80e60707" stroke-width="0.2" />
 			<line stroke="#60f66966" stroke-width="1.0" />
 			<line dy="0.6" stroke="#80e60707" stroke-width="0.2" />
 		</rule>
 
 		<!-- TEXT TO PATH -->
-		<rule e="way" k="hknetwork" v="own|lwn" zoom-min="13">
+		<rule e="way" k="network|hknetwork" v="own|lwn" zoom-min="13">
 			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
 		</rule>
-		<rule e="way" k="hknetwork" v="rwn" zoom-min="13">
+		<rule e="way" k="network|hknetwork" v="rwn" zoom-min="13">
 			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="30" repeat-gap="100" />
 		</rule>
-		<rule e="way" k="hknetwork" v="nwn" zoom-min="11">
+		<rule e="way" k="network|hknetwork" v="nwn" zoom-min="11">
 			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
 		</rule>
-		<rule e="way" k="hknetwork" v="iwn" zoom-min="11">
+		<rule e="way" k="network|hknetwork" v="iwn" zoom-min="11">
 			<pathText k="ref_hike" dy="-1.5" font-style="bold" font-size="8" fill="#631f1f" stroke="#ffffff" stroke-width="2.0" repeat-start="50" repeat-gap="300" />
 		</rule>
 	</rule>
@@ -72,7 +72,7 @@
 	</rule>
 
 	<!-- HIKING PATH OSMC:SYMBOL für OpenAndroMaps -->
-	<rule e="any" k="osmc" v="osmc_yes" zoom-min="14" cat="trail_markings"> <!-- rule für cat=Wegemarkierungen -->
+	<rule e="any" k="osmc" v="yes|osmc_yes" zoom-min="14" cat="trail_markings"> <!-- rule für cat=Wegemarkierungen -->
 		<!-- ================= OSMC_BACKGROUND ======================== -->
 		<rule e="any" k="osmc_background" v="~|no|false"> <!-- nur wenn background nichts enthält -->
 			<symbol src="file:/osmc/bcg_white.svg" display="always" priority="{$osmc-bcg-sym-prio}" symbol-percent="{$osmc-bcg-sym-perc}" />

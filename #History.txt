@@ -1,3 +1,13 @@
+07.04.2023, neu hinzu: Es wird nun auch amenity=public_bath dargestellt
+20.03.2023, geändert: Anpassungen für LoMaps V4 Karten tagging
+20.03.2023, neu hinzu: Es wird nun auch natural=sand dargestellt
+16.03.2023, geändert: contour_lines (Höhenlinien), natural=cliff|earth_bank (Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang), waterway=drain|ditch (Wassergraben), waterway=stream (Bach) werden nun fließender (curve="cubic") dargestellt.
+
+26.10.2022, geändert: historic=archaeological_site (als ways) wird früher in der Reihenfolge dargestellt, sonst werden Sachen verdeckt
+26.10.2022, neu hinzu: Es wird nun auch man_made=water_tower dargestellt
+
+09.08.2022, neu hinzu: Es wird nun auch landuse=plant_nursery dargestellt, bei OpenAndroMaps ab 07.08.2022
+
 18.07.2022, neu hinzu: Es wird nun auch highway=busway dargestellt, bei OpenAndroMaps ab 08.06.2022
 
 25.04.2022, neu hinzu: Es wird nun auch man_made=breakwater dargestellt, bei OpenAndroMaps ab 23.04.2022

@@ -6,7 +6,7 @@
 	<!-- place -->
 	<rule e="any" k="place" v="locality" zoom-min="15">
 		<rule e="any" k="mountain_pass|natural|tourism" v="~">
-			<caption k="name" priority="10" font-style="normal" font-family="sans_serif" font-size="8" fill="#000000" stroke="#ffffff" stroke-width="1.5" />
+			<caption k="name" priority="10" font-style="normal" font-family="sans_serif" font-size="8" fill="#000000" stroke="#ffffff" stroke-width="1.5" text-wrap-width="110" />
 		</rule>
 	</rule>
 

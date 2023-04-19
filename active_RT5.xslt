@@ -33,7 +33,7 @@
 <xsl:template match="/">
 
 <rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme-V5.xsd"
+			xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd"
 			version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
 
 	<xsl:comment>
@@ -54,6 +54,7 @@
 	<xsl:call-template name="landuse"/>
 	<xsl:call-template name="leisure"/>
 	<xsl:call-template name="tourism_areas"/>
+	<xsl:call-template name="historic_ways"/>
 	<xsl:call-template name="amenity_ways"/>
 	<xsl:call-template name="admin"/>
 	<xsl:call-template name="contour_lines"/>
@@ -69,13 +70,12 @@
 	<xsl:call-template name="winter"/>	
 	<xsl:call-template name="railway_node"/>
 	<xsl:call-template name="military_ways"/>
-	<xsl:call-template name="historic_ways"/>
 	<xsl:call-template name="route"/>
 	<xsl:call-template name="power"/>
 	<xsl:call-template name="places"/>
 	<xsl:call-template name="boundary"/>
-	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="man_made"/>
+	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="barrier"/>
 	<xsl:call-template name="natural_nodes"/>
 	<xsl:call-template name="amenity_nodes"/>

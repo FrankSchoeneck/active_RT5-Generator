@@ -14,7 +14,7 @@
 	<!-- cutline (Schneise im Wald) -->
 	<rule e="way" k="man_made" v="cutline" zoom-min="11">
 		<rule e="way" k="*" v="*" closed="no">
-			<line stroke="#90EEEFEC" stroke-width="1.4" stroke-linecap="butt" />
+			<line stroke="#90EEEFEC" stroke-width="2.0" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" closed="yes">
 			<area fill="#90EEEFEC" />
@@ -33,6 +33,12 @@
 		</rule>
 		<rule e="way" k="man_made" v="groyne|breakwater" zoom-min="13"> <!-- Nur bei OpenAndroMaps -->
 			<line stroke="#E7E7E7" stroke-width="0.6" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="man_made" v="water_tower" zoom-min="12">
+			<symbol id="id_water_tower" src="file:/symbols/tower_observation.svg" symbol-percent="45" />
+			<rule e="way" k="*" v="*" zoom-min="15">
+				<caption symbol-id="id_water_tower" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			</rule>
 		</rule>
 		<rule e="way" k="man_made" v="watermill" zoom-min="12">
 			<symbol id="id_watermill" src="file:/symbols/watermill.svg" symbol-percent="70" />

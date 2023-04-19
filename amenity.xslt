@@ -50,6 +50,13 @@
 		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
 		<area src="file:/patterns/cemetery.svg" symbol-width="40"/>
 	</rule>
+	
+	<rule e="way" k="amenity" v="public_bath" zoom-min="14">
+		<line stroke="#515151" stroke-width="0.15" stroke-dasharray="15,15" />
+		<rule e="any" k="amenity" v="*" zoom-min="15">
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+		</rule>
+	</rule>
 </xsl:template>
 
 <xsl:template name="amenity_nodes">

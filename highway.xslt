@@ -356,12 +356,16 @@
 				</rule>
 				<!-- Klettersteige (via_ferrata) -->
 				<rule e="way" k="via_ferrata_flag|via_ferrata_scale" v="set|yes|*" zoom-min="{$z-track}">
-					<symbol id="id_via_ferrata" src="file:/symbols/via_ferrata.svg" symbol-percent="80"/>
 					<line stroke="#FF0000" stroke-width="0.4" stroke-linecap="butt"/>
 					<line stroke="#000000" stroke-width="0.4" stroke-dasharray="4,1,0.5,1,0.5,1" stroke-linecap="butt" scale="stroke"/>
-					<rule e="any" k="*" v="*" zoom-min="15">
-						<caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
-						<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+					<rule e="any" k="*" v="*" zoom-min="14">
+						<symbol id="id_via_ferrata" src="file:/symbols/via_ferrata.svg" symbol-percent="80"/>
+						<rule e="way" k="*" v="*" zoom-max="15">
+							<caption symbol-id="id_via_ferrata" k="name" position="above" font-family="sans_serif" font-style="normal" font-size="9.0" fill="#393935" stroke="#FFFFFF" stroke-width="3.0" />
+						</rule>
+						<rule e="way" k="*" v="*" zoom-min="15">
+							<pathText k="name" font-family="sans_serif" font-style="normal" font-size="{$fs-track}" fill="#393935" stroke="#FFFFFF" stroke-width="2.0" />
+						</rule>
 					</rule>
 				</rule>
 				<!-- Reitweg -->

@@ -22,11 +22,9 @@
 		<rule e="way" k="landuse" v="retail|garages|greenfield">
 			<area fill="#FFFEFE" stroke="#e4e4e4" stroke-width="0.2" />
 		</rule>
-		<rule e="way" k="landuse" v="farm|farmland" cat="Style_Summer">
-			<area fill="#fffefe" />
-		</rule>
-		<rule e="way" k="landuse" v="farm|farmland" cat="Style_Winter">
-			<area fill="#fcfdff" />
+		<rule e="way" k="landuse" v="farm|farmland">
+			<area cat="Style_Summer" fill="#fffefe" />
+			<area cat="Style_Winter" fill="#fcfdff" />
 		</rule>
 		<rule e="way" k="landuse" v="farmyard">
 			<area fill="#E7E7E7" stroke="#e4e4e4" stroke-width="0.2" />
@@ -37,61 +35,40 @@
 		<rule e="way" k="landuse" v="brownfield">
 			<area fill="#FFFEFE" stroke="#e4e4e4" stroke-width="0.2" />
 		</rule>
-		<rule e="way" k="landuse" v="industrial" cat="Style_Summer">
-			<area fill="#dbdcdc" stroke="#e4e4e4" stroke-width="0.2" />
+		<rule e="way" k="landuse" v="industrial">
+			<area cat="Style_Summer" fill="#dbdcdc" stroke="#e4e4e4" stroke-width="0.2" />
+			<area cat="Style_Winter" fill="#ececec" stroke="#e4e4e4" stroke-width="0.2" />
 			<rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
 				<caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5" />
 			</rule>
 		</rule>
-		<rule e="way" k="landuse" v="industrial" cat="Style_Winter">
-			<area fill="#ececec" stroke="#e4e4e4" stroke-width="0.2" />
-			<rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
-				<caption k="name" font-style="normal" font-size="10" fill="#5A5A5A" stroke="#FFFFFF" stroke-width="1.5" />
-			</rule>
-		</rule>
-		<rule e="way" k="landuse" v="landfill" cat="Style_Summer">
-			<area fill="#eff5e1" stroke="#556b2f" stroke-width="0.2" />
+		<rule e="way" k="landuse" v="landfill">
+			<area cat="Style_Summer" fill="#eff5e1" stroke="#556b2f" stroke-width="0.2" />
+			<area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.2" />
 			<rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
 				<caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5" />
 			</rule>
 		</rule>
-		<rule e="way" k="landuse" v="landfill" cat="Style_Winter">
-			<area fill="#fcfdff" stroke="#556b2f" stroke-width="0.2" />
-			<rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
-				<caption k="name" font-style="italic" font-size="10" fill="#333333" stroke="#FFFFFF" stroke-width="0.5" />
-			</rule>
-		</rule>
-		<rule e="way" k="landuse" v="quarry" cat="Style_Summer">
-			<area fill="#dae0d9" stroke="#556b2f" stroke-width="0.2" />
+		<rule e="way" k="landuse" v="quarry">
+			<area cat="Style_Summer" fill="#dae0d9" stroke="#556b2f" stroke-width="0.2" />
+			<area cat="Style_Winter" fill="#e7e9eb" stroke="#556b2f" stroke-width="0.2" />
 			<rule e="way" k="*" v="*" zoom-min="14">
 				<area src="file:/patterns/quarry.svg" symbol-width="40" />
 			</rule>
 		</rule>
-		<rule e="way" k="landuse" v="quarry" cat="Style_Winter">
-			<area fill="#e7e9eb" stroke="#556b2f" stroke-width="0.2" />
-			<rule e="way" k="*" v="*" zoom-min="14">
-				<area src="file:/patterns/quarry.svg" symbol-width="40" />
-			</rule>
-		</rule>
-		<rule e="way" k="landuse" v="allotments" cat="Style_Summer">
-			<area fill="#e2ecc5" stroke="#556b2f" stroke-width="0.2" />
-		</rule>
-		<rule e="way" k="landuse" v="allotments" cat="Style_Winter">
-			<area fill="#fcfdff" stroke="#556b2f" stroke-width="0.2" />
+		<rule e="way" k="landuse" v="allotments">
+			<area cat="Style_Summer" fill="#e2ecc5" stroke="#556b2f" stroke-width="0.2" />
+			<area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.2" />
 		</rule>
 	</rule>
 
-	<rule e="way" k="landuse" v="village_green" zoom-min="11" cat="Style_Summer">
-		<area fill="#e2ecc5" stroke="#6fc18e" />
+	<rule e="way" k="landuse" v="village_green" zoom-min="11">
+		<area cat="Style_Summer" fill="#e2ecc5" stroke="#6fc18e" />
+		<area cat="Style_Winter" fill="#fcfdff" stroke="#6fc18e" />
 	</rule>
-	<rule e="way" k="landuse" v="village_green" zoom-min="11" cat="Style_Winter">
-		<area fill="#fcfdff" stroke="#6fc18e" />
-	</rule>
-	<rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11" cat="Style_Summer">
-		<area fill="#e2ecc5" stroke="#6fc18e" />
-	</rule>
-	<rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11" cat="Style_Winter">
-		<area fill="#fcfdff" stroke="#6fc18e" />
+	<rule e="way" k="leisure|landuse" v="recreation_ground" zoom-min="11">
+		<area cat="Style_Summer" fill="#e2ecc5" stroke="#6fc18e" />
+		<area cat="Style_Winter" fill="#fcfdff" stroke="#6fc18e" />
 	</rule>
 
 	<!-- captions -->
@@ -100,12 +77,14 @@
 	</rule>
 
 	<!-- wood -->
-	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8" cat="Style_Summer" >
+	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
 		<rule e="way" k="*" v="*" zoom-max="13" >
-			<area fill="#C9E0B4" />
+			<area cat="Style_Summer" fill="#C9E0B4" />
+			<area cat="Style_Winter" fill="#d9e3f4" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="14">
-			<area fill="#C9E0B4" />
+			<area cat="Style_Summer" fill="#C9E0B4"/>
+			<area cat="Style_Winter" fill="#d9e3f4" />
 			<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
 				<area src="file:/patterns/wood_coniferous.svg" symbol-width="40" />
 			</rule>
@@ -121,47 +100,19 @@
 			<caption k="name" font-style="italic" font-size="12" fill="#77856D" stroke="#FFFFFF" stroke-width="1.5" />
 		</rule>
 	</rule>
-	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8" cat="Style_Winter" >
-		<rule e="way" k="*" v="*" zoom-max="13" >
-			<area fill="#d9e3f4" />
-		</rule>
-		<rule e="way" k="*" v="*" zoom-min="14">
-			<area fill="#d9e3f4" />
-			<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
-				<area src="file:/patterns/wood_coniferous.svg" symbol-width="40" />
-			</rule>
-			<rule e="any" k="wood|leaf_type" v="deciduous|broadleaved">
-				<area src="file:/patterns/wood_deciduous.svg" symbol-width="40" />
-			</rule>
-			<rule e="any" k="wood|leaf_type" v="~|mixed|leafless">
-				<area src="file:/patterns/wood_mixed.svg" symbol-width="40"/>
-			</rule>
-		</rule>
-		<!-- wood captions -->
-		<rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
-			<caption k="name" font-style="italic" font-size="12" fill="#8ba8ac" stroke="#FFFFFF" stroke-width="1.5" />
-		</rule>
-	</rule>
 
 	<!-- Obstplantage -->
-	<rule e="way" k="landuse" v="orchard" cat="Style_Summer">
-		<area fill="#ecf3e1" />
-		<rule e="way" k="*" v="*" zoom-min="14">
-			<area src="file:/patterns/orchard.svg" symbol-width="40" />
-		</rule>		
-	</rule>
-	<rule e="way" k="landuse" v="orchard" cat="Style_Winter">
-		<area fill="#fafcff" />
+	<rule e="way" k="landuse" v="orchard">
+		<area cat="Style_Summer" fill="#ecf3e1" />
+		<area cat="Style_Winter" fill="#fafcff" />
 		<rule e="way" k="*" v="*" zoom-min="14">
 			<area src="file:/patterns/orchard.svg" symbol-width="40" />
 		</rule>		
 	</rule>
 
-	<rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes" cat="Style_Summer">
-		<area fill="#dde7c0" />
-	</rule>
-	<rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes" cat="Style_Winter">
-		<area fill="#fcfdff" />
+	<rule e="way" k="landuse" v="grass" zoom-min="10" closed="yes">
+		<area cat="Style_Summer" fill="#dde7c0" />
+		<area cat="Style_Winter" fill="#fcfdff" />
 	</rule>
 	
 	<rule e="way" k="landuse" v="vineyard" zoom-min="10" closed="yes">
@@ -170,12 +121,18 @@
 			<area src="file:/patterns/vineyard.svg" symbol-width="14" />
 		</rule>
 	</rule>
-
-	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Summer">
-		<area fill="#fdfefb" />
+	
+	<!-- Baumschulen -->
+	<rule e="way" k="landuse" v="plant_nursery" zoom-min="11">
+		<area cat="Style_Summer" fill="#e1f0e6" />
+		<area cat="Style_Winter" fill="#fcfdff" />
+		<area src="file:/patterns/wood_deciduous.svg" symbol-width="30" />
 	</rule>
-	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Winter">
-		<area fill="#fcfdff" />
+	
+	<!-- Wiese -->
+	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Summer">
+		<area cat="Style_Summer" fill="#fcfcf2" />
+		<area cat="Style_Winter" fill="#fcfdff" />
 	</rule>
 
 	<!-- Friedhöfe -->

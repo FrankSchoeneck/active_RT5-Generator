@@ -9,10 +9,10 @@
 		<!-- ditch = Wassergraben -->
 		<rule e="way" k="waterway" v="drain|ditch">
 			<rule e="way" k="intermittent|seasonal" v="~">
-				<line stroke="#59A0D8" stroke-width="0.4"  />
+				<line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
 			</rule>
 			<rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes" zoom-min="13"> <!-- Beschreibt, nicht ständig Wasser führend, only OpenAndroMaps -->
-				<line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6" />
+				<line stroke="#59A0D8" stroke-width="0.4" stroke-dasharray="3,6" curve="cubic"/>
 			</rule>
 		</rule>
 		<!-- Kanal -->
@@ -31,15 +31,15 @@
 		<rule e="way" k="waterway" v="stream" zoom-min="11">
 			<rule e="way" k="*" v="*" zoom-min="11" zoom-max="12">
 				<rule e="way" k="intermittent|seasonal" v="~">
-					<line stroke="#59A0D8" stroke-width="0.4"  />
+					<line stroke="#59A0D8" stroke-width="0.4" curve="cubic"/>
 				</rule>
 			</rule>
 			<rule e="way" k="*" v="*" zoom-min="14">
 				<rule e="way" k="intermittent|seasonal" v="~">
-					<line stroke="#59A0D8" stroke-width="0.2"  />
+					<line stroke="#59A0D8" stroke-width="0.2" curve="cubic"/>
 				</rule>
 				<rule e="way" k="intermittent|seasonal" v="wwi_yes|seas_yes"> <!-- Beschreibt, nicht ständig Wasser führend, only OpenAndroMaps -->
-					<line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6"  />
+					<line stroke="#59A0D8" stroke-width="0.2" stroke-dasharray="3,6" curve="cubic"/>
 				</rule>
 				<pathText k="name" dy="-1" repeat-gap="300" font-style="normal" font-size="9" fill="#035FBC" stroke="#ffffff" stroke-width="0.5" />
 			</rule>

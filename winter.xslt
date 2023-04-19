@@ -1080,42 +1080,6 @@
     </rule>
   </rule>
 
-	<!-- aerial ways    modifiziert für Winter-fork   peter@danninger.eu -->
-	<rule e="way" k="aerialway" v="*" zoom-min="11">
-	  <!-- Gondel- bzw. Sessellift -->
-		<rule e="way" k="aerialway" v="cable_car|gondola|chair_lift|mixed_lift">
-			<line stroke="#404040" stroke-width="1" stroke-linecap="butt" />
-			<line stroke="#404040" stroke-width="4" stroke-dasharray="4,40" stroke-linecap="butt" />
-		</rule>
-		<!-- Schlepplift -->
-		<rule e="way" k="aerialway" v="drag_lift|t-bar|j-bar|platter" zoom-min="13">
-			<line stroke="#404040" stroke-width="0.8" stroke-linecap="butt" />
-			<line stroke="#606060" stroke-width="4" stroke-dasharray="4,80" stroke-linecap="butt" />
-		</rule>
-		<!-- Materialseilbahn, Sonstige -->
-		<rule e="way" k="aerialway" v="goods|rope_tow|magic_carpet|zip_line" zoom-min="13">
-			<line stroke="#404040" stroke-width="0.6" stroke-linecap="butt" />
-			<line stroke="#909090" stroke-width="4" stroke-dasharray="4,160" stroke-linecap="butt" />
-		</rule>
-		<rule cat="aerway" e="way" k="aerialway" v="cable_car" zoom-min="14">
-			<lineSymbol src="file:/symbols_winter/s_cable_car.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48" />
-		</rule>
-		<rule cat="aerway" e="way" k="aerialway" v="gondola" zoom-min="14">
-			<lineSymbol src="file:/symbols_winter/s_gondola.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48" />
-		</rule>
-		<rule cat="aerway" e="way" k="aerialway" v="chair_lift|mixed_lift" zoom-min="14">
-			<lineSymbol src="file:/symbols_winter/s_chair_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48" />
-		</rule>
-		<rule cat="aerway" e="way" k="aerialway" v="drag_lift|t-bar|j-bar|platter|rope_tow|magic_carpet" zoom-min="14">
-			<lineSymbol src="file:/symbols_winter/s_drag_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48" />
-		</rule>
-		<rule cat="aerway" e="way" k="aerialway" v="goods" zoom-min="14">
-			<lineSymbol src="file:/symbols_winter/s_goods_lift.svg" rotate="false" dy="0" scale="none" align-center="true" repeat="true" repeat-start="0" repeat-gap="100" symbol-height="48" symbol-width="48" />
-		</rule>
-		<rule cat="aerway" e="any" k="aerialway" v="cable_car|gondola|chair_lift|mixed_lift|drag_lift|t-bar|j-bar|platter|goods|rope_tow|magic_carpet|zip_line" zoom-min="14">
-			<pathText k="name" dy="-11" scale="none" display="always" font-style="italic" font-size="8" fill="#208080" stroke="#E5FFFFFF" stroke-width="2" repeat-start="50" repeat-gap="300" />
-		</rule>
-	</rule>
   <!-- Ende Wintersport-Ergänzungen -->
 </xsl:template>
 

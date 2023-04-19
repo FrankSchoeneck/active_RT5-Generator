@@ -12,11 +12,9 @@
 				<area fill="#50D3E9FF" />
 				<area src="file:/patterns/glacier.svg" />
 			</rule>
-			<rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Summer">
-				<area fill="#E7E7E7" stroke="#b7c7b9" />
-			</rule>
-			<rule e="way" k="natural" v="grassland" closed="yes" cat="Style_Winter">
-				<area fill="#fcfdff" stroke="#b7c7b9" />
+			<rule e="way" k="natural" v="grassland" closed="yes">
+				<area fill="#E7E7E7" stroke="#b7c7b9" cat="Style_Summer"/>
+				<area fill="#fcfdff" stroke="#b7c7b9" cat="Style_Winter"/>
 			</rule>
 			<rule e="way" k="natural" v="fell" closed="yes">
 				<area fill="#D4E5EB" />
@@ -32,6 +30,9 @@
 		</rule>
 		
 		<rule e="way" k="natural" v="*" zoom-min="10">
+			<rule e="way" k="natural" v="sand">
+				<area fill="#fffce4" />
+			</rule>
 			<rule e="way" k="natural" v="crater" closed="no">
 				<line stroke="#8c4600" stroke-width="0.7" stroke-linecap="butt" />
 			</rule>
@@ -66,14 +67,14 @@
 
 		<rule e="way" k="natural" v="*" zoom-min="12">
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="no" cat="landscapefeat" > <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
-				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt"/>
+				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
 				<pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 				<rule e="way" k="natural" v="*" zoom-min="13">
 					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" align-center="true" symbol-percent="30" />
 				</rule>		
 			</rule>
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
-				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" />
+				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" curve="cubic"/>
 				<caption k="name" font-style="bold_italic" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 			</rule>
 			<rule e="way" k="natural" v="crevasse" closed="no">

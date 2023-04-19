@@ -125,7 +125,7 @@
 	</rule>
 
 	<!-- safety_rope, ladder, rungs -->
-	<rule e="any" k="safety_rope|ladder|rungs" v="*" zoom-min="13">
+	<rule e="any" k="safety_rope|ladder|rungs" v="*" zoom-min="14">
 		<rule e="any" k="safety_rope" v="sr_yes" >
 			<symbol src="file:/symbols/safety_rope.svg" display="always" symbol-percent="80" />
 		</rule>
@@ -135,11 +135,10 @@
 		<rule e="any" k="rungs" v="rn_yes" >
 			<symbol src="file:/symbols/rungs.svg" display="always" symbol-percent="80" />
 		</rule>
-	<rule e="way" k="safety_rope|ladder|rungs" v="sr_yes|ld_yes|rn_yes" zoom-min="14">
-		<line stroke="#BFBFBF" stroke-width="1.4" stroke-dasharray="1,5" stroke-linecap="round" />
-		<line stroke="#000000" stroke-width="0.8" stroke-dasharray="1,5" stroke-linecap="round" />
-	</rule>
-
+		<rule e="way" k="safety_rope|ladder|rungs" v="sr_yes|ld_yes|rn_yes" zoom-min="14">
+			<line stroke="#FF0000" stroke-width="0.4" stroke-linecap="butt"/>
+			<line stroke="#000000" stroke-width="0.4" stroke-dasharray="6,2" stroke-linecap="butt" scale="stroke"/>
+		</rule>
 	</rule>
 
 	<!-- aerialway -->

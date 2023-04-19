@@ -34,7 +34,8 @@
 			<area fill="#fcfdff" />
 		</rule>
 		<rule e="way" k="leisure" v="golf_course|common|green" >
-			<area fill="#E2ECC5" />
+			<area fill="#e2ecc5" cat="Style_Summer"/>
+			<area fill="#fcfdff" cat="Style_Winter"/>
 		</rule>
 		<rule e="way" k="leisure" v="garden" cat="Style_Summer">
 			<area fill="#dde7c0" />
