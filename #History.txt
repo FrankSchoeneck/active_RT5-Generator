@@ -1,3 +1,9 @@
+28.07.2023, geändert: Schreibfehler in OSMC Symolnamen behoben
+24.07.2023, neu hinzu: amenity=watering_place wird nun angezeigt
+20.07.2023, geändert: Änderung curve="cubic" vom 16.03.2023 bis auf contour_lines (Höhenlinien) wieder rückgängig gemacht
+
+02.05.2023, geändert: Anpassungen für LoMaps V4 Karten tagging
+
 07.04.2023, neu hinzu: Es wird nun auch amenity=public_bath dargestellt
 20.03.2023, geändert: Anpassungen für LoMaps V4 Karten tagging
 20.03.2023, neu hinzu: Es wird nun auch natural=sand dargestellt

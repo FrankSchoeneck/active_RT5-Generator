@@ -110,6 +110,13 @@
 			<symbol src="file:/symbols/drinking_water.svg" symbol-percent="60" />
 		</rule>
 
+		<rule e="node" k="amenity" v="watering_place" zoom-min="15">
+			<symbol id="id_watering_place" src="file:/symbols/water_well.svg" symbol-percent="60" />
+			<rule e="any" k="*" v="*" zoom-min="16">
+				<caption symbol-id="id_watering_place" k="name" font-style="normal" font-family="sans_serif" font-size="9" fill="#333333" stroke="#ffffff" stroke-width="1.0" />
+			</rule>
+		</rule>
+
 		<rule e="any" k="amenity" v="hunting_stand" zoom-min="14">
 			<symbol src="file:/symbols/hunting_stand.svg" symbol-percent="60" />
 		</rule>
