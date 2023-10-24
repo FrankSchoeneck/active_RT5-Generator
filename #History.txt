@@ -1,3 +1,8 @@
+11.08.2023, geändert: contour_lines (Höhenlinien) werden nun in der Reihenfolge hinter den natural aereas/bodys gerendert
+11.08.2023, geändert: contour_lines (Höhenlinien) Ausrichtung der Beschriftung geändert
+09.08.2023, geändert: state (Bundesland) und country (Staat) Name wird nun angezeigt, aber nur wenn Grenzen angezeigt werden
+09.08.2023, geändert: align-center="yes" nach position="center" geändert
+
 28.07.2023, geändert: Schreibfehler in OSMC Symolnamen behoben
 24.07.2023, neu hinzu: amenity=watering_place wird nun angezeigt
 20.07.2023, geändert: Änderung curve="cubic" vom 16.03.2023 bis auf contour_lines (Höhenlinien) wieder rückgängig gemacht

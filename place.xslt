@@ -74,9 +74,14 @@
 		<caption k="name" font-style="bold" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3.0" />
 	</rule>
 	
+	<!-- Bundesland -->
+	<rule e="node" k="place" v="state" zoom-min="6" zoom-max="8" cat="boundaries_areas">
+		<caption k="name" font-style="bold" font-size="20" fill="#000000" stroke="#FFFFFF" stroke-width="3.0" text-transform="uppercase" />
+	</rule>
+	
 	<!-- Staat -->
-	<rule e="node" k="place" v="country" zoom-max="4">
-		<caption k="name" font-style="bold" font-size="25" fill="#000000" stroke="#ffffff" stroke-width="2.0" />
+	<rule e="node" k="place" v="country" zoom-max="7" cat="boundaries_areas">
+		<caption k="name" font-style="bold" font-size="25" fill="#000000" stroke="#FFFFFF" stroke-width="3.0" text-transform="uppercase" />
 	</rule>
 		
 </xsl:template>

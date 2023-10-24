@@ -61,7 +61,7 @@
     <rule e="way" k="piste:difficulty" v="novice">                              <!-- Anfänger-Piste: grün -->
       <line stroke="#6600FF00" stroke-width="6" dy="-8" scale="none" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -73,7 +73,7 @@
     <rule e="way" k="piste:difficulty" v="easy">                                <!-- Einfache Piste: blau -->
       <line stroke="#660000FF" stroke-width="6" dy="-8" scale="none" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -85,7 +85,7 @@
     <rule e="way" k="piste:difficulty" v="intermediate">                        <!-- Mittelschwere Mittelschwere Piste: rot -->
       <line stroke="#66FF0000" stroke-width="6" dy="-8" scale="none" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -97,7 +97,7 @@
     <rule e="way" k="piste:difficulty" v="advanced">                            <!-- Schwere Piste: schwarz -->
       <line stroke="#66000000" stroke-width="6" dy="-8" scale="none" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-191" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-191" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -111,7 +111,7 @@
       <line stroke="#88FF0000" stroke-width="1" dy="-5.5" scale="none" />
       <line stroke="#88FF0000" stroke-width="1" dy="-10.5" scale="none" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -124,9 +124,9 @@
       <line stroke="#66FFFF00" stroke-width="6" dy="-8" scale="none" />
       <line stroke="#88FF0000" stroke-width="1" dy="-5.5" scale="none" />
       <line stroke="#88FF0000" stroke-width="1" dy="-10.5" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-91" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-90" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -138,9 +138,9 @@
     <rule e="way" k="piste:difficulty" v="~">                                   <!-- Piste unbekannter Schwierigkeit: lila -->
       <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none" />
       <!-- kein Symbol, da viele Pisten ohne Angabe -->
-      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" /> -->
+      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" /> -->
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-151" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-150" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -151,7 +151,7 @@
     </rule>
     <!-- Schitourenabfahrt -->
     <rule e="way" k="piste:grooming" v="backcountry">                           <!-- Piste unpräpariert, Skitouren-Abfahrt: zusätzlich weisse Ringe  -->
-      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-92" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-92" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
     </rule>
   </rule>
 
@@ -161,7 +161,7 @@
     <line stroke="#6600FF00" stroke-width="1" dy="0" scale="none" />
     <area fill="#3300FF00" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -181,7 +181,7 @@
       <line stroke="#6600FF00" stroke-width="1" dy="0" scale="none" />
       <area fill="#3300FF00" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_lila.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -194,7 +194,7 @@
       <line stroke="#660000FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#330000FF" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -207,7 +207,7 @@
       <line stroke="#66FF0000" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF0000" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -220,7 +220,7 @@
       <line stroke="#66000000" stroke-width="1" dy="0" scale="none" />
       <area fill="#33000000" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -233,7 +233,7 @@
       <line stroke="#66FFBB00" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FFBB00" />                                                 <!-- orange gefüllt -->
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -245,9 +245,9 @@
     <rule e="way" k="piste:difficulty" v="freeride">                            <!-- Extreme Pisten-Fläche: orange, mit Achtung-Symbol  -->
       <line stroke="#66FFBB00" stroke-width="2" dy="0" scale="none" />
       <area fill="#33FFFF00" />                                                 <!-- gelb gefüllt -->
-      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -260,10 +260,10 @@
       <line stroke="#66FF00FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF00FF" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skipiste_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-96" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <!-- kein Symbol, da viele Pisten ohne Angabe -->
-      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-83" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" /> -->
+      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-83" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" /> -->
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-95" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
       </rule>
@@ -273,7 +273,7 @@
     </rule>
     <!-- Schitourenabfahrt -->
     <rule e="way" k="piste:grooming" v="backcountry">                           <!-- Piste unpräpariert, Skitouren-Abfahrt: zusätzlich weisse Ringe  -->
-      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-97" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_weiss_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-97" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
     </rule>
   </rule>
 
@@ -285,9 +285,9 @@
 
     <rule e="way" k="piste:difficulty" v="novice">                              <!-- Anfänger-Ski-Tour:  grüne Ringe -->
       <line stroke="#4400FF00" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -298,9 +298,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="easy">                                <!-- Einfache Ski-Tour:  blaue Ringe -->
       <line stroke="#440000FF" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -311,9 +311,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="intermediate">                        <!-- Mittelschwere Ski-Tour:  rote Ringe -->
       <line stroke="#44FF0000" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -324,9 +324,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="advanced">                            <!-- Schwere Ski-Tour:  schwarze Ringe -->
       <line stroke="#44000000" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -337,9 +337,9 @@
     </rule>
     <rule e="way" k="piste:difficulty" v="expert">                              <!-- Sehr schwere Ski-Tour:  orange Ringe -->
       <line stroke="#44FFBB00" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -352,10 +352,10 @@
       <line stroke="#44FFFF00" stroke-width="6" dy="+8" scale="none" />
       <line stroke="#88FFBB00" stroke-width="1" dy="+5.5" scale="none" />
       <line stroke="#88FFBB00" stroke-width="1" dy="+10.5" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
-      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-102" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-101" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-100" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -367,11 +367,11 @@
     <rule e="way" k="piste:difficulty" v="~">                                   <!-- Ski-Tour:  unbekannte Schwierigkeit, lila Ringe -->
       <!-- Wegen evtl. Doubletten #22 statt #44 und modifizierte priority/repeat-Werte -->
       <line stroke="#22FF00FF" stroke-width="6" dy="+8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-108" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-108" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <!-- kein Symbol, da viele Touren ohne Angabe -->
-      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-85" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" /> -->
+      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-85" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" /> -->
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-107" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-107" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-106" repeat-start="75" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -391,9 +391,9 @@
     <rule e="way" k="piste:difficulty" v="novice">                              <!-- Anfänger-Ski-Touren-Fläche:  grüne Ringe -->
       <line stroke="#5500FF00" stroke-width="1" dy="0" scale="none" />
       <area fill="#3300FF00" />
-      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_gruen_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="0" priority="-106" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_lila.svg" symbol-height="24" symbol-width="24" dy="0" priority="-106" scale="none" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -405,9 +405,9 @@
     <rule e="way" k="piste:difficulty" v="easy">                                <!-- Einfache Ski-Touren-Fläche:  blaue Ringe -->
       <line stroke="#550000FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#330000FF" />
-      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_blau_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -419,9 +419,9 @@
     <rule e="way" k="piste:difficulty" v="intermediate">                        <!-- Mittelschwere Ski-Touren-Fläche:  rote Ringe -->
       <line stroke="#55FF0000" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF0000" />
-      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_rot_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -433,9 +433,9 @@
     <rule e="way" k="piste:difficulty" v="advanced">                            <!-- Schwere Ski-Touren-Fläche:  schwarze Ringe -->
       <line stroke="#55000000" stroke-width="1" dy="0" scale="none" />
       <area fill="#33000000" />
-      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_schwarz_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -447,9 +447,9 @@
     <rule e="way" k="piste:difficulty" v="expert">                              <!-- Sehr schwere Ski-Touren-Fläche:  orange Ringe -->
       <line stroke="#66FFBB00" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FFBB00" />                                                 <!-- orange Fläche -->
-      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -461,10 +461,10 @@
     <rule e="way" k="piste:difficulty" v="freeride">                            <!-- Extreme Ski-Touren-Fläche:  orange Ringe auf gelber Linie, mit Achtung-Symbol -->
       <line stroke="#66FFBB00" stroke-width="2" dy="0" scale="none" />
       <area fill="#33FFFF00" />                                                 <!-- gelbe Fläche -->
-      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
-      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_orange_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_blau.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -476,11 +476,11 @@
     <rule e="way" k="piste:difficulty" v="~">                                   <!-- Ski-Touren-Fläche:  unbekannte Schwierigkeit, lila Ringe -->
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF00FF" />
-      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_circle_lila_ring.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-107" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <!-- kein Symbol, da viele Touren ohne Angabe -->
-      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-87" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" /> -->
+      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-87" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" /> -->
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_skitour_gruen.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-106" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-105" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -503,7 +503,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... weisse Punkte -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -516,7 +516,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... weiss gepunktet -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -529,7 +529,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... weiss gestrichelt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -542,7 +542,7 @@
         <line stroke="#AA00FF00" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... weiss Strich-Punkt-Punkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_lila.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#00FF00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -559,7 +559,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... weisse Punkte -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -572,7 +572,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... weiss gepunktet -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -585,7 +585,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... weiss gestrichelt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-111" scale="none" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-111" scale="none" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -598,7 +598,7 @@
         <line stroke="#AA0000FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... weiss Strich-Punkt-Punkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -615,7 +615,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... weisse Punkte -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -628,7 +628,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... weiss gepunktet -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -641,7 +641,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... weiss gestrichelt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -654,7 +654,7 @@
         <line stroke="#AAFF0000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... weiss Strich-Punkt-Punkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF0000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -671,7 +671,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... gelb gestrichelt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -684,7 +684,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... gelb gepunktet -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -697,7 +697,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... gelb Strichpunkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -710,7 +710,7 @@
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... gelb Strich-Punkt-Punkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -726,9 +726,9 @@
       <rule e="way" k="piste:grooming" v="~">                                                                 <!-- Loipe, Spur unbekannt -->
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... gelb gestrichelt -->
-        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -740,9 +740,9 @@
       <rule e="way" k="piste:grooming" v="classic|scooter">                                                   <!-- Klassische Loipe -->
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... gelb gepunktet -->
-        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -754,9 +754,9 @@
       <rule e="way" k="piste:grooming" v="skating">                                                           <!-- Skating Loipe -->
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... gelb Strichpunkt -->
-        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-19" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-19" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -768,9 +768,9 @@
       <rule e="way" k="piste:grooming" v="classic+skating|classic;skating">                                   <!-- Klassische und Skating Loipe -->
         <line stroke="#AA000000" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFF00" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... gelb Strich-Punkt-Punkt -->
-        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_achtung.svg" symbol-height="24" symbol-width="24" dy="-8" priority="-80" scale="none" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_orange.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-111" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-110" repeat-start="50" repeat-gap="150" font-style="italic" fill="#000000" stroke="#E5FFFFFF" stroke-width="3" />
@@ -791,7 +791,7 @@
         <line stroke="#33FF00FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,40" />             <!-- .... weisse Punkte -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -804,7 +804,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="5,5" />              <!-- .... weiss gepunktet -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -817,7 +817,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5" />             <!-- .... weiss gestrichelt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -830,7 +830,7 @@
         <line stroke="#66FF00FF" stroke-width="6" dy="-8" scale="none" />
         <line stroke="#AAFFFFFF" stroke-width="2" dy="-8" scale="none" stroke-dasharray="40,5,5,5,5,5,5,5" /> <!-- .... weiss Strich-Punkt-Punkt -->
         <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+          <lineSymbol src="file:/symbols_winter/w_langlauf_gruen.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-116" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
         </rule>
         <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
           <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-115" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -840,7 +840,7 @@
         </rule>
       </rule>
       <!-- kein Symbol, da viele Touren ohne Angabe -->
-      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="-6" scale="none" priority="-80" repeat-start="10" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" /> -->
+      <!-- <lineSymbol src="file:/symbols_winter/w_unbekannt_cyan.svg" symbol-height="24" symbol-width="24" dy="-6" scale="none" priority="-80" repeat-start="10" repeat-gap="100" position="center" repeat="true" symbol-percent="100" /> -->
     </rule>
   </rule>
 
@@ -848,9 +848,9 @@
   <rule cat="schneeschuh" e="way" k="piste:type" v="hike" zoom-min="13">
     <rule e="way" k="piste:grooming" v="classic">                                                   <!-- Winter-Wanderung:  violett-weisse 4-Ecke -->
       <line stroke="#449F009F" stroke-width="6" dy="-8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_4eck_violett_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_4eck_violett_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_winterwandern_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_winterwandern_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-120" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3" />
@@ -861,9 +861,9 @@
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry|~">                                             <!-- Schneeschuh-Wanderung:  lila 4-Eck-Frames -->
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_4eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_4eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-122" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_schneeschuh_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_schneeschuh_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-121" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-120" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -878,9 +878,9 @@
   <rule cat="rodeln" e="way" k="piste:type" v="sled" closed="no" zoom-min="13">
     <rule e="way" k="piste:grooming" v="classic|~">                                                 <!-- Natur Rodel-Bahn: lila Dreieck Frames -->
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-130" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -891,9 +891,9 @@
     </rule>
     <rule e="way" k="piste:grooming" v="backcountry">                                               <!-- unpräparierte Rodel-Bahn: lila Dreieck weiss gefüllt -->
       <line stroke="#44FF00FF" stroke-width="6" dy="-8" scale="none" />
-      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="-8" scale="none" priority="-132" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="-8" scale="none" priority="-131" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="-8" scale="none" display="always" priority="-130" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -907,9 +907,9 @@
     <rule e="way" k="piste:grooming" v="classic|~">                                                 <!-- Natur Rodel-Fläche: lila Dreieck Frames -->
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF00FF" />
-      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_frame.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-135" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -921,9 +921,9 @@
     <rule e="way" k="piste:grooming" v="backcountry">                                               <!-- unpräparierte Rodel-Fläche: lila Dreieck weiss gefüllt -->
       <line stroke="#55FF00FF" stroke-width="1" dy="0" scale="none" />
       <area fill="#33FF00FF" />
-      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_3eck_lila_weiss.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-137" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
       <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+        <lineSymbol src="file:/symbols_winter/w_rodel_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-136" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
       </rule>
       <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
         <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-135" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FF00FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -937,9 +937,9 @@
   <!-- Hunde/Motor-Schlitten (sleigh), siehe Rodel-Tour-way.ods bzw. siehe Rodel-Tour-area.ods -->
   <rule cat="hundeschlitten" e="way" k="piste:type" v="sleigh" closed="no" zoom-min="13">           <!-- Hunde/Motor-Schlitten: violette Dreiecke -->
     <line stroke="#449F009F" stroke-width="6" dy="+8" scale="none" />
-    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-142" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="+8" scale="none" priority="-142" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-141" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="+8" scale="none" priority="-141" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="+8" scale="none" display="always" priority="-140" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3" />
@@ -951,9 +951,9 @@
   <rule cat="hundeschlitten" e="way" k="piste:type" v="sleigh" closed="yes" zoom-min="13">          <!-- Hunde/Motor-Schlitten Fläche: violette Dreiecke -->
     <line stroke="#559F009F" stroke-width="1" dy="0" scale="none" />
     <area fill="#339F009F" />
-    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-147" repeat-start="0" repeat-gap="20" align-center="true" repeat="true" symbol-percent="100" />
+    <lineSymbol src="file:/symbols_winter/w_3eck_violett.svg" symbol-height="8" symbol-width="8" dy="0" scale="none" priority="-147" repeat-start="0" repeat-gap="20" position="center" repeat="true" symbol-percent="100" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-146" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_hundeschlitten_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-146" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-145" repeat-start="50" repeat-gap="150" font-style="italic" fill="#9F009F" stroke="#E5FFFFFF" stroke-width="3" />
@@ -968,7 +968,7 @@
     <line stroke="#AA00FFFF" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10" />
     <line stroke="#AA0000FF" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" dy="0" symbol-height="24" symbol-width="24" scale="none" priority="-151" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" dy="0" symbol-height="24" symbol-width="24" scale="none" priority="-151" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-150" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -982,7 +982,7 @@
     <line stroke="#AA0000FF" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <area fill="#3300FFFF" />                                                                       <!-- Eislauf-Fläche cyan -->
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-155" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -996,7 +996,7 @@
     <line stroke="#AA0000FF" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <area fill="#3300FFFF" />                                                                       <!-- Eislauf-Fläche cyan -->
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_eislauf_orange.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-156" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-155" repeat-start="50" repeat-gap="150" font-style="italic" fill="#0000FF" stroke="#E5FFFFFF" stroke-width="3" />
@@ -1012,7 +1012,7 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <area fill="#33FFFF00" />                                                                       <!-- Fläche gelb gefüllt -->
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-2160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -1027,7 +1027,7 @@
     <line stroke="#AAFFFF00" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10" />
     <line stroke="#AAFFBB00" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -1041,7 +1041,7 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <area fill="#33FFFF00" />                                                                       <!-- Fläche gelb gefüllt -->
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-165" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -1056,7 +1056,7 @@
     <line stroke="#AAFFFF00" stroke-width="6" dy="0" scale="none" stroke-dasharray="10,10" />
     <line stroke="#AAFFBB00" stroke-width="6" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-161" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-160" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />
@@ -1070,7 +1070,7 @@
     <line stroke="#AAFFBB00" stroke-width="2" dy="0" scale="none" stroke-dasharray="0,10,10,0" />
     <area fill="#33FFFF00" />                                                                       <!-- Fläche gelb gefüllt -->
     <rule cat="winter_symbol" e="way" k="*" v="*" zoom-min="14">
-      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" align-center="true" repeat="true" symbol-percent="100" />
+      <lineSymbol src="file:/symbols_winter/w_halfpipe_cyan.svg" symbol-height="24" symbol-width="24" dy="0" scale="none" priority="-166" repeat-start="0" repeat-gap="100" position="center" repeat="true" symbol-percent="100" />
     </rule>
     <rule cat="winter_reference" e="way" k="*" v="*" zoom-min="14">
       <pathText k="ref" font-size="8" dy="0" scale="none" display="always" priority="-165" repeat-start="50" repeat-gap="150" font-style="italic" fill="#FFBB00" stroke="#E5FFFFFF" stroke-width="3" />

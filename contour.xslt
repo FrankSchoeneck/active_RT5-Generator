@@ -23,18 +23,13 @@
 			</rule>
 			<rule e="way" k="contour_ext" v="elevation_major">
 				<line stroke="#A9641B" stroke-width="0.4" curve="cubic"/>
-				<pathText k="ele" font-style="bold" font-size="7" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false" />
+				<pathText k="ele" font-style="bold" font-size="7" fill="#A9641B" stroke="#e5ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" text-orientation="left" />
 			</rule>
 		</rule>
 		<rule e="way" k="contour_ext" v="*" zoom-min="14" zoom-max="14" cat="contourlines">
-			<!-- Estmal für ZOOM 14 deaktiviert, kann später gelöscht werden. 17.02.2021
-			<rule e="way" k="contour_ext" v="elevation_minor">
-				<line stroke="#A9641B" stroke-width="0.1" curve="cubic"/>
-			</rule>
-			-->
 			<rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
 				<line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
-				<pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" rotate="false" />
+				<pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#e5ffffff" stroke-width="1" repeat-start="50" repeat-gap="150" text-orientation="left" />
 			</rule>
 		</rule>
 		<rule e="way" k="contour_ext" v="*" zoom-min="15" zoom-max="15" cat="contourlines">
@@ -43,7 +38,7 @@
 			</rule>
 			<rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
 				<line stroke="#A9641B" stroke-width="0.25" curve="cubic"/>
-				<pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#a0ffffff" stroke-width="1" repeat-start="100" repeat-gap="150" rotate="false" />
+				<pathText k="ele" font-style="bold" font-size="8" fill="#A9641B" stroke="#e5ffffff" stroke-width="1" repeat-start="100" repeat-gap="150" text-orientation="left" />
 			</rule>
 		</rule>
 		<rule e="way" k="contour_ext" v="*" zoom-min="16" zoom-max="16" cat="contourlines">
@@ -52,7 +47,7 @@
 			</rule>
 			<rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
 				<line stroke="#A9641B" stroke-width="0.2" curve="cubic"/>
-				<pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false" />
+				<pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#e5ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" text-orientation="left" />
 			</rule>
 		</rule>
 		<rule e="way" k="contour_ext" v="*" zoom-min="17" cat="contourlines">
@@ -61,7 +56,7 @@
 			</rule>
 			<rule e="way" k="contour_ext" v="elevation_medium|elevation_major">
 				<line stroke="#A9641B" stroke-width="0.15" curve="cubic"/>
-				<pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#a0ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" rotate="false" />
+				<pathText k="ele" font-style="bold" font-size="9" fill="#A9641B" stroke="#e5ffffff" stroke-width="2" repeat-start="200" repeat-gap="200" text-orientation="left" />
 			</rule>
 		</rule>
 

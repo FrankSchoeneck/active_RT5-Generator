@@ -512,7 +512,7 @@
 				</rule>
 				<!-- Symbole für Fahrtrichtung -->
 				<rule e="way" k="oneway" v="yes|1" zoom-min="16">
-					<lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="35" align-center="true" repeat="true" repeat-gap="100" repeat-start="2"/>
+					<lineSymbol src="file:/symbols/oneway_arrow.svg" symbol-percent="35" position="center" repeat="true" repeat-gap="100" repeat-start="2"/>
 				</rule>
 			</rule>
 		</rule>
