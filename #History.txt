@@ -1,3 +1,5 @@
+12.02.2024, geändert: fix von nono303 übernommen
+
 11.08.2023, geändert: contour_lines (Höhenlinien) werden nun in der Reihenfolge hinter den natural aereas/bodys gerendert
 11.08.2023, geändert: contour_lines (Höhenlinien) Ausrichtung der Beschriftung geändert
 09.08.2023, geändert: state (Bundesland) und country (Staat) Name wird nun angezeigt, aber nur wenn Grenzen angezeigt werden

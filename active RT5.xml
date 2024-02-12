@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd" version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme https://raw.githubusercontent.com/mapsforge/mapsforge/master/resources/renderTheme.xsd" version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
   <!--
 		active RT5 (active RenderTheme Version 5)
 		Mapsforge Rendertheme for Apps with Mapsforge support and Openandromaps
@@ -377,10 +377,10 @@
       <area fill="#A2CBED" stroke="#5FA3D6" stroke-width="0.15"/>
     </rule>
     <rule e="way" k="leisure" v="common" zoom-min="15">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
     <rule e="way" k="leisure" v="park|stadium|sports_centre|water_park|golf_course|playing_fields" zoom-min="15">
-      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
+      <caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5"/>
     </rule>
   </rule>
   <rule e="way" k="tourism" v="*">
@@ -2417,10 +2417,10 @@
       <line stroke="#6bb96c" stroke-width="0.8" stroke-linecap="butt"/>
     </rule>
     <rule e="way" k="boundary" v="national_park" zoom-min="10" zoom-max="15">
-      <caption k="name" text-transform="uppercase" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
+      <caption k="name" text-transform="uppercase" font-style="bold" font-size="10" position="center" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
     </rule>
     <rule e="way" k="boundary" v="protect_class" zoom-min="15" zoom-max="18">
-      <caption k="name" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
+      <caption k="name" font-style="bold" font-size="10" position="center" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
     </rule>
   </rule>
   <rule e="way" k="man_made|embankment" v="dyke|embankment|emb_yes" zoom-min="12" cat="landscapefeat">

@@ -13,10 +13,10 @@
 
 		<!-- captions -->
 		<rule e="way" k="boundary" v="national_park" zoom-min="10" zoom-max="15">
-			<caption k="name" text-transform="uppercase" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
+			<caption k="name" text-transform="uppercase" font-style="bold" font-size="10" position="center" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
 		</rule>
 		<rule e="way" k="boundary" v="protect_class" zoom-min="15" zoom-max="18">
-			<caption k="name" font-style="bold" font-size="10" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
+			<caption k="name" font-style="bold" font-size="10" position="center" fill="#688F37" stroke="#FFFFFF" stroke-width="1.5" text-wrap-width="120"/>
 		</rule>
 	</rule>
 </xsl:template>

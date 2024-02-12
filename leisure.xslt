@@ -59,10 +59,10 @@
 			<area fill="#A2CBED" stroke="#5FA3D6" stroke-width="0.15" />
 		</rule>
 		<rule e="way" k="leisure" v="common" zoom-min="15">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 		<rule e="way" k="leisure" v="park|stadium|sports_centre|water_park|golf_course|playing_fields" zoom-min="15">
-			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
+			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>
 </xsl:template>

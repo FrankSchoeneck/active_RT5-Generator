@@ -32,9 +32,7 @@
 	<xsl:include href="winter.xslt" />
 <xsl:template match="/">
 
-<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd"
-			version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme https://raw.githubusercontent.com/mapsforge/mapsforge/master/resources/renderTheme.xsd" version="5" map-background-outside="#dddddd" map-background="#FAFBFC">
 
 	<xsl:comment>
 		active RT5 (active RenderTheme Version 5)
