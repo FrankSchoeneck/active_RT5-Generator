@@ -3,8 +3,15 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 <xsl:template name="man_made">
-	<!-- Deich|Damm, only OpenAndroMaps -->
-	<rule e="way" k="man_made|embankment" v="dyke|embankment|emb_yes" zoom-min="12" cat="landscapefeat">
+	<!-- Deich, only OpenAndroMaps -->
+	<rule e="way" k="man_made" v="dyke" zoom-min="14" cat="landscapefeat">
+		<line stroke="#6D6D6D" dy="2.2" stroke-width="1.5" stroke-dasharray="0.5,5" stroke-linecap="butt" />
+		<line stroke="#6D6D6D" dy="1.5" stroke-width="0.2" stroke-linecap="butt" />
+		<line stroke="#6D6D6D" dy="-1.5" stroke-width="0.2" stroke-linecap="butt" />
+		<line stroke="#6D6D6D" dy="-2.2" stroke-width="1.5" stroke-dasharray="0.5,5" stroke-linecap="butt" />
+	</rule>
+	<!-- Damm -->
+	<rule e="way" k="embankment" v="yes|emb_yes" zoom-min="14" cat="landscapefeat">
 		<line stroke="#6D6D6D" dy="2.2" stroke-width="1.5" stroke-dasharray="0.5,5" stroke-linecap="butt" />
 		<line stroke="#6D6D6D" dy="1.5" stroke-width="0.2" stroke-linecap="butt" />
 		<line stroke="#6D6D6D" dy="-1.5" stroke-width="0.2" stroke-linecap="butt" />

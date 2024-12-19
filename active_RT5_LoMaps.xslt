@@ -1,20 +1,20 @@
-<?xml-stylesheet type="text/xsl" href="active_RT5.xslt"?>
+<?xml-stylesheet type="text/xsl" href="active_RT5_LoMaps.xslt"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 			
-    <xsl:include href="menu.xslt" />
+    <xsl:include href="menu_LoMaps.xslt" />
     <xsl:include href="contour.xslt" />
     <xsl:include href="building.xslt" />
-    <xsl:include href="highway.xslt" />
+    <xsl:include href="highway_LoMaps.xslt" />
     <xsl:include href="railway.xslt" />
     <xsl:include href="aeroway.xslt" />
     <xsl:include href="landuse.xslt" />
     <xsl:include href="water.xslt" />
     <xsl:include href="admin.xslt" />
     <xsl:include href="place.xslt" />
-    <xsl:include href="hikingtrails.xslt" />
+    <xsl:include href="hikingtrails_LoMaps.xslt" />
     <xsl:include href="tourism.xslt" />
     <xsl:include href="natural.xslt" />    
     <xsl:include href="aerial.xslt" />
@@ -24,7 +24,7 @@
 	<xsl:include href="power.xslt" />
 	<xsl:include href="historic.xslt" />
 	<xsl:include href="military.xslt" />
-	<xsl:include href="boundary.xslt" />
+	<xsl:include href="boundary_LoMaps.xslt" />
 	<xsl:include href="leisure.xslt" />
 	<xsl:include href="areas.xslt" />
 	<xsl:include href="man_made.xslt" />
@@ -36,7 +36,7 @@
 
 	<xsl:comment>
 		active RT5 (active RenderTheme Version 5)
-		Mapsforge Rendertheme for Apps with Mapsforge support and Openandromaps
+		Mapsforge Rendertheme for Apps with Mapsforge and LoMaps (Locus Map) support
 		
 		by LocusUser#1 (Frank Schöneck)
 		Contact: LocusUser1@gmx.de
@@ -59,6 +59,7 @@
 	<xsl:call-template name="water_ways"/>
 	<xsl:call-template name="water_bodys"/>
 	<xsl:call-template name="admin"/>
+	<xsl:call-template name="boundary"/>
 	<xsl:call-template name="contour_lines"/>
 	<xsl:call-template name="highway_area"/>
 	<xsl:call-template name="railway_tunnel"/>
@@ -71,7 +72,6 @@
 	<xsl:call-template name="route"/>
 	<xsl:call-template name="power"/>
 	<xsl:call-template name="places"/>
-	<xsl:call-template name="boundary"/>
 	<xsl:call-template name="man_made"/>
 	<xsl:call-template name="aerial"/>
 	<xsl:call-template name="barrier"/>

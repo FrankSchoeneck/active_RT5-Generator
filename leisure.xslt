@@ -3,11 +3,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <xsl:template name="leisure">
 	<rule e="way" k="leisure" v="*" zoom-min="10">
-		<rule e="way" k="leisure" v="park" cat="Style_Summer">
-			<area fill="#cce4ca" />
-		</rule>
-		<rule e="way" k="leisure" v="park" cat="Style_Winter">
-			<area fill="#fcfdff" />
+		<rule e="way" k="leisure" v="park">
+			<area fill="#cce4ca" cat="Style_Summer"/>
+			<area fill="#fcfdff" cat="Style_Winter"/>
 		</rule>
 		<rule e="way" k="leisure" v="sports_centre" cat="Style_Summer">
 			<area fill="#ebf3e2" stroke="#A3BAA5" stroke-width="0.2" />
@@ -33,7 +31,7 @@
 		<rule e="way" k="leisure" v="water_park" cat="Style_Winter">
 			<area fill="#fcfdff" />
 		</rule>
-		<rule e="way" k="leisure" v="golf_course|common|green" >
+		<rule e="way" k="leisure" v="golf_course|common|green">
 			<area fill="#e2ecc5" cat="Style_Summer"/>
 			<area fill="#fcfdff" cat="Style_Winter"/>
 		</rule>
@@ -43,17 +41,19 @@
 		<rule e="way" k="leisure" v="garden" cat="Style_Winter">
 			<area fill="#fcfdff" />
 		</rule>
-		<rule e="way" k="leisure" v="playground|playing_fields|dog_park" zoom-min="12" cat="Style_Summer">
-			<area fill="#cadab1" stroke="#B7C7B9" stroke-width="0.1" />
-		</rule>
-		<rule e="way" k="leisure" v="playground|playing_fields|dog_park" zoom-min="12" cat="Style_Winter">
-			<area fill="#fcfdff" stroke="#B7C7B9" stroke-width="0.1" />
+		<rule e="way" k="leisure" v="playground|playing_fields|dog_park" zoom-min="12" >
+			<area fill="#cadab1" stroke="#B7C7B9" stroke-width="0.2" cat="Style_Summer"/>
+			<area fill="#fcfdff" stroke="#B7C7B9" stroke-width="0.1" cat="Style_Winter"/>
 		</rule>
 		<rule e="way" k="leisure" v="track|byway|ls_track" zoom-min="12" cat="Style_Summer">
-			<area fill="#f0f7d2" />
+			<rule e="way" k="area" v="yes|true">
+				<area fill="#f0f7d2" />
+			</rule>
 		</rule>
 		<rule e="way" k="leisure" v="track|byway|ls_track" zoom-min="12" cat="Style_Winter">
-			<area fill="#ffffff" />
+			<rule e="way" k="area" v="yes|true">
+				<area fill="#ffffff" />
+			</rule>
 		</rule>
 		<rule e="way" k="leisure" v="swimming_pool" zoom-min="11">
 			<area fill="#A2CBED" stroke="#5FA3D6" stroke-width="0.15" />
@@ -61,7 +61,10 @@
 		<rule e="way" k="leisure" v="common" zoom-min="15">
 			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
-		<rule e="way" k="leisure" v="park|stadium|sports_centre|water_park|golf_course|playing_fields" zoom-min="15">
+		<rule e="way" k="leisure" v="park" zoom-min="14">
+			<caption k="name" font-style="bold" font-size="10" position="center" fill="#378d20" stroke="#ffffff" stroke-width="1.0" />
+		</rule>
+		<rule e="way" k="leisure" v="stadium|sports_centre|water_park|golf_course|playing_fields" zoom-min="15">
 			<caption k="name" font-style="normal" font-family="sans_serif" font-size="10" position="center" fill="#333333" stroke="#ffffff" stroke-width="1.5" />
 		</rule>
 	</rule>

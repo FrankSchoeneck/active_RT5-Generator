@@ -57,8 +57,8 @@
 			</rule>
 		</rule>
 		<rule e="way" k="landuse" v="allotments">
-			<area cat="Style_Summer" fill="#e2ecc5" stroke="#556b2f" stroke-width="0.2" />
-			<area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.2" />
+			<area cat="Style_Summer" fill="#e2ecc5" stroke="#7aaa41" stroke-width="0.1" />
+			<area cat="Style_Winter" fill="#fcfdff" stroke="#556b2f" stroke-width="0.1" />
 		</rule>
 	</rule>
 
@@ -79,12 +79,12 @@
 	<!-- wood -->
 	<rule e="way" k="natural|landuse" v="forest|wood" zoom-min="8">
 		<rule e="way" k="*" v="*" zoom-max="13" >
-			<area cat="Style_Summer" fill="#C9E0B4" />
-			<area cat="Style_Winter" fill="#d9e3f4" />
+			<area fill="#809fc86f" cat="Style_Summer" />
+			<area fill="#80b1c6e9" cat="Style_Winter" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="14">
-			<area cat="Style_Summer" fill="#C9E0B4"/>
-			<area cat="Style_Winter" fill="#d9e3f4" />
+			<area fill="#809fc86f" cat="Style_Summer" />
+			<area fill="#80b1c6e9" cat="Style_Winter" />
 			<rule e="any" k="wood|leaf_type" v="coniferous|needleleaved">
 				<area src="file:/patterns/wood_coniferous.svg" symbol-width="40" />
 			</rule>
@@ -96,8 +96,8 @@
 			</rule>
 		</rule>
 		<!-- wood captions -->
-		<rule e="way" k="*" v="*" zoom-min="12" zoom-max="14">
-			<caption k="name" font-style="italic" font-size="12" fill="#77856D" stroke="#FFFFFF" stroke-width="1.5" />
+		<rule e="way" k="*" v="*" zoom-min="12" zoom-max="16">
+			<caption k="name" font-style="italic" font-size="12" fill="#40602a" stroke="#FFFFFF" stroke-width="1.0" />
 		</rule>
 	</rule>
 
@@ -130,7 +130,7 @@
 	</rule>
 	
 	<!-- Wiese -->
-	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes" cat="Style_Summer">
+	<rule e="way" k="landuse" v="meadow" zoom-min="12" closed="yes">
 		<area cat="Style_Summer" fill="#fcfcf2" />
 		<area cat="Style_Winter" fill="#fcfdff" />
 	</rule>

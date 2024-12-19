@@ -1,3 +1,20 @@
+18.12.2024, geändert: Dateigrößen der SVG Dateien optimiert
+25.10.2024, geändert: Darstellung von Strassen in Tunnel verbessert
+25.10.2024, geändert: turning_circle|mini_roundabout werden jetzt korrekt dargestellt
+30.09.2024, neu hinu: SAC Scale Einstufung wird nun auch als Text angezeigt (nur bei OpenAndroMaps)
+15.04.2024, geändert: bei track wurde tracktype nicht korrekt angezeigt
+25.03.2024, geändert: motorway (Autobahnen) werden nun durch caption beschriftet
+25.03.2024, geändert: track=grade2 (Schotterwege) werden nun separat dargestellt, mit anderer Strichlierung
+25.03.2024, geändert: Grenzen von Naturschutz und Schutzgebieten angepasst, werden nun nicht mehr gefüllt dargestellt
+25.03.2024, geändert: Farbe der Beschriftung von parks angepasst
+18.03.2024, geändert: leisure=playground Darstellung angepasst (nun wird die Fläche umrandert)
+18.03.2024, geändert: natural=scrubs Darstellung angepasst (nun wird die Fläche umrandert)
+18.03.2024, geändert: Gebäude werden nun ab Zoom 14 dargestellt
+18.03.2024, geändert: boundary (Nationalpark Grenzen) werden nun vor ways gerendert, Farbe angepasst
+29.02.2024, geändert: Darstellung von Richtungspfeilen auf die wichtigsten Strassen begrenzt
+27.02.2024, geändert: Symbolgröße von castle und ruins verkleinert
+26.02.2024, neu hinzu: Separate Version für LoMaps Karten erstellt. Darstellung der Wanderwegesymbole komplett geändert. Weitere Anpassungen für LoMaps V4 Karten tagging.
+
 12.02.2024, geändert: fix von nono303 übernommen
 
 11.08.2023, geändert: contour_lines (Höhenlinien) werden nun in der Reihenfolge hinter den natural aereas/bodys gerendert

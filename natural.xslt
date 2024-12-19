@@ -13,13 +13,13 @@
 				<area src="file:/patterns/glacier.svg" />
 			</rule>
 			<rule e="way" k="natural" v="grassland" closed="yes">
-				<area fill="#E7E7E7" stroke="#b7c7b9" cat="Style_Summer"/>
-				<area fill="#fcfdff" stroke="#b7c7b9" cat="Style_Winter"/>
+				<area fill="#E7E7E7" stroke="#b7c7b9" stroke-width="0.1" cat="Style_Summer"/>
+				<area fill="#fcfdff" stroke="#b7c7b9" stroke-width="0.1" cat="Style_Winter"/>
 			</rule>
 			<rule e="way" k="natural" v="fell" closed="yes">
 				<area fill="#D4E5EB" />
 			</rule>
-			<rule e="way" k="natural" v="rock" closed="yes">
+			<rule e="way" k="natural" v="bare_rock|rock" closed="yes">
 				<area fill="#D4E5EB" />
 				<area src="file:/patterns/rock.svg" symbol-width="32" />
 			</rule>
@@ -57,11 +57,9 @@
 				<area fill="#DCE0DA" />
 				<area src="file:/patterns/heath.svg" symbol-width="40" />
 			</rule>
-			<rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Summer">
-				<area fill="#e1edd5" />
-			</rule>
-			<rule e="way" k="natural" v="scrub" closed="yes" cat="Style_Winter">
-				<area fill="#e8f2e2" />
+			<rule e="way" k="natural" v="scrub" >
+				<area fill="#80cce2bf" cat="Style_Summer"/>
+				<area fill="#80daead0" cat="Style_Winter"/>
 			</rule>
 		</rule>
 
@@ -70,7 +68,7 @@
 				<line stroke="#70606060" stroke-width="1.0" stroke-linecap="butt" />
 				<pathText k="name" font-style="bold" font-family="sans_serif" font-size="19" fill="#333333" stroke="#FFFFFF" stroke-width="1.5" />
 				<rule e="way" k="natural" v="*" zoom-min="13">
-					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="1" repeat-start="1" rotate="true" position="center" symbol-percent="30" />
+					<lineSymbol dy="0.5" src="file:/symbols/cliff.svg" repeat="true" repeat-gap="3" repeat-start="1" rotate="true" position="center" symbol-percent="30" />
 				</rule>		
 			</rule>
 			<rule e="way" k="natural" v="cliff|earth_bank" closed="yes" cat="landscapefeat"> <!-- Steile Böschungen: Steilufer, Erosionsrinnen, Steilabhang. -->
